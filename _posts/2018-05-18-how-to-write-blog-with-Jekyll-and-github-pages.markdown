@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hot to start write a blog with Jekyll on GitHubPages"
+title:  "Hot to start writing a blog with Jekyll on GitHubPages"
 date:   2018-05-19 00:42:40 +0800
 categories: jekyll update
 ---
