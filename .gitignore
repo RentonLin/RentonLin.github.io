@@ -1,2 +1,6 @@
 */*.DS_Store
 */*.swp
+.sass-cache/*
+*/*.DS_Store
+
+
