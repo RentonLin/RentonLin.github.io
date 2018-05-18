@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Daily collection 2018/05/19 | ToraceOn Studio</title>
+<meta name="generator" content="Jekyll v3.8.1" />
+<meta property="og:title" content="Daily collection 2018/05/19" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to use timer with RxSwift Problems with NSTimer NSTimer will retain target which often cause retain cycle. How to use timer with RxSwift ``` let o = Observable.timer(#dueTime, period: #lap?, scheduler: scheduler).subscribe()" />
+<meta property="og:description" content="How to use timer with RxSwift Problems with NSTimer NSTimer will retain target which often cause retain cycle. How to use timer with RxSwift ``` let o = Observable.timer(#dueTime, period: #lap?, scheduler: scheduler).subscribe()" />
+<link rel="canonical" href="https://rentonlin.github.io//jekyll/update/2018/05/19/daily-collec.html" />
+<meta property="og:url" content="https://rentonlin.github.io//jekyll/update/2018/05/19/daily-collec.html" />
+<meta property="og:site_name" content="ToraceOn Studio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-19T00:42:40+08:00" />
+<script type="application/ld+json">
+{"description":"How to use timer with RxSwift Problems with NSTimer NSTimer will retain target which often cause retain cycle. How to use timer with RxSwift ``` let o = Observable.timer(#dueTime, period: #lap?, scheduler: scheduler).subscribe()","@type":"BlogPosting","url":"https://rentonlin.github.io//jekyll/update/2018/05/19/daily-collec.html","headline":"Daily collection 2018/05/19","dateModified":"2018-05-19T00:42:40+08:00","datePublished":"2018-05-19T00:42:40+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rentonlin.github.io//jekyll/update/2018/05/19/daily-collec.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rentonlin.github.io//feed.xml" title="ToraceOn Studio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">ToraceOn Studio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Daily collection 2018/05/19</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-05-19T00:42:40+08:00" itemprop="datePublished">May 19, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ol>
+  <li>How to use timer with RxSwift
+    <ul>
+      <li>Problems with NSTimer
+        <ul>
+          <li>NSTimer will retain target which often cause retain cycle.</li>
+        </ul>
+      </li>
+      <li>How to use timer with RxSwift
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   let o = Observable&lt;Int&gt;.timer(#dueTime, period: #lap?, scheduler: scheduler).subscribe()
+
+   //DueTime is the the first time you will timer to fire
+   //Lap is the inter-period between after fires, if nil is provided, the timer will only fire once. In this way you can create repeat timer and unrepeat timers
+   //Scheduler: Scheduler where you will your timer to fire
+
+   //Warning:The following timer will never fire unless you subscribe it.
+   let o = Observable&lt;Int&gt;.timer(#dueTime, period: #lap?, scheduler: scheduler)
+
+   //How to stop a timer? Just dipose the subscription
+   let disposebal = Observable&lt;Int&gt;.timer(#dueTime, period: #lap?, scheduler: scheduler).sbuscribe()
+   disposebal.dispose()
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>When will subscription release in RxSwift?
+    <ul>
+      <li>Disposebal.dispose(by: disposeBag)
+        <ul>
+          <li>Subscription blocks(nextBlock, errorBlock) and the values retained by them will be released when disposeBag is released</li>
+          <li>Normally we create a disposeBag as a property of current object, when current object deinit, its disposeBag will also deinit, which cause all subscription blocks and value they retained to reduce reference count.</li>
+          <li>So if you retain Self in the blocks, onNext block for example, subscription and self retain each other, which will cause memory leak.</li>
+        </ul>
+      </li>
+      <li>Observer.onError(error), onComplete()
+        <ul>
+          <li>If the observer calles its onError() or onComplete(), the subscription will also release</li>
+          <li>A common scene for this is the UI actions, when UI element deinit, their observables, button.rx.tap or collectionView.rx.modelSelected will  also dispose</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>How to use ssh key to communicate with remote repository
+    <ul>
+      <li>Create ssh keys pair</li>
+    </ul>
+    <ul>
+      <li>ssh-keygen</li>
+      <li>Default private key and public key is stored in ~/.ssh/
+      * Add to ssh agent</li>
+      <li>ssh-add ~/.ssh/private_key_file
+      * Add ssh public key to repository holder</li>
+      <li>Github account preference
+      * Test</li>
+      <li>ssh -T git@address_to_repository</li>
+    </ul>
+  </li>
+</ol>
+
+  </div><a class="u-url" href="/jekyll/update/2018/05/19/daily-collec.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">ToraceOn Studio</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">ToraceOn Studio</li><li><a class="u-email" href="mailto:renton20120426@gmail.com">renton20120426@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/RentonLin"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">RentonLin</span></a></li><li><a href="https://www.twitter.com/Renton942"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">Renton942</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Record</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
