@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Daily collection 2018/05/19"
+title:  "Hot to start write a blog with Jekyll on GitHubPages"
 date:   2018-05-19 00:42:40 +0800
 categories: jekyll update
 ---
 * 吐槽:Jekyll官方的文档真的是啰嗦，刚开始写blog的人一上来，谁关心你的目录结构是啥，谁关心你那花哨的模板。安装就得好久，再那么啰嗦地show你能做的东西谁关心？上来就教人建个网站，写一段文字不是比什么都好?
+
+
 1. Create project in github with name same as your github account name
 2. Check out the repository
 3. Install ruby, budle, Jekyll
