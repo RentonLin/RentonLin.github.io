@@ -19,3 +19,4 @@ categories: Collection
       //work with error when cast failed
     }
     ```
+    * Warning: You must specify the type of your variable.
