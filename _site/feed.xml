@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-22T09:37:29+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Hot to get model from indexPath in a Rx way</title><link href="http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html" rel="alternate" type="text/html" title="Hot to get model from indexPath in a Rx way" /><published>2018-05-21T23:22:40+08:00</published><updated>2018-05-21T23:22:40+08:00</updated><id>http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-23T09:30:18+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Collection in 2018-05-22</title><link href="http://localhost:4000/collection/2018/05/22/Collections.html" rel="alternate" type="text/html" title="Collection in 2018-05-22" /><published>2018-05-22T09:25:40+08:00</published><updated>2018-05-22T09:25:40+08:00</updated><id>http://localhost:4000/collection/2018/05/22/Collections</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/22/Collections.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-input-special-symbol-in-xcodemacos&quot;&gt;How to input special symbol in Xcode/Macos&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Press Command + Control + Space to call out symbol keyboard&lt;/li&gt;
+      &lt;li&gt;Choose from the symobls&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;what-does-initcoder-do&quot;&gt;What does init(coder:) do&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;It is actually part of Protocol NSCoding&lt;/li&gt;
+      &lt;li&gt;NSCoding has two methods
+        &lt;ul&gt;
+          &lt;li&gt;encdoe(coder:)
+            &lt;ul&gt;
+              &lt;li&gt;Save what you config in xib or storyboard to disk&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;init(coder:)
+            &lt;ul&gt;
+              &lt;li&gt;Generate Instance of your view from disk&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;If you don’t use xib or storyboard
+        &lt;ul&gt;
+          &lt;li&gt;Just input fatalerror(error)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to input special symbol in Xcode/Macos Press Command + Control + Space to call out symbol keyboard Choose from the symobls What does init(coder:) do It is actually part of Protocol NSCoding NSCoding has two methods encdoe(coder:) Save what you config in xib or storyboard to disk init(coder:) Generate Instance of your view from disk If you don’t use xib or storyboard Just input fatalerror(error)</summary></entry><entry><title type="html">Hot to get model from indexPath in a Rx way</title><link href="http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html" rel="alternate" type="text/html" title="Hot to get model from indexPath in a Rx way" /><published>2018-05-21T23:22:40+08:00</published><updated>2018-05-21T23:22:40+08:00</updated><id>http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html">&lt;ul&gt;
   &lt;li&gt;Two ways to get model from indexPath of TableView &amp;amp; CollectionView
     &lt;ul&gt;
       &lt;li&gt;Use indexPath and dataSource to get model
