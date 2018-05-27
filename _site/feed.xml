@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-27T21:21:02+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Collection in 2018-05-27</title><link href="http://localhost:4000/collection/2018/05/27/daily-collection.html" rel="alternate" type="text/html" title="Collection in 2018-05-27" /><published>2018-05-27T20:47:57+08:00</published><updated>2018-05-27T20:47:57+08:00</updated><id>http://localhost:4000/collection/2018/05/27/daily-collection</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/27/daily-collection.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-27T21:33:40+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Collection in 2018-05-27</title><link href="http://localhost:4000/collection/2018/05/27/daily-collection.html" rel="alternate" type="text/html" title="Collection in 2018-05-27" /><published>2018-05-27T20:47:57+08:00</published><updated>2018-05-27T20:47:57+08:00</updated><id>http://localhost:4000/collection/2018/05/27/daily-collection</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/27/daily-collection.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;how-to-change-key-binding-when-using-a-normal-keyboard-in-macos&quot;&gt;How to change key binding when using a normal keyboard in MacOS&lt;/h3&gt;
     &lt;ul&gt;
@@ -225,6 +225,18 @@ if let t = e as? Type {
           &lt;li&gt;If the observer calles its onError() or onComplete(), the subscription will also release&lt;/li&gt;
           &lt;li&gt;A common scene for this is the UI actions, when UI element deinit, their observables, button.rx.tap or collectionView.rx.modelSelected will  also dispose&lt;/li&gt;
         &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Edited: 2018-05-27
+        &lt;ul&gt;
+          &lt;li&gt;Another way to control dispose of your Subscription&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Using takeUntil
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//before you subscribe your observable, use takeUntil operator to make your observable dispose at a specific time
+let o.takeUntil(self.rx.willDealloc).subscribe{#subscribeCode}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;

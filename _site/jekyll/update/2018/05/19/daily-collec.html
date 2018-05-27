@@ -85,6 +85,18 @@
           <li>A common scene for this is the UI actions, when UI element deinit, their observables, button.rx.tap or collectionView.rx.modelSelected will  also dispose</li>
         </ul>
       </li>
+      <li>Edited: 2018-05-27
+        <ul>
+          <li>Another way to control dispose of your Subscription</li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>Using takeUntil
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//before you subscribe your observable, use takeUntil operator to make your observable dispose at a specific time
+let o.takeUntil(self.rx.willDealloc).subscribe{#subscribeCode}
+</code></pre></div>        </div>
+      </li>
     </ul>
   </li>
   <li>How to use ssh key to communicate with remote repository

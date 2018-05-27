@@ -30,6 +30,13 @@ categories: jekyll update
 * Observer.onError(error), onComplete()
   * If the observer calles its onError() or onComplete(), the subscription will also release
   * A common scene for this is the UI actions, when UI element deinit, their observables, button.rx.tap or collectionView.rx.modelSelected will  also dispose
+* Edited: 2018-05-27
+  * Another way to control dispose of your Subscription
+    * Using takeUntil
+    ```
+      //before you subscribe your observable, use takeUntil operator to make your observable dispose at a specific time
+      let o.takeUntil(self.rx.willDealloc).subscribe{#subscribeCode}
+    ```
 3. How to use ssh key to communicate with remote repository
   * Create ssh keys pair
     * ssh-keygen
