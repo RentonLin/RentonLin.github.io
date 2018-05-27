@@ -20,3 +20,11 @@ categories: Collection
     }
     ```
     * Warning: You must specify the type of your variable.
+    * Edited: 2018-05-27
+    * Your can first transform the data to Any and then downcast to the type of your Model or Protocol
+    ```
+      let e: Any = try tableView.model(at: indexPath)
+      if let t = e as? Type {
+        t.foo()
+      }
+    ```
