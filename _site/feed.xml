@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-23T09:30:18+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Collection in 2018-05-22</title><link href="http://localhost:4000/collection/2018/05/22/Collections.html" rel="alternate" type="text/html" title="Collection in 2018-05-22" /><published>2018-05-22T09:25:40+08:00</published><updated>2018-05-22T09:25:40+08:00</updated><id>http://localhost:4000/collection/2018/05/22/Collections</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/22/Collections.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-27T21:16:18+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Collection in 2018-05-27</title><link href="http://localhost:4000/collection/2018/05/27/daily-collection.html" rel="alternate" type="text/html" title="Collection in 2018-05-27" /><published>2018-05-27T20:47:57+08:00</published><updated>2018-05-27T20:47:57+08:00</updated><id>http://localhost:4000/collection/2018/05/27/daily-collection</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/27/daily-collection.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-change-key-binding-when-using-a-normal-keyboard-in-macos&quot;&gt;How to change key binding when using a normal keyboard in MacOS&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Preference -&amp;gt; Keyboard -&amp;gt; Modifier keys&lt;/li&gt;
+      &lt;li&gt;Exchange Command and option&lt;/li&gt;
+      &lt;li&gt;Of course you can also change other keys like Control, Caps Lock, Fn  here&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-detect-link-or-number-in-uitextview&quot;&gt;How to detect link or number in UITextView&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;property: UIDataDectorTypes&lt;/li&gt;
+      &lt;li&gt;Change this property to what you like: .link, .address, .calendarEvent, .shipmentTrackingNumber, .FlightNumber, .lookupSuggestion, .all&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-handle-click-of-the-dectected-types-in-uitextview&quot;&gt;How to handle click of the dectected types in UITextView&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Implete method in UITextViewDelegate&lt;/li&gt;
+      &lt;li&gt;iOS10 and later&lt;/li&gt;
+      &lt;li&gt;TextView(:shouldInteractWithURL:inRange:interaction:)
+        &lt;ul&gt;
+          &lt;li&gt;return false and handle by yourself&lt;/li&gt;
+          &lt;li&gt;or just return true&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;There are 3 kinds of interaction:
+        &lt;ul&gt;
+          &lt;li&gt;.default&lt;/li&gt;
+          &lt;li&gt;.present&lt;/li&gt;
+          &lt;li&gt;.preview&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-change-double-to-string-with-formate&quot;&gt;How to change double to string with formate&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;let s = String(formate:”%.2f”, 0.019)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-draw-a-rect-with-round-corner-in-context&quot;&gt;How to draw a rect with round corner in context&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Normal way
+        &lt;ul&gt;
+          &lt;li&gt;context.beginPath&lt;/li&gt;
+          &lt;li&gt;move&lt;/li&gt;
+          &lt;li&gt;drawToPoint&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Easy way
+        &lt;ul&gt;
+          &lt;li&gt;Using UIBezierPath&lt;/li&gt;
+          &lt;li&gt;In this way, drawing rect with round corner is just like new a view and set its layer’s cornerRadius
+            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Don't forget set path fillColor and strokeColor before stroke or fill
+let path = UIBezierPath(rounderRect:cornerRadius:)
+path.stroke()
+path.fill()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-capture-several-variables-in-closure-in-swift&quot;&gt;How to capture several variables in closure in Swift&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;[weak v1, weak v2]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;hot-to-make-image-in-button-fill-button-even-if-image-is-smaller-than-buttons-size&quot;&gt;Hot to make image in button fill button even if image is smaller than button’s size&lt;/h3&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;btn.contentVerticalAlignment = .fill
+btn.contentHorizontaolAlignment = .fill
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-bind-credit-card-to-japanese-apple-id&quot;&gt;How to bind credit card to Japanese Apple ID&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Get a credit card with JCB, CMB JCB card in my case&lt;/li&gt;
+      &lt;li&gt;Make sure it is ready for purchasing as Apple will try to make a bill of $0.01 when binding&lt;/li&gt;
+      &lt;li&gt;On Mac OS, enable VPN of Japanese VPS&lt;/li&gt;
+      &lt;li&gt;Enable global proxy&lt;/li&gt;
+      &lt;li&gt;Open iTunes and login your Japanese App Store account&lt;/li&gt;
+      &lt;li&gt;In account detail, edit payment method and input your JCB card info&lt;/li&gt;
+      &lt;li&gt;Your card will have a $0.01 bill and then all is done&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to change key binding when using a normal keyboard in MacOS Preference -&amp;gt; Keyboard -&amp;gt; Modifier keys Exchange Command and option Of course you can also change other keys like Control, Caps Lock, Fn here How to detect link or number in UITextView property: UIDataDectorTypes Change this property to what you like: .link, .address, .calendarEvent, .shipmentTrackingNumber, .FlightNumber, .lookupSuggestion, .all How to handle click of the dectected types in UITextView Implete method in UITextViewDelegate iOS10 and later TextView(:shouldInteractWithURL:inRange:interaction:) return false and handle by yourself or just return true There are 3 kinds of interaction: .default .present .preview How to change double to string with formate let s = String(formate:”%.2f”, 0.019) How to draw a rect with round corner in context Normal way context.beginPath move drawToPoint Easy way Using UIBezierPath In this way, drawing rect with round corner is just like new a view and set its layer’s cornerRadius //Don't forget set path fillColor and strokeColor before stroke or fill let path = UIBezierPath(rounderRect:cornerRadius:) path.stroke() path.fill() How to capture several variables in closure in Swift [weak v1, weak v2] Hot to make image in button fill button even if image is smaller than button’s size btn.contentVerticalAlignment = .fill btn.contentHorizontaolAlignment = .fill How to bind credit card to Japanese Apple ID Get a credit card with JCB, CMB JCB card in my case Make sure it is ready for purchasing as Apple will try to make a bill of $0.01 when binding On Mac OS, enable VPN of Japanese VPS Enable global proxy Open iTunes and login your Japanese App Store account In account detail, edit payment method and input your JCB card info Your card will have a $0.01 bill and then all is done</summary></entry><entry><title type="html">Collection in 2018-05-22</title><link href="http://localhost:4000/collection/2018/05/22/Collections.html" rel="alternate" type="text/html" title="Collection in 2018-05-22" /><published>2018-05-22T09:25:40+08:00</published><updated>2018-05-22T09:25:40+08:00</updated><id>http://localhost:4000/collection/2018/05/22/Collections</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/22/Collections.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;how-to-input-special-symbol-in-xcodemacos&quot;&gt;How to input special symbol in Xcode/Macos&lt;/h3&gt;
     &lt;ul&gt;
