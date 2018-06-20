@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-17T15:22:14+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to send next in observer of Observer</title><link href="http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void.html" rel="alternate" type="text/html" title="How to send next in observer of Observer&lt;Void&gt;" /><published>2018-06-17T15:13:00+08:00</published><updated>2018-06-17T15:13:00+08:00</updated><id>http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void</id><content type="html" xml:base="http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-20T22:14:59+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">What are the transforming operators in RxSwift</title><link href="http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift.html" rel="alternate" type="text/html" title="What are the transforming operators in RxSwift" /><published>2018-06-20T22:02:00+08:00</published><updated>2018-06-20T22:02:00+08:00</updated><id>http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift</id><content type="html" xml:base="http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;what-are-the-transforming-operators-in-rxswift&quot;&gt;What are the transforming operators in RxSwift&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;map&quot;&gt;Map&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Transform element to other, just like map in Swift&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;flatmap&quot;&gt;FlatMap&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Generate a new type of Observable to each element, and merge all the new Observables and subscribe to it&lt;/li&gt;
+          &lt;li&gt;Be careful, any observable sending error will make the terminate the observable&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;flatmaplatest&quot;&gt;FlatMapLatest&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Generate a new type of Observable to each element, and only subscribe to the newest Observable&lt;/li&gt;
+          &lt;li&gt;You can use this to deal with error events and filter them&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;materialize&quot;&gt;Materialize&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Observe to events of an observable&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h4 id=&quot;dematerialize&quot;&gt;Dematerialize&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Get element from event, used with Materialize&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use &lt;a href=&quot;https://github.com/malcommac/SwiftRichString&quot;&gt;SwiftRichString&lt;/a&gt; to generate attributes string
+    &lt;ul&gt;
+      &lt;li&gt;Create a style object and call setStyle on string
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let style = Style {
+$0.color = UIColor.white
+$0.alignment = .center
+....
+}
+let hello = &quot;Hello&quot;.set(style: Style)
+let world = &quot;world&quot;.set(style: Style)
+print(hello + world)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;You don’t need to remember all those keys.font congratulations&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What are the transforming operators in RxSwift Map Transform element to other, just like map in Swift FlatMap Generate a new type of Observable to each element, and merge all the new Observables and subscribe to it Be careful, any observable sending error will make the terminate the observable FlatMapLatest Generate a new type of Observable to each element, and only subscribe to the newest Observable You can use this to deal with error events and filter them Materialize Observe to events of an observable Dematerialize Get element from event, used with Materialize How to use SwiftRichString to generate attributes string Create a style object and call setStyle on string let style = Style { $0.color = UIColor.white $0.alignment = .center .... } let hello = &quot;Hello&quot;.set(style: Style) let world = &quot;world&quot;.set(style: Style) print(hello + world) You don’t need to remember all those keys.font congratulations</summary></entry><entry><title type="html">How to send next in observer of Observer</title><link href="http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void.html" rel="alternate" type="text/html" title="How to send next in observer of Observer&lt;Void&gt;" /><published>2018-06-17T15:13:00+08:00</published><updated>2018-06-17T15:13:00+08:00</updated><id>http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void</id><content type="html" xml:base="http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;we-can-use--to-represent-void&quot;&gt;We can use () to represent Void&lt;/h3&gt;
     &lt;p&gt;Use void when represent observer when you just need tell observer that certain things happens but no detail should be provided&lt;/p&gt;
