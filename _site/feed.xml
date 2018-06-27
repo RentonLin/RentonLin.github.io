@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-20T22:14:59+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">What are the transforming operators in RxSwift</title><link href="http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift.html" rel="alternate" type="text/html" title="What are the transforming operators in RxSwift" /><published>2018-06-20T22:02:00+08:00</published><updated>2018-06-20T22:02:00+08:00</updated><id>http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift</id><content type="html" xml:base="http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-28T00:44:55+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use CGGradientLayer</title><link href="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html" rel="alternate" type="text/html" title="How to use CGGradientLayer" /><published>2018-06-27T11:59:00+08:00</published><updated>2018-06-27T11:59:00+08:00</updated><id>http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer</id><content type="html" xml:base="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-use-cggradientlayer&quot;&gt;How to use CGGradientLayer&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let layer = CGGraidentLayer()
+layer.frame = CGRect.zero
+layer.colors = [color1.cgcolor, color2.cgcolor, color3.cgcolor]
+veiw.layer.addSublayer(layer)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Where is (0, 0) and (1, 1)
+(0,0) is the left bottom corner and (1, 1) is the right top corner&lt;/li&gt;
+      &lt;li&gt;What is the default start point and end point
+(0.5, 0) -&amp;gt; (0.5, 1)
+That is middle bottom to middle top&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-change-distance-between-characters&quot;&gt;How to change distance between characters&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Use attributedString&lt;/li&gt;
+      &lt;li&gt;kerning can affect this value&lt;/li&gt;
+      &lt;li&gt;Kerning is 0 by default, but it doesn’t mean the distance between is 0, it means determine the distance by the font&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-delete-app--test-3d-touch-on-simulator&quot;&gt;How to delete app / test 3d touch on simulator&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Touch slightly to enable edit mode on desktop&lt;/li&gt;
+      &lt;li&gt;Touch and press down to test 3d Touch&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;how-to-copy-text-from-simulator&quot;&gt;How to copy text from simulator&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Long click until the copy menu appears&lt;/li&gt;
+      &lt;li&gt;Command + C&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use CGGradientLayer let layer = CGGraidentLayer() layer.frame = CGRect.zero layer.colors = [color1.cgcolor, color2.cgcolor, color3.cgcolor] veiw.layer.addSublayer(layer) Where is (0, 0) and (1, 1) (0,0) is the left bottom corner and (1, 1) is the right top corner What is the default start point and end point (0.5, 0) -&amp;gt; (0.5, 1) That is middle bottom to middle top How to change distance between characters Use attributedString kerning can affect this value Kerning is 0 by default, but it doesn’t mean the distance between is 0, it means determine the distance by the font How to delete app / test 3d touch on simulator Touch slightly to enable edit mode on desktop Touch and press down to test 3d Touch How to copy text from simulator Long click until the copy menu appears Command + C</summary></entry><entry><title type="html">What are the transforming operators in RxSwift</title><link href="http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift.html" rel="alternate" type="text/html" title="What are the transforming operators in RxSwift" /><published>2018-06-20T22:02:00+08:00</published><updated>2018-06-20T22:02:00+08:00</updated><id>http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift</id><content type="html" xml:base="http://localhost:4000/collection,/rxswift/2018/06/20/what-are-the-transforming-operators-in-RxSwift.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;what-are-the-transforming-operators-in-rxswift&quot;&gt;What are the transforming operators in RxSwift&lt;/h3&gt;
     &lt;ul&gt;
