@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-28T00:44:55+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use CGGradientLayer</title><link href="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html" rel="alternate" type="text/html" title="How to use CGGradientLayer" /><published>2018-06-27T11:59:00+08:00</published><updated>2018-06-27T11:59:00+08:00</updated><id>http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer</id><content type="html" xml:base="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-09T23:10:24+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year</title><link href="http://localhost:4000/jekyll/update/2018/07/09/how-to-use-decimal-in-Swift.html" rel="alternate" type="text/html" title="How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year" /><published>2018-07-09T22:53:00+08:00</published><updated>2018-07-09T22:53:00+08:00</updated><id>http://localhost:4000/jekyll/update/2018/07/09/how-to-use-decimal-in-Swift</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/07/09/how-to-use-decimal-in-Swift.html">&lt;ul&gt;
+  &lt;li&gt;What is decimal
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Decimal is a structure representing a base-10 number
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the differences between decimal and float/double
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Float and double are NOT accurate, especially when representing price.
+  They are structure representing a base-2 number.
+  When deal with currency, better use decimal than float/double
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use decimal
+    &lt;ul&gt;
+      &lt;li&gt;Create a Decimal&lt;/li&gt;
+      &lt;li&gt;Apply +/-/*/\ to decimals&lt;/li&gt;
+      &lt;li&gt;Use numberFormmater to change decimal to string&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to get monthly price from a SKProduct subscription with period of one year
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //Get price of product, which is the value in the currency of the related store of your iTunes Store id
+  let price: Decimal = product.price
+  let monthlyPrice = price / 12
+  //Transform it into string using the local of product
+  let numberFormmater = NumberFormatter()
+  numberFormmater.local = product.local
+  numberFormmater.numberStyle = .currency
+  let result = numberFormmater.stringFromNumber(monthlyPrice as NSNumber)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to enumrate dictionary, and what is the element
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  dic.map({(key, value) -&amp;gt; Any
+    #do with key and value
+    })
+  for (key, value) in dic
+  Every element is a tuple with key and associate value
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What are the common ways to get sorted array
+    &lt;ul&gt;
+      &lt;li&gt;The element conform to Comparable protocol
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;arr.sorted()
+arr.sorted(by: &amp;lt;/&amp;gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;The element does not conform to Comparable protocol
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;arr.sorted(by: { v1, v2 -&amp;gt; Bool
+  #compare two element and return true if v1 should be in front of v2
+  })
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is decimal Decimal is a structure representing a base-10 number What is the differences between decimal and float/double Float and double are NOT accurate, especially when representing price. They are structure representing a base-2 number. When deal with currency, better use decimal than float/double How to use decimal Create a Decimal Apply +/-/*/\ to decimals Use numberFormmater to change decimal to string How to get monthly price from a SKProduct subscription with period of one year //Get price of product, which is the value in the currency of the related store of your iTunes Store id let price: Decimal = product.price let monthlyPrice = price / 12 //Transform it into string using the local of product let numberFormmater = NumberFormatter() numberFormmater.local = product.local numberFormmater.numberStyle = .currency let result = numberFormmater.stringFromNumber(monthlyPrice as NSNumber) How to enumrate dictionary, and what is the element dic.map({(key, value) -&amp;gt; Any #do with key and value }) for (key, value) in dic Every element is a tuple with key and associate value What are the common ways to get sorted array The element conform to Comparable protocol arr.sorted() arr.sorted(by: &amp;lt;/&amp;gt;) The element does not conform to Comparable protocol arr.sorted(by: { v1, v2 -&amp;gt; Bool #compare two element and return true if v1 should be in front of v2 })</summary></entry><entry><title type="html">How to use CGGradientLayer</title><link href="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html" rel="alternate" type="text/html" title="How to use CGGradientLayer" /><published>2018-06-27T11:59:00+08:00</published><updated>2018-06-27T11:59:00+08:00</updated><id>http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer</id><content type="html" xml:base="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;how-to-use-cggradientlayer&quot;&gt;How to use CGGradientLayer&lt;/h3&gt;
     &lt;ul&gt;
@@ -330,73 +382,4 @@ if let t = e as? Type {
   &lt;li&gt;Test your blog on localhost/4000&lt;/li&gt;
   &lt;li&gt;Add . and push to master branch of your site&lt;/li&gt;
   &lt;li&gt;Check your sites after a few seconds&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">吐槽:Jekyll官方的文档真的是啰嗦，刚开始写blog的人一上来，谁关心你的目录结构是啥，谁关心你那花哨的模板。安装就得好久，再那么啰嗦地show你能做的东西谁关心？上来就教人建个网站，写一段文字不是比什么都好?</summary></entry><entry><title type="html">Daily collection 2018/05/19</title><link href="http://localhost:4000/jekyll/update/2018/05/19/daily-collec.html" rel="alternate" type="text/html" title="Daily collection 2018/05/19" /><published>2018-05-19T00:42:40+08:00</published><updated>2018-05-19T00:42:40+08:00</updated><id>http://localhost:4000/jekyll/update/2018/05/19/daily-collec</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/19/daily-collec.html">&lt;ol&gt;
-  &lt;li&gt;How to use timer with RxSwift
-    &lt;ul&gt;
-      &lt;li&gt;Problems with NSTimer
-        &lt;ul&gt;
-          &lt;li&gt;NSTimer will retain target which often cause retain cycle.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;How to use timer with RxSwift
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   let o = Observable&amp;lt;Int&amp;gt;.timer(#dueTime, period: #lap?, scheduler: scheduler).subscribe()
-
-   //DueTime is the the first time you will timer to fire
-   //Lap is the inter-period between after fires, if nil is provided, the timer will only fire once. In this way you can create repeat timer and unrepeat timers
-   //Scheduler: Scheduler where you will your timer to fire
-
-   //Warning:The following timer will never fire unless you subscribe it.
-   let o = Observable&amp;lt;Int&amp;gt;.timer(#dueTime, period: #lap?, scheduler: scheduler)
-
-   //How to stop a timer? Just dipose the subscription
-   let disposebal = Observable&amp;lt;Int&amp;gt;.timer(#dueTime, period: #lap?, scheduler: scheduler).sbuscribe()
-   disposebal.dispose()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;When will subscription release in RxSwift?
-    &lt;ul&gt;
-      &lt;li&gt;Disposebal.dispose(by: disposeBag)
-        &lt;ul&gt;
-          &lt;li&gt;Subscription blocks(nextBlock, errorBlock) and the values retained by them will be released when disposeBag is released&lt;/li&gt;
-          &lt;li&gt;Normally we create a disposeBag as a property of current object, when current object deinit, its disposeBag will also deinit, which cause all subscription blocks and value they retained to reduce reference count.&lt;/li&gt;
-          &lt;li&gt;So if you retain Self in the blocks, onNext block for example, subscription and self retain each other, which will cause memory leak.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Observer.onError(error), onComplete()
-        &lt;ul&gt;
-          &lt;li&gt;If the observer calles its onError() or onComplete(), the subscription will also release&lt;/li&gt;
-          &lt;li&gt;A common scene for this is the UI actions, when UI element deinit, their observables, button.rx.tap or collectionView.rx.modelSelected will  also dispose&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Edited: 2018-05-27
-        &lt;ul&gt;
-          &lt;li&gt;Another way to control dispose of your Subscription&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Using takeUntil
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//before you subscribe your observable, use takeUntil operator to make your observable dispose at a specific time
-let o.takeUntil(self.rx.willDealloc).subscribe{#subscribeCode}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to use ssh key to communicate with remote repository
-    &lt;ul&gt;
-      &lt;li&gt;Create ssh keys pair&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul&gt;
-      &lt;li&gt;ssh-keygen&lt;/li&gt;
-      &lt;li&gt;Default private key and public key is stored in ~/.ssh/
-      * Add to ssh agent&lt;/li&gt;
-      &lt;li&gt;ssh-add ~/.ssh/private_key_file
-      * Add ssh public key to repository holder&lt;/li&gt;
-      &lt;li&gt;Github account preference
-      * Test&lt;/li&gt;
-      &lt;li&gt;ssh -T git@address_to_repository&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">How to use timer with RxSwift Problems with NSTimer NSTimer will retain target which often cause retain cycle. How to use timer with RxSwift ``` let o = Observable.timer(#dueTime, period: #lap?, scheduler: scheduler).subscribe()</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">吐槽:Jekyll官方的文档真的是啰嗦，刚开始写blog的人一上来，谁关心你的目录结构是啥，谁关心你那花哨的模板。安装就得好久，再那么啰嗦地show你能做的东西谁关心？上来就教人建个网站，写一段文字不是比什么都好?</summary></entry></feed>
