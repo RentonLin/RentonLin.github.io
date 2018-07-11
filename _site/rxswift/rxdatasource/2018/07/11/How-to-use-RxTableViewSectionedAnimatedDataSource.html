@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v3.8.1" />
 <meta property="og:title" content="How to use RxTableViewSectionedAnimatedDataSource" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource ``` //Create a data type which is the element for a cell struct CustomElementType { var text: String }" />
-<meta property="og:description" content="How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource ``` //Create a data type which is the element for a cell struct CustomElementType { var text: String }" />
+<meta name="description" content="How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource //Create a data type which is the element for a cell struct CustomElementType { var text: String }" />
+<meta property="og:description" content="How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource //Create a data type which is the element for a cell struct CustomElementType { var text: String }" />
 <link rel="canonical" href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" />
 <meta property="og:url" content="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" />
 <meta property="og:site_name" content="ToraceOn Studio" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-07-11T23:59:00+08:00" />
 <script type="application/ld+json">
-{"description":"How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource ``` //Create a data type which is the element for a cell struct CustomElementType { var text: String }","@type":"BlogPosting","url":"http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html","headline":"How to use RxTableViewSectionedAnimatedDataSource","dateModified":"2018-07-11T23:59:00+08:00","datePublished":"2018-07-11T23:59:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html"},"@context":"http://schema.org"}</script>
+{"description":"How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource //Create a data type which is the element for a cell struct CustomElementType { var text: String }","@type":"BlogPosting","url":"http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html","headline":"How to use RxTableViewSectionedAnimatedDataSource","dateModified":"2018-07-11T23:59:00+08:00","datePublished":"2018-07-11T23:59:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="ToraceOn Studio" /></head>
 <body><header class="site-header" role="banner">
@@ -49,54 +49,66 @@
   <li>How to implement UITableView with sections and headerView footView with RxSwift
     <ul>
       <li>Use RxTableViewSectionedReloadDataSource</li>
-      <li>```
-//Create a data type which is the element for a cell
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Create a data type which is the element for a cell
 struct CustomElementType {
 var text: String
-}</li>
-    </ul>
-
-    <p>//Create a type conform SectionModelType which is the element for a section
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Create a type conform SectionModelType which is the element for a section
 //Here we use header to represent headerView
 //You can also add a property like footer to represent footerView
 struct CustomSectionDataType: SectionModelType {
-  var header: String
-  var items: [Item]
-  typealias Item = CustomElementType
-  init(original: CustomSectionDataType, items: [Item]) {
-    self = original
-    self.items = items
-  }
-}</p>
-
-    <p>//New datasource with section model type
+var header: String
+var items: [Item]
+typealias Item = CustomElementType
+init(original: CustomSectionDataType, items: [Item]) {
+  self = original
+  self.items = items
+}
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//New datasource with section model type
 //Config each cell with each element
-let dataSource = RxTableViewSectionedReloadDataSource<CustomSectionDataType>(configureCell: { datasource, tableView, element(&lt;--CustomElementType) -&gt; UItableViewCell in
-  //create and return your cell here
-  })</CustomSectionDataType></p>
-
-    <p>//Config titleView for section
+let dataSource = RxTableViewSectionedReloadDataSource&lt;CustomSectionDataType&gt;(configureCell: { datasource, tableView, element(&lt;--CustomElementType) -&gt; UItableViewCell in
+//create and return your cell here
+})
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Config titleView for section
 //Get title from SectionModel
-dataSource.titleForHeaderInSection = { ds, section in
-  let sectionModel = ds.sectionModels[section]
-  return sectionModel.header
-}</p>
-
-    <p>//new section models
-let sectionDatas = [CustomSectionDataType(header:”section0”, items:[Item]),
-CustomSectionDataType(header:”section1”, items:[Item]]</p>
-
-    <p>//Bind data to UITableView
-Observable.just(sectionDatas).bind{to: tableView.rx.items(dataSource: dataSource)}.dispose(by: #yourDisposeBag)</p>
-
-    <p>//If you have different types of element in cells, you may wrap your final model in CustomElementType
+dataSource.titleForHeaderInSection = { (ds, section) in
+let sectionModel = ds.sectionModels[section]
+return sectionModel.header
+}
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//new section models
+let sectionDatas = [CustomSectionDataType(header:"section0", items:[Item]),
+CustomSectionDataType(header:"section1", items:[Item]]
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Bind data to UITableView
+Observable.just(sectionDatas).bind{to: tableView.rx.items(dataSource: dataSource)}.dispose(by: #yourDisposeBag)
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//If you have different types of element in cells, you may wrap your final model in CustomElementType
 struct CustomElementType {
-  var text: String
-  var exactModel: Any
-}</p>
-
-    <p>//when config cell, downcast exactModel to your model type, and fill cell
-```</p>
+var text: String
+var exactModel: Any
+}
+//when config cell, downcast exactModel to your model type, and fill cell
+</code></pre></div>        </div>
+      </li>
+    </ul>
   </li>
   <li>How to implement UITableView with animation while insert or delete with RxSwift
     <ul>
@@ -109,64 +121,61 @@ struct CustomElementType {
           <li>Element conforms to IdentifiableType and Equatable, where you need to provide unique id for datasource to find which rows are deleted and which rows are added</li>
         </ul>
       </li>
-      <li>
-        <p>How to use
-```
-//make element in each cell conform IdentifiableType, Equatable
+      <li>How to use
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//make element in each cell conform IdentifiableType, Equatable
 struct CustomElementType: IdentifiableType, Equatable {
 var id: String
 var text: String
-typealias Identity = String(&lt;–can be Int)
+typealias Identity = String(&lt;--can be Int)
 var identity: Identity {
   return text
-}</p>
+}
 
-        <p>func ==(lhs: CustomElementType, rhs: CustomElementType) -&gt; Bool {
+func ==(lhs: CustomElementType, rhs: CustomElementType) -&gt; Bool {
   return lhs.id == rhs.id
 }
-}</p>
+}
+</code></pre></div>        </div>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//See AnimatableSectionModelType
+struct CustomSectionDataType: AnimatableSectionModelType {
+var uniqueId: String
+var header: String
+var items: [Item]
+typealias Item = CustomElementType
+init(original: CustomSectionDataType, items: [Item]) {
+  self = original
+  self.items = items
+}
+typealias Identity = String(&lt;--can be Int)
+var identity: String {
+  return uniqueId //Use this
+}
+}
+//create models and bind to RxTableViewSectionedAnimatedDataSource, that is almost same with reloadDataSource
+</code></pre></div>        </div>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Do not rebind observable to UITableView, which will result in fatalerror in Debug, and reloadData(with no animation) in Release
+Observable.just(models0).bind(to: tableView.rx.items(dataSource: dataSource))
+Observable.just(models1).bind(to: tableView.rx.items(dataSource: dataSource)//&lt;--This will cause fatalerror in Debug
+</code></pre></div>        </div>
       </li>
     </ul>
 
-    <p>//See AnimatableSectionModelType
-struct CustomSectionDataType: AnimatableSectionModelType {
-  var uniqueId: String
-  var header: String
-  var items: [Item]
-  typealias Item = CustomElementType
-  init(original: CustomSectionDataType, items: [Item]) {
-    self = original
-    self.items = items
-  }</p>
-
-    <p>typealias Identity = String(&lt;–can be Int)
-  var identity: String {
-    return uniqueId //Use this
-  }
-}</p>
-
-    <p>//create models and bind to RxTableViewSectionedAnimatedDataSource, that is almost same with reloadDataSource</p>
-
-    <p>//Do not rebind observable to UITableView, which will result in fatalerror in Debug, and reloadData(with no animation) in Release
-Observable.just(models0).bind(to: tableView.rx.items(dataSource: dataSource))
-Observable.just(models1).bind(to: tableView.rx.items(dataSource: dataSource)//&lt;–This will cause fatalerror in Debug</p>
-
-    <p>//Even if you dispose previous bind, and bind a new observable, there will be no animation
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//Even if you dispose previous bind, and bind a new observable, there will be no animation
 //No animation:
 let modelsObservable1 = PublishSubject&lt;[CustomSectionDataType]&gt;()
 modelsObservable1.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
 disposeBag = DisposeBag()
 let modelsObservable2 = PublishSubject&lt;[CustomSectionDataType]&gt;()
-modelsObservable2.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)</p>
-
-    <p>//This is the prefered way
+modelsObservable2.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
+</code></pre></div>    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//This is the prefered way
 let modelsObservable = PublishSubject&lt;[CustomSectionDataType]&gt;()
 modelsObservable.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
 modelsObservable.onNext(v1)
-modelsObservable.onNext(v2)</p>
-
-    <p>//IdentifiableType can be the same, but it will raise fatalerror in Debug, and just reload (with no animation) in Release
-```</p>
+modelsObservable.onNext(v2)
+</code></pre></div>    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//IdentifiableType can be the same, but it will raise fatalerror in Debug, and just reload (with no animation) in Release
+</code></pre></div>    </div>
   </li>
 </ul>
 

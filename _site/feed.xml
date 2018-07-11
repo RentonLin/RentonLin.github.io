@@ -1,55 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-12T00:37:17+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use RxTableViewSectionedAnimatedDataSource</title><link href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" rel="alternate" type="text/html" title="How to use RxTableViewSectionedAnimatedDataSource" /><published>2018-07-11T23:59:00+08:00</published><updated>2018-07-11T23:59:00+08:00</updated><id>http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource</id><content type="html" xml:base="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-12T00:52:16+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use RxTableViewSectionedAnimatedDataSource</title><link href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" rel="alternate" type="text/html" title="How to use RxTableViewSectionedAnimatedDataSource" /><published>2018-07-11T23:59:00+08:00</published><updated>2018-07-11T23:59:00+08:00</updated><id>http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource</id><content type="html" xml:base="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html">&lt;ul&gt;
   &lt;li&gt;How to implement UITableView with sections and headerView footView with RxSwift
     &lt;ul&gt;
       &lt;li&gt;Use RxTableViewSectionedReloadDataSource&lt;/li&gt;
-      &lt;li&gt;```
-//Create a data type which is the element for a cell
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Create a data type which is the element for a cell
 struct CustomElementType {
 var text: String
-}&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;//Create a type conform SectionModelType which is the element for a section
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Create a type conform SectionModelType which is the element for a section
 //Here we use header to represent headerView
 //You can also add a property like footer to represent footerView
 struct CustomSectionDataType: SectionModelType {
-  var header: String
-  var items: [Item]
-  typealias Item = CustomElementType
-  init(original: CustomSectionDataType, items: [Item]) {
-    self = original
-    self.items = items
-  }
-}&lt;/p&gt;
-
-    &lt;p&gt;//New datasource with section model type
+var header: String
+var items: [Item]
+typealias Item = CustomElementType
+init(original: CustomSectionDataType, items: [Item]) {
+  self = original
+  self.items = items
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//New datasource with section model type
 //Config each cell with each element
-let dataSource = RxTableViewSectionedReloadDataSource&lt;CustomSectionDataType&gt;(configureCell: { datasource, tableView, element(&amp;lt;--CustomElementType) -&amp;gt; UItableViewCell in
-  //create and return your cell here
-  })&lt;/CustomSectionDataType&gt;&lt;/p&gt;
-
-    &lt;p&gt;//Config titleView for section
+let dataSource = RxTableViewSectionedReloadDataSource&amp;lt;CustomSectionDataType&amp;gt;(configureCell: { datasource, tableView, element(&amp;lt;--CustomElementType) -&amp;gt; UItableViewCell in
+//create and return your cell here
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Config titleView for section
 //Get title from SectionModel
-dataSource.titleForHeaderInSection = { ds, section in
-  let sectionModel = ds.sectionModels[section]
-  return sectionModel.header
-}&lt;/p&gt;
-
-    &lt;p&gt;//new section models
-let sectionDatas = [CustomSectionDataType(header:”section0”, items:[Item]),
-CustomSectionDataType(header:”section1”, items:[Item]]&lt;/p&gt;
-
-    &lt;p&gt;//Bind data to UITableView
-Observable.just(sectionDatas).bind{to: tableView.rx.items(dataSource: dataSource)}.dispose(by: #yourDisposeBag)&lt;/p&gt;
-
-    &lt;p&gt;//If you have different types of element in cells, you may wrap your final model in CustomElementType
+dataSource.titleForHeaderInSection = { (ds, section) in
+let sectionModel = ds.sectionModels[section]
+return sectionModel.header
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//new section models
+let sectionDatas = [CustomSectionDataType(header:&quot;section0&quot;, items:[Item]),
+CustomSectionDataType(header:&quot;section1&quot;, items:[Item]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Bind data to UITableView
+Observable.just(sectionDatas).bind{to: tableView.rx.items(dataSource: dataSource)}.dispose(by: #yourDisposeBag)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//If you have different types of element in cells, you may wrap your final model in CustomElementType
 struct CustomElementType {
-  var text: String
-  var exactModel: Any
-}&lt;/p&gt;
-
-    &lt;p&gt;//when config cell, downcast exactModel to your model type, and fill cell
-```&lt;/p&gt;
+var text: String
+var exactModel: Any
+}
+//when config cell, downcast exactModel to your model type, and fill cell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;How to implement UITableView with animation while insert or delete with RxSwift
     &lt;ul&gt;
@@ -62,66 +74,63 @@ struct CustomElementType {
           &lt;li&gt;Element conforms to IdentifiableType and Equatable, where you need to provide unique id for datasource to find which rows are deleted and which rows are added&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;How to use
-```
-//make element in each cell conform IdentifiableType, Equatable
+      &lt;li&gt;How to use
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//make element in each cell conform IdentifiableType, Equatable
 struct CustomElementType: IdentifiableType, Equatable {
 var id: String
 var text: String
-typealias Identity = String(&amp;lt;–can be Int)
+typealias Identity = String(&amp;lt;--can be Int)
 var identity: Identity {
   return text
-}&lt;/p&gt;
+}
 
-        &lt;p&gt;func ==(lhs: CustomElementType, rhs: CustomElementType) -&amp;gt; Bool {
+func ==(lhs: CustomElementType, rhs: CustomElementType) -&amp;gt; Bool {
   return lhs.id == rhs.id
 }
-}&lt;/p&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//See AnimatableSectionModelType
+struct CustomSectionDataType: AnimatableSectionModelType {
+var uniqueId: String
+var header: String
+var items: [Item]
+typealias Item = CustomElementType
+init(original: CustomSectionDataType, items: [Item]) {
+  self = original
+  self.items = items
+}
+typealias Identity = String(&amp;lt;--can be Int)
+var identity: String {
+  return uniqueId //Use this
+}
+}
+//create models and bind to RxTableViewSectionedAnimatedDataSource, that is almost same with reloadDataSource
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Do not rebind observable to UITableView, which will result in fatalerror in Debug, and reloadData(with no animation) in Release
+Observable.just(models0).bind(to: tableView.rx.items(dataSource: dataSource))
+Observable.just(models1).bind(to: tableView.rx.items(dataSource: dataSource)//&amp;lt;--This will cause fatalerror in Debug
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;p&gt;//See AnimatableSectionModelType
-struct CustomSectionDataType: AnimatableSectionModelType {
-  var uniqueId: String
-  var header: String
-  var items: [Item]
-  typealias Item = CustomElementType
-  init(original: CustomSectionDataType, items: [Item]) {
-    self = original
-    self.items = items
-  }&lt;/p&gt;
-
-    &lt;p&gt;typealias Identity = String(&amp;lt;–can be Int)
-  var identity: String {
-    return uniqueId //Use this
-  }
-}&lt;/p&gt;
-
-    &lt;p&gt;//create models and bind to RxTableViewSectionedAnimatedDataSource, that is almost same with reloadDataSource&lt;/p&gt;
-
-    &lt;p&gt;//Do not rebind observable to UITableView, which will result in fatalerror in Debug, and reloadData(with no animation) in Release
-Observable.just(models0).bind(to: tableView.rx.items(dataSource: dataSource))
-Observable.just(models1).bind(to: tableView.rx.items(dataSource: dataSource)//&amp;lt;–This will cause fatalerror in Debug&lt;/p&gt;
-
-    &lt;p&gt;//Even if you dispose previous bind, and bind a new observable, there will be no animation
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Even if you dispose previous bind, and bind a new observable, there will be no animation
 //No animation:
 let modelsObservable1 = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
 modelsObservable1.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
 disposeBag = DisposeBag()
 let modelsObservable2 = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
-modelsObservable2.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)&lt;/p&gt;
-
-    &lt;p&gt;//This is the prefered way
+modelsObservable2.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//This is the prefered way
 let modelsObservable = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
 modelsObservable.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
 modelsObservable.onNext(v1)
-modelsObservable.onNext(v2)&lt;/p&gt;
-
-    &lt;p&gt;//IdentifiableType can be the same, but it will raise fatalerror in Debug, and just reload (with no animation) in Release
-```&lt;/p&gt;
+modelsObservable.onNext(v2)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//IdentifiableType can be the same, but it will raise fatalerror in Debug, and just reload (with no animation) in Release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource ``` //Create a data type which is the element for a cell struct CustomElementType { var text: String }</summary></entry><entry><title type="html">How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year</title><link href="http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift.html" rel="alternate" type="text/html" title="How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year" /><published>2018-07-09T22:53:00+08:00</published><updated>2018-07-09T22:53:00+08:00</updated><id>http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift</id><content type="html" xml:base="http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource //Create a data type which is the element for a cell struct CustomElementType { var text: String }</summary></entry><entry><title type="html">How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year</title><link href="http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift.html" rel="alternate" type="text/html" title="How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year" /><published>2018-07-09T22:53:00+08:00</published><updated>2018-07-09T22:53:00+08:00</updated><id>http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift</id><content type="html" xml:base="http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift.html">&lt;ul&gt;
   &lt;li&gt;What is decimal
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Decimal is a structure representing a base-10 number
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
