@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-09T23:10:24+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year</title><link href="http://localhost:4000/jekyll/update/2018/07/09/how-to-use-decimal-in-Swift.html" rel="alternate" type="text/html" title="How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year" /><published>2018-07-09T22:53:00+08:00</published><updated>2018-07-09T22:53:00+08:00</updated><id>http://localhost:4000/jekyll/update/2018/07/09/how-to-use-decimal-in-Swift</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/07/09/how-to-use-decimal-in-Swift.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-12T00:37:17+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use RxTableViewSectionedAnimatedDataSource</title><link href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" rel="alternate" type="text/html" title="How to use RxTableViewSectionedAnimatedDataSource" /><published>2018-07-11T23:59:00+08:00</published><updated>2018-07-11T23:59:00+08:00</updated><id>http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource</id><content type="html" xml:base="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html">&lt;ul&gt;
+  &lt;li&gt;How to implement UITableView with sections and headerView footView with RxSwift
+    &lt;ul&gt;
+      &lt;li&gt;Use RxTableViewSectionedReloadDataSource&lt;/li&gt;
+      &lt;li&gt;```
+//Create a data type which is the element for a cell
+struct CustomElementType {
+var text: String
+}&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;//Create a type conform SectionModelType which is the element for a section
+//Here we use header to represent headerView
+//You can also add a property like footer to represent footerView
+struct CustomSectionDataType: SectionModelType {
+  var header: String
+  var items: [Item]
+  typealias Item = CustomElementType
+  init(original: CustomSectionDataType, items: [Item]) {
+    self = original
+    self.items = items
+  }
+}&lt;/p&gt;
+
+    &lt;p&gt;//New datasource with section model type
+//Config each cell with each element
+let dataSource = RxTableViewSectionedReloadDataSource&lt;CustomSectionDataType&gt;(configureCell: { datasource, tableView, element(&amp;lt;--CustomElementType) -&amp;gt; UItableViewCell in
+  //create and return your cell here
+  })&lt;/CustomSectionDataType&gt;&lt;/p&gt;
+
+    &lt;p&gt;//Config titleView for section
+//Get title from SectionModel
+dataSource.titleForHeaderInSection = { ds, section in
+  let sectionModel = ds.sectionModels[section]
+  return sectionModel.header
+}&lt;/p&gt;
+
+    &lt;p&gt;//new section models
+let sectionDatas = [CustomSectionDataType(header:”section0”, items:[Item]),
+CustomSectionDataType(header:”section1”, items:[Item]]&lt;/p&gt;
+
+    &lt;p&gt;//Bind data to UITableView
+Observable.just(sectionDatas).bind{to: tableView.rx.items(dataSource: dataSource)}.dispose(by: #yourDisposeBag)&lt;/p&gt;
+
+    &lt;p&gt;//If you have different types of element in cells, you may wrap your final model in CustomElementType
+struct CustomElementType {
+  var text: String
+  var exactModel: Any
+}&lt;/p&gt;
+
+    &lt;p&gt;//when config cell, downcast exactModel to your model type, and fill cell
+```&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to implement UITableView with animation while insert or delete with RxSwift
+    &lt;ul&gt;
+      &lt;li&gt;Use RxTableViewSectionedAnimatedDataSource&lt;/li&gt;
+      &lt;li&gt;How does this work?
+        &lt;ul&gt;
+          &lt;li&gt;RxTableViewSectionedAnimatedDataSource is built on top of RxTableViewSectionedReloadDataSource&lt;/li&gt;
+          &lt;li&gt;RxTableViewSectionedAnimatedDataSource keep latest value, when get a new value, it compare two value, and then make tableView animation like insert or delete&lt;/li&gt;
+          &lt;li&gt;CustomSectionDataType conform to AnimatableSectionModelType, where you need to provide a unique id for each sectionModel, which helps datasource to find which sectionModel is new and which sectionModel is deleted&lt;/li&gt;
+          &lt;li&gt;Element conforms to IdentifiableType and Equatable, where you need to provide unique id for datasource to find which rows are deleted and which rows are added&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;How to use
+```
+//make element in each cell conform IdentifiableType, Equatable
+struct CustomElementType: IdentifiableType, Equatable {
+var id: String
+var text: String
+typealias Identity = String(&amp;lt;–can be Int)
+var identity: Identity {
+  return text
+}&lt;/p&gt;
+
+        &lt;p&gt;func ==(lhs: CustomElementType, rhs: CustomElementType) -&amp;gt; Bool {
+  return lhs.id == rhs.id
+}
+}&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;//See AnimatableSectionModelType
+struct CustomSectionDataType: AnimatableSectionModelType {
+  var uniqueId: String
+  var header: String
+  var items: [Item]
+  typealias Item = CustomElementType
+  init(original: CustomSectionDataType, items: [Item]) {
+    self = original
+    self.items = items
+  }&lt;/p&gt;
+
+    &lt;p&gt;typealias Identity = String(&amp;lt;–can be Int)
+  var identity: String {
+    return uniqueId //Use this
+  }
+}&lt;/p&gt;
+
+    &lt;p&gt;//create models and bind to RxTableViewSectionedAnimatedDataSource, that is almost same with reloadDataSource&lt;/p&gt;
+
+    &lt;p&gt;//Do not rebind observable to UITableView, which will result in fatalerror in Debug, and reloadData(with no animation) in Release
+Observable.just(models0).bind(to: tableView.rx.items(dataSource: dataSource))
+Observable.just(models1).bind(to: tableView.rx.items(dataSource: dataSource)//&amp;lt;–This will cause fatalerror in Debug&lt;/p&gt;
+
+    &lt;p&gt;//Even if you dispose previous bind, and bind a new observable, there will be no animation
+//No animation:
+let modelsObservable1 = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
+modelsObservable1.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
+disposeBag = DisposeBag()
+let modelsObservable2 = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
+modelsObservable2.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)&lt;/p&gt;
+
+    &lt;p&gt;//This is the prefered way
+let modelsObservable = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
+modelsObservable.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
+modelsObservable.onNext(v1)
+modelsObservable.onNext(v2)&lt;/p&gt;
+
+    &lt;p&gt;//IdentifiableType can be the same, but it will raise fatalerror in Debug, and just reload (with no animation) in Release
+```&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource ``` //Create a data type which is the element for a cell struct CustomElementType { var text: String }</summary></entry><entry><title type="html">How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year</title><link href="http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift.html" rel="alternate" type="text/html" title="How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year" /><published>2018-07-09T22:53:00+08:00</published><updated>2018-07-09T22:53:00+08:00</updated><id>http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift</id><content type="html" xml:base="http://localhost:4000/swift/oc/iap/2018/07/09/how-to-use-decimal-in-Swift.html">&lt;ul&gt;
   &lt;li&gt;What is decimal
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Decimal is a structure representing a base-10 number
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
@@ -365,21 +488,4 @@ if let t = e as? Type {
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Hot to start writing a blog with Jekyll on GitHubPages</title><link href="http://localhost:4000/jekyll/update/2018/05/19/how-to-write-blog-with-Jekyll-and-github-pages.html" rel="alternate" type="text/html" title="Hot to start writing a blog with Jekyll on GitHubPages" /><published>2018-05-19T00:42:40+08:00</published><updated>2018-05-19T00:42:40+08:00</updated><id>http://localhost:4000/jekyll/update/2018/05/19/how-to-write-blog-with-Jekyll-and-github-pages</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/19/how-to-write-blog-with-Jekyll-and-github-pages.html">&lt;ul&gt;
-  &lt;li&gt;吐槽:Jekyll官方的文档真的是啰嗦，刚开始写blog的人一上来，谁关心你的目录结构是啥，谁关心你那花哨的模板。安装就得好久，再那么啰嗦地show你能做的东西谁关心？上来就教人建个网站，写一段文字不是比什么都好?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create project in github with name same as your github account name&lt;/li&gt;
-  &lt;li&gt;Check out the repository&lt;/li&gt;
-  &lt;li&gt;Install ruby, budle, Jekyll&lt;/li&gt;
-  &lt;li&gt;Create a blog in your repository’s path&lt;/li&gt;
-  &lt;li&gt;Config -config.yml , change baseurl to the newly created blog path&lt;/li&gt;
-  &lt;li&gt;Create file in -posts directory, with name like 2018-05-19-name-of-your-blog.markdown&lt;/li&gt;
-  &lt;li&gt;Edit your new file&lt;/li&gt;
-  &lt;li&gt;Run Jekyll build on your blog root directory&lt;/li&gt;
-  &lt;li&gt;Run Jekyll serve on your blog ROOT directory&lt;/li&gt;
-  &lt;li&gt;Test your blog on localhost/4000&lt;/li&gt;
-  &lt;li&gt;Add . and push to master branch of your site&lt;/li&gt;
-  &lt;li&gt;Check your sites after a few seconds&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">吐槽:Jekyll官方的文档真的是啰嗦，刚开始写blog的人一上来，谁关心你的目录结构是啥，谁关心你那花哨的模板。安装就得好久，再那么啰嗦地show你能做的东西谁关心？上来就教人建个网站，写一段文字不是比什么都好?</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

@@ -2,7 +2,7 @@
 layout: post
 title:  "How to use decimal in Swift, how to display monthly price of a SKProduct with period of one year"
 date:   2018-07-09 22:53:00 +0800
-categories: jekyll update
+categories: Swift OC iAP
 ---
 * What is decimal
   ```
