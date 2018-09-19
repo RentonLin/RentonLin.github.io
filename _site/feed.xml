@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-12T00:52:16+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use RxTableViewSectionedAnimatedDataSource</title><link href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" rel="alternate" type="text/html" title="How to use RxTableViewSectionedAnimatedDataSource" /><published>2018-07-11T23:59:00+08:00</published><updated>2018-07-11T23:59:00+08:00</updated><id>http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource</id><content type="html" xml:base="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-19T22:49:15+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
+  &lt;li&gt;What is Shortcuts in iOS 12?
+    &lt;ul&gt;
+      &lt;li&gt;It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is Shortcuts constructed by?
+    &lt;ul&gt;
+      &lt;li&gt;UserActivity that can be donated to show on lock screen, spotlight search, notification center, and user can tap to enter app, also can be trigger by Siri.
+        &lt;ul&gt;
+          &lt;li&gt;Intent that can be interacted with user by tap or Siri. Now you can even finish a task without open your app!&lt;/li&gt;
+          &lt;li&gt;Shortcuts App(formally named Workflow): An app that can help user finish a group of tasks by click, and can be easily customized.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What can we do with shortcuts with UserActivity?
+    &lt;ul&gt;
+      &lt;li&gt;Donate shortcuts
+        &lt;ul&gt;
+          &lt;li&gt;New a UserActivity, and set need properties
+            &lt;ul&gt;
+              &lt;li&gt;Call becomeActive on the object and store it
+                &lt;ul&gt;
+                  &lt;li&gt;iOS will learn automatically by current time, date, location and suggest this action for user later&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Remove shortcuts
+            &lt;ul&gt;
+              &lt;li&gt;NInteraction.removeAll/removeWithId/removeWithIds&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Respond to click of shortcuts
+            &lt;ul&gt;
+              &lt;li&gt;Add type for NSUserActivity in Info.plist&lt;/li&gt;
+              &lt;li&gt;Implement in appdelegate
+                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -&amp;gt; Void) -&amp;gt; Bool
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li&gt;Make a class that conform UIUserActivityRestoring protocol
+                &lt;ul&gt;
+                  &lt;li&gt;Commonly it is your home viewController or app delegate
+                    &lt;ul&gt;
+                      &lt;li&gt;You can use navigator or router to route to specific viewControllers with info from userActivity’s userInfo which was donated by you&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Suggest shortcuts to user, and user can find in setting
+            &lt;ul&gt;
+              &lt;li&gt;Use INVoiceShortcutCenter.shared.setShortcutSuggestions([INShortcut]) to suggest intents for user&lt;/li&gt;
+              &lt;li&gt;Suggest user to immediately add voice phrase to a certain shortcut&lt;/li&gt;
+              &lt;li&gt;Use INUIAddVoiceShortcutButton to show add to Siri button&lt;/li&gt;
+              &lt;li&gt;Use system Controller INUIAddVoiceShortcutViewController to make user input voice phrase for certain shortcuts&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Update added voice shortcut with new voice phrase
+            &lt;ul&gt;
+              &lt;li&gt;Use INUIEditVoiceShortcutViewController  to make user update voice phrase for certain shortcuts&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;How to debug a shortcut
+            &lt;ul&gt;
+              &lt;li&gt;Setting -&amp;gt; Developer -&amp;gt; Shortcut testing&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Show recently added shortcut&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Problems
+    &lt;ul&gt;
+      &lt;li&gt;When get useractivity from INVoiceShortcut.INShortcut.userActivity, the persistentIdentifier is nil.&lt;/li&gt;
+      &lt;li&gt;In this way, I can only distinct shortcuts by some values in the userInfo&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is Shortcuts in iOS 12? It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app What is Shortcuts constructed by? UserActivity that can be donated to show on lock screen, spotlight search, notification center, and user can tap to enter app, also can be trigger by Siri. Intent that can be interacted with user by tap or Siri. Now you can even finish a task without open your app! Shortcuts App(formally named Workflow): An app that can help user finish a group of tasks by click, and can be easily customized. What can we do with shortcuts with UserActivity? Donate shortcuts New a UserActivity, and set need properties Call becomeActive on the object and store it iOS will learn automatically by current time, date, location and suggest this action for user later Remove shortcuts NInteraction.removeAll/removeWithId/removeWithIds Respond to click of shortcuts Add type for NSUserActivity in Info.plist Implement in appdelegate func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -&amp;gt; Void) -&amp;gt; Bool Make a class that conform UIUserActivityRestoring protocol Commonly it is your home viewController or app delegate You can use navigator or router to route to specific viewControllers with info from userActivity’s userInfo which was donated by you Suggest shortcuts to user, and user can find in setting Use INVoiceShortcutCenter.shared.setShortcutSuggestions([INShortcut]) to suggest intents for user Suggest user to immediately add voice phrase to a certain shortcut Use INUIAddVoiceShortcutButton to show add to Siri button Use system Controller INUIAddVoiceShortcutViewController to make user input voice phrase for certain shortcuts Update added voice shortcut with new voice phrase Use INUIEditVoiceShortcutViewController to make user update voice phrase for certain shortcuts How to debug a shortcut Setting -&amp;gt; Developer -&amp;gt; Shortcut testing Show recently added shortcut Problems When get useractivity from INVoiceShortcut.INShortcut.userActivity, the persistentIdentifier is nil. In this way, I can only distinct shortcuts by some values in the userInfo</summary></entry><entry><title type="html">How to use RxTableViewSectionedAnimatedDataSource</title><link href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" rel="alternate" type="text/html" title="How to use RxTableViewSectionedAnimatedDataSource" /><published>2018-07-11T23:59:00+08:00</published><updated>2018-07-11T23:59:00+08:00</updated><id>http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource</id><content type="html" xml:base="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html">&lt;ul&gt;
   &lt;li&gt;How to implement UITableView with sections and headerView footView with RxSwift
     &lt;ul&gt;
       &lt;li&gt;Use RxTableViewSectionedReloadDataSource&lt;/li&gt;
@@ -485,16 +566,4 @@ if let t = e as? Type {
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Two ways to get model from indexPath of TableView &amp;amp; CollectionView Use indexPath and dataSource to get model Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in return datas[indexPath.secion][indexPath.row] } Use model(at: indexPath) do { let element: Type = try tableView.model(at: indexPath) } catch { //work with error when cast failed } Warning: You must specify the type of your variable. Edited: 2018-05-27 Your can first transform the data to Any and then downcast to the type of your Model or Protocol let e: Any = try tableView.model(at: indexPath) if let t = e as? Type { t.foo() }</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/05/19/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-05-19T00:42:40+08:00</published><updated>2018-05-19T00:42:40+08:00</updated><id>http://localhost:4000/jekyll/update/2018/05/19/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/19/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Two ways to get model from indexPath of TableView &amp;amp; CollectionView Use indexPath and dataSource to get model Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in return datas[indexPath.secion][indexPath.row] } Use model(at: indexPath) do { let element: Type = try tableView.model(at: indexPath) } catch { //work with error when cast failed } Warning: You must specify the type of your variable. Edited: 2018-05-27 Your can first transform the data to Any and then downcast to the type of your Model or Protocol let e: Any = try tableView.model(at: indexPath) if let t = e as? Type { t.foo() }</summary></entry></feed>
