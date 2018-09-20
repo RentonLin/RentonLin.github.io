@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-19T22:49:15+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-20T22:28:21+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
+  &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
+    &lt;ul&gt;
+      &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
+      &lt;li&gt;How to use it
+        &lt;ul&gt;
+          &lt;li&gt;foo&lt;Int&gt;(dump: Int.type)&lt;/Int&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is frame of layer?
+    &lt;ul&gt;
+      &lt;li&gt;Like view and its superview&lt;/li&gt;
+      &lt;li&gt;A layer’s frame is its frame in it’s superLayer’s coordinate&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What does the mask property of mask mean?
+    &lt;ul&gt;
+      &lt;li&gt;The mask is also a layer&lt;/li&gt;
+      &lt;li&gt;Default is nil, and all contents will be drawn&lt;/li&gt;
+      &lt;li&gt;When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero&lt;/li&gt;
+      &lt;li&gt;In this way you can clip layer by a sublayer(although there will not be a layer there)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to check a value got from json is null
+    &lt;ul&gt;
+      &lt;li&gt;Value is NSNull&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to change array to set in Swift
+    &lt;ul&gt;
+      &lt;li&gt;Set&lt;array&gt;&lt;/array&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the new templates in Xcode playground
+    &lt;ul&gt;
+      &lt;li&gt;You can now create a viewController in the playground&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can you test view in playground
+    &lt;ul&gt;
+      &lt;li&gt;Yes, use the new templates, and show the linked view&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to implement shadow in iOS&lt;/li&gt;
+  &lt;li&gt;How to make rotate to a view
+    &lt;ul&gt;
+      &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
   &lt;li&gt;What is Shortcuts in iOS 12?
     &lt;ul&gt;
       &lt;li&gt;It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app&lt;/li&gt;
@@ -530,40 +581,4 @@ btn.contentHorizontaolAlignment = .fill
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to input special symbol in Xcode/Macos Press Command + Control + Space to call out symbol keyboard Choose from the symobls What does init(coder:) do It is actually part of Protocol NSCoding NSCoding has two methods encdoe(coder:) Save what you config in xib or storyboard to disk init(coder:) Generate Instance of your view from disk If you don’t use xib or storyboard Just input fatalerror(error)</summary></entry><entry><title type="html">Hot to get model from indexPath in a Rx way</title><link href="http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html" rel="alternate" type="text/html" title="Hot to get model from indexPath in a Rx way" /><published>2018-05-21T23:22:40+08:00</published><updated>2018-05-21T23:22:40+08:00</updated><id>http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath</id><content type="html" xml:base="http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html">&lt;ul&gt;
-  &lt;li&gt;Two ways to get model from indexPath of TableView &amp;amp; CollectionView
-    &lt;ul&gt;
-      &lt;li&gt;Use indexPath and dataSource to get model
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in
-return datas[indexPath.secion][indexPath.row]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Use model&lt;T&gt;(at: indexPath)
-&lt;/T&gt;        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;do {
-let element: Type = try tableView.model(at: indexPath)
-} catch {
-//work with error when cast failed
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Warning: You must specify the type of your variable.&lt;/li&gt;
-          &lt;li&gt;Edited: 2018-05-27&lt;/li&gt;
-          &lt;li&gt;Your can first transform the data to Any and then downcast to the type of your Model or Protocol
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let e: Any = try tableView.model(at: indexPath)
-if let t = e as? Type {
-  t.foo()
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Two ways to get model from indexPath of TableView &amp;amp; CollectionView Use indexPath and dataSource to get model Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in return datas[indexPath.secion][indexPath.row] } Use model(at: indexPath) do { let element: Type = try tableView.model(at: indexPath) } catch { //work with error when cast failed } Warning: You must specify the type of your variable. Edited: 2018-05-27 Your can first transform the data to Any and then downcast to the type of your Model or Protocol let e: Any = try tableView.model(at: indexPath) if let t = e as? Type { t.foo() }</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to input special symbol in Xcode/Macos Press Command + Control + Space to call out symbol keyboard Choose from the symobls What does init(coder:) do It is actually part of Protocol NSCoding NSCoding has two methods encdoe(coder:) Save what you config in xib or storyboard to disk init(coder:) Generate Instance of your view from disk If you don’t use xib or storyboard Just input fatalerror(error)</summary></entry></feed>
