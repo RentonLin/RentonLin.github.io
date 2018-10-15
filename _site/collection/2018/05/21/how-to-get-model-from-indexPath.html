@@ -2,9 +2,9 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Hot to get model from indexPath in a Rx way | ToraceOn Studio</title>
-<meta name="generator" content="Jekyll v3.8.1" />
+<meta name="generator" content="Jekyll v3.8.4" />
 <meta property="og:title" content="Hot to get model from indexPath in a Rx way" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Two ways to get model from indexPath of TableView &amp; CollectionView Use indexPath and dataSource to get model Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in return datas[indexPath.secion][indexPath.row] } Use model(at: indexPath) do { let element: Type = try tableView.model(at: indexPath) } catch { //work with error when cast failed } Warning: You must specify the type of your variable. Edited: 2018-05-27 Your can first transform the data to Any and then downcast to the type of your Model or Protocol let e: Any = try tableView.model(at: indexPath) if let t = e as? Type { t.foo() }" />
@@ -15,7 +15,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-05-21T23:22:40+08:00" />
 <script type="application/ld+json">
-{"description":"Two ways to get model from indexPath of TableView &amp; CollectionView Use indexPath and dataSource to get model Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in return datas[indexPath.secion][indexPath.row] } Use model(at: indexPath) do { let element: Type = try tableView.model(at: indexPath) } catch { //work with error when cast failed } Warning: You must specify the type of your variable. Edited: 2018-05-27 Your can first transform the data to Any and then downcast to the type of your Model or Protocol let e: Any = try tableView.model(at: indexPath) if let t = e as? Type { t.foo() }","@type":"BlogPosting","url":"http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html","headline":"Hot to get model from indexPath in a Rx way","dateModified":"2018-05-21T23:22:40+08:00","datePublished":"2018-05-21T23:22:40+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html"},"@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/collection/2018/05/21/how-to-get-model-from-indexPath.html"},"description":"Two ways to get model from indexPath of TableView &amp; CollectionView Use indexPath and dataSource to get model Observable.just(indexPath).withLatestFrom(#ObservableThatBindToYourTableView) { indexPath, datas in return datas[indexPath.secion][indexPath.row] } Use model(at: indexPath) do { let element: Type = try tableView.model(at: indexPath) } catch { //work with error when cast failed } Warning: You must specify the type of your variable. Edited: 2018-05-27 Your can first transform the data to Any and then downcast to the type of your Model or Protocol let e: Any = try tableView.model(at: indexPath) if let t = e as? Type { t.foo() }","headline":"Hot to get model from indexPath in a Rx way","dateModified":"2018-05-21T23:22:40+08:00","datePublished":"2018-05-21T23:22:40+08:00","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="ToraceOn Studio" /></head>
 <body><header class="site-header" role="banner">

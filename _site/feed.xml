@@ -1,59 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-12T08:35:22+08:00</updated><id>http://localhost:4000/</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* When test local notification triggered by calendar date, what should you be careful with
-	* While adjust system time, do not cross the trigger time
-	* It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged
-* When you test iAP, what should you be careful with
-	* The system time must be correct
-* How to draw a shape on a layer
-	* New a CGShapeLayer
-	* Create a CGPath
-		* You can also create a CGPath with a UIBezierPath
-	* Set shaperLayer.path = path
-	* ```
-		* Let layer = CGShapeLayer()
-		* Layer.frame = CGRect(x:0, y:0, with: width, height: height)
-		* let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50))
-		* Layer.path = bezierPath.cgPath
-	* ```
-* How to clip a view as you wish
-	* New a CGShapeLayer and set path to
-	* Set layer.mask to shapeLayer
-* Python: How to make utf-8 code enable in your python file
-	* Indicate encoding utf-8
-	* # -*- coding: utf-8 -*-
-* Python: How to read string from file
-	* F = Open(#path, #mode)
-	* F.readlines()
-* Python: How to get lines from file and enumerate them
-	* Lines = F.readlines()
-	* For line in Lines:
-* Python: How to replace substring in string
-	* Str.replace(#replacedString, #newString)
-* Python: How to concat string list
-	* '\n'.join(stringList)
-* Python: How to take value from input
-	* Import sys
-	* Let param1 = sys.argv[1]
-* How to write a workflow in Alfred
-	* Drag Trigger/Input
-		* Trigger
-			* Hotkey
-			* Keyword
-			* Snipper in other app and others
-		* Input
-			* When using hot key, clipboard/current selection text is supported
-			* When using keyword, you can pass text after keyword
-	* Action/Script
-		* Action
-			* Open file
-			* Open app
-			* And many others
-		* Script
-			* Using input to do actions and sys.stdout.write(output) to produce output to the next  step
-	* Output
-		* To clipboard
-		* To file
-		* Notification
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">* When test local notification triggered by calendar date, what should you be careful with * While adjust system time, do not cross the trigger time * It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged * When you test iAP, what should you be careful with * The system time must be correct * How to draw a shape on a layer * New a CGShapeLayer * Create a CGPath * You can also create a CGPath with a UIBezierPath * Set shaperLayer.path = path * ``` * Let layer = CGShapeLayer() * Layer.frame = CGRect(x:0, y:0, with: width, height: height) * let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) * Layer.path = bezierPath.cgPath * ``` * How to clip a view as you wish * New a CGShapeLayer and set path to * Set layer.mask to shapeLayer * Python: How to make utf-8 code enable in your python file * Indicate encoding utf-8 * # -*- coding: utf-8 -*- * Python: How to read string from file * F = Open(#path, #mode) * F.readlines() * Python: How to get lines from file and enumerate them * Lines = F.readlines() * For line in Lines: * Python: How to replace substring in string * Str.replace(#replacedString, #newString) * Python: How to concat string list * '\n'.join(stringList) * Python: How to take value from input * Import sys * Let param1 = sys.argv[1] * How to write a workflow in Alfred * Drag Trigger/Input * Trigger * Hotkey * Keyword * Snipper in other app and others * Input * When using hot key, clipboard/current selection text is supported * When using keyword, you can pass text after keyword * Action/Script * Action * Open file * Open app * And many others * Script * Using input to do actions and sys.stdout.write(output) to produce output to the next step * Output * To clipboard * To file * Notification</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-15T08:13:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
+  &lt;li&gt;When test local notification triggered by calendar date, what should you be careful with
+    &lt;ul&gt;
+      &lt;li&gt;While adjust system time, do not cross the trigger time&lt;/li&gt;
+      &lt;li&gt;It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When you test iAP, what should you be careful with
+    &lt;ul&gt;
+      &lt;li&gt;The system time must be correct&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to draw a shape on a layer
+    &lt;ul&gt;
+      &lt;li&gt;New a CGShapeLayer&lt;/li&gt;
+      &lt;li&gt;Create a CGPath
+        &lt;ul&gt;
+          &lt;li&gt;You can also create a CGPath with a UIBezierPath&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Set shaperLayer.path = path&lt;/li&gt;
+      &lt;li&gt;```
+        &lt;ul&gt;
+          &lt;li&gt;Let layer = CGShapeLayer()&lt;/li&gt;
+          &lt;li&gt;Layer.frame = CGRect(x:0, y:0, with: width, height: height)&lt;/li&gt;
+          &lt;li&gt;let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50))&lt;/li&gt;
+          &lt;li&gt;Layer.path = bezierPath.cgPath&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;```&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to clip a view as you wish
+    &lt;ul&gt;
+      &lt;li&gt;New a CGShapeLayer and set path to&lt;/li&gt;
+      &lt;li&gt;Set layer.mask to shapeLayer&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python: How to make utf-8 code enable in your python file
+    &lt;ul&gt;
+      &lt;li&gt;Indicate encoding utf-8&lt;/li&gt;
+      &lt;li&gt;
+        &lt;h1 id=&quot;---coding-utf-8---&quot;&gt;-&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-&lt;/h1&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python: How to read string from file
+    &lt;ul&gt;
+      &lt;li&gt;F = Open(#path, #mode)&lt;/li&gt;
+      &lt;li&gt;F.readlines()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python: How to get lines from file and enumerate them
+    &lt;ul&gt;
+      &lt;li&gt;Lines = F.readlines()&lt;/li&gt;
+      &lt;li&gt;For line in Lines:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python: How to replace substring in string
+    &lt;ul&gt;
+      &lt;li&gt;Str.replace(#replacedString, #newString)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python: How to concat string list
+    &lt;ul&gt;
+      &lt;li&gt;‘\n’.join(stringList)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Python: How to take value from input
+    &lt;ul&gt;
+      &lt;li&gt;Import sys&lt;/li&gt;
+      &lt;li&gt;Let param1 = sys.argv[1]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to write a workflow in Alfred
+    &lt;ul&gt;
+      &lt;li&gt;Drag Trigger/Input
+        &lt;ul&gt;
+          &lt;li&gt;Trigger
+            &lt;ul&gt;
+              &lt;li&gt;Hotkey&lt;/li&gt;
+              &lt;li&gt;Keyword&lt;/li&gt;
+              &lt;li&gt;Snipper in other app and others&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Input
+            &lt;ul&gt;
+              &lt;li&gt;When using hot key, clipboard/current selection text is supported&lt;/li&gt;
+              &lt;li&gt;When using keyword, you can pass text after keyword&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Action/Script
+        &lt;ul&gt;
+          &lt;li&gt;Action
+            &lt;ul&gt;
+              &lt;li&gt;Open file&lt;/li&gt;
+              &lt;li&gt;Open app&lt;/li&gt;
+              &lt;li&gt;And many others&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Script
+            &lt;ul&gt;
+              &lt;li&gt;Using input to do actions and sys.stdout.write(output) to produce output to the next  step&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Output
+        &lt;ul&gt;
+          &lt;li&gt;To clipboard&lt;/li&gt;
+          &lt;li&gt;To file&lt;/li&gt;
+          &lt;li&gt;Notification&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
+  &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
+    &lt;ul&gt;
+      &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
+      &lt;li&gt;How to use it
+        &lt;ul&gt;
+          &lt;li&gt;foo&lt;Int&gt;(dump: Int.type)&lt;/Int&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is frame of layer?
+    &lt;ul&gt;
+      &lt;li&gt;Like view and its superview&lt;/li&gt;
+      &lt;li&gt;A layer’s frame is its frame in it’s superLayer’s coordinate&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What does the mask property of mask mean?
+    &lt;ul&gt;
+      &lt;li&gt;The mask is also a layer&lt;/li&gt;
+      &lt;li&gt;Default is nil, and all contents will be drawn&lt;/li&gt;
+      &lt;li&gt;When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero&lt;/li&gt;
+      &lt;li&gt;In this way you can clip layer by a sublayer(although there will not be a layer there)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to check a value got from json is null
+    &lt;ul&gt;
+      &lt;li&gt;Value is NSNull&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to change array to set in Swift
+    &lt;ul&gt;
+      &lt;li&gt;Set&lt;array&gt;&lt;/array&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the new templates in Xcode playground
+    &lt;ul&gt;
+      &lt;li&gt;You can now create a viewController in the playground&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can you test view in playground
+    &lt;ul&gt;
+      &lt;li&gt;Yes, use the new templates, and show the linked view&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to implement shadow in iOS&lt;/li&gt;
+  &lt;li&gt;How to make rotate to a view
+    &lt;ul&gt;
+      &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
   &lt;li&gt;What is the properties about shadow
     &lt;ul&gt;
       &lt;li&gt;They are properties of CALayer&lt;/li&gt;
@@ -137,58 +251,7 @@ let bezierPath = UIBezierPath()
       &lt;li&gt;Set shadow to the parent view&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
-  &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
-    &lt;ul&gt;
-      &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
-      &lt;li&gt;How to use it
-        &lt;ul&gt;
-          &lt;li&gt;foo&lt;Int&gt;(dump: Int.type)&lt;/Int&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is frame of layer?
-    &lt;ul&gt;
-      &lt;li&gt;Like view and its superview&lt;/li&gt;
-      &lt;li&gt;A layer’s frame is its frame in it’s superLayer’s coordinate&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What does the mask property of mask mean?
-    &lt;ul&gt;
-      &lt;li&gt;The mask is also a layer&lt;/li&gt;
-      &lt;li&gt;Default is nil, and all contents will be drawn&lt;/li&gt;
-      &lt;li&gt;When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero&lt;/li&gt;
-      &lt;li&gt;In this way you can clip layer by a sublayer(although there will not be a layer there)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to check a value got from json is null
-    &lt;ul&gt;
-      &lt;li&gt;Value is NSNull&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to change array to set in Swift
-    &lt;ul&gt;
-      &lt;li&gt;Set&lt;array&gt;&lt;/array&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is the new templates in Xcode playground
-    &lt;ul&gt;
-      &lt;li&gt;You can now create a viewController in the playground&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Can you test view in playground
-    &lt;ul&gt;
-      &lt;li&gt;Yes, use the new templates, and show the linked view&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to implement shadow in iOS&lt;/li&gt;
-  &lt;li&gt;How to make rotate to a view
-    &lt;ul&gt;
-      &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
   &lt;li&gt;What is Shortcuts in iOS 12?
     &lt;ul&gt;
       &lt;li&gt;It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app&lt;/li&gt;
