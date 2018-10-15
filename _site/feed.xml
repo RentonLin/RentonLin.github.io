@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-15T08:13:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-15T08:20:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use TTS service</title><link href="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html" rel="alternate" type="text/html" title="How to use TTS service" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/12/how-to-use-tts-service</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html">&lt;ul&gt;
+  &lt;li&gt;How to use AVSpeechSynthesizer To speak a sentence?
+    &lt;ul&gt;
+      &lt;li&gt;First, new an AVSpeechUtterance with text&lt;/li&gt;
+      &lt;li&gt;Adjust voice, rate, pre pro latency of utterance&lt;/li&gt;
+      &lt;li&gt;New a new AVSpeechSynthesizer or reuse one&lt;/li&gt;
+      &lt;li&gt;Use synthesizer.speak(utterance)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use Objective-C Framework in Swift?
+    &lt;ul&gt;
+      &lt;li&gt;Drag framework to project&lt;/li&gt;
+      &lt;li&gt;If there is no bridge file
+        &lt;ul&gt;
+          &lt;li&gt;New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file)&lt;/li&gt;
+          &lt;li&gt;Import &amp;lt;Module/MoudleName.h&amp;gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Now the framework can be used&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use TTS Cloud service of Google?
+    &lt;ul&gt;
+      &lt;li&gt;Enable Google Cloud&lt;/li&gt;
+      &lt;li&gt;New a project&lt;/li&gt;
+      &lt;li&gt;Enable TTS API&lt;/li&gt;
+      &lt;li&gt;Create a  service  account key
+        &lt;ul&gt;
+          &lt;li&gt;No role is needed for the service account&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Download a json version of the key&lt;/li&gt;
+      &lt;li&gt;Set environment variable to use the JSON file(which is your credential)&lt;/li&gt;
+      &lt;li&gt;Install and init Cloud SDK&lt;/li&gt;
+      &lt;li&gt;Use curl to use TTS api to transform text to mp3 and save to local
+        &lt;ul&gt;
+          &lt;li&gt;This is a json file&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Save value for key “audioContent”, and save to a text file&lt;/li&gt;
+      &lt;li&gt;Base64 decode this file to mp3&lt;/li&gt;
+      &lt;li&gt;Play the mp3&lt;/li&gt;
+      &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
   &lt;li&gt;When test local notification triggered by calendar date, what should you be careful with
     &lt;ul&gt;
       &lt;li&gt;While adjust system time, do not cross the trigger time&lt;/li&gt;
@@ -619,45 +664,4 @@ o.onNext(())
 o.subscribe()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We can use () to represent Void Use void when represent observer when you just need tell observer that certain things happens but no detail should be provided let o = PublishSubject&amp;lt;Void&amp;gt;() o.onNext(()) o.subscribe()</summary></entry><entry><title type="html">How to migrate FMDB along with new App releases</title><link href="http://localhost:4000/collection/base/fmdb/2018/06/13/how-to-update-fmdb-along-with-app-release.html" rel="alternate" type="text/html" title="How to migrate FMDB along with new App releases" /><published>2018-06-13T23:00:00+08:00</published><updated>2018-06-13T23:00:00+08:00</updated><id>http://localhost:4000/collection/base/fmdb/2018/06/13/how-to-update-fmdb-along-with-app-release</id><content type="html" xml:base="http://localhost:4000/collection/base/fmdb/2018/06/13/how-to-update-fmdb-along-with-app-release.html">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;how-to-create-a-unique-id-in-ios-with-swift&quot;&gt;How to create a unique id in iOS with Swift&lt;/h3&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let uuid = UUID().uuidString
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;how-to-migrate-fmdb-along-with-new-app-releases&quot;&gt;How to migrate FMDB along with new App releases&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Tool: &lt;a href=&quot;https://github.com/layerhq/FMDBMigrationManager&quot;&gt;FMDBMigrationManager&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;How: Treat your database like git repository, add modifications like commits, and apply commits to the current state&lt;/li&gt;
-      &lt;li&gt;Steps:
-        &lt;ul&gt;
-          &lt;li&gt;install FMDBMigrationManager with pod&lt;/li&gt;
-          &lt;li&gt;New a FMDBMigrationManager linked to your database&lt;/li&gt;
-          &lt;li&gt;Create a version table with FMDBMigrationManager&lt;/li&gt;
-          &lt;li&gt;As your apps release, new migrations are need&lt;/li&gt;
-          &lt;li&gt;New migrate objects that confirm FMDBMigrating
-            &lt;ul&gt;
-              &lt;li&gt;Implement methods in the protocol&lt;/li&gt;
-              &lt;li&gt;Version and progress closure is the most important part&lt;/li&gt;
-              &lt;li&gt;Which determine the order of migrations and what will be done&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Migrate to latest version
-            &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//create manager
-FMDBMigrationManager *manager = [FMDBMigrationManager managerWithDatabaseAtPath:@&quot;path/to/your/DB.sqlite&quot; migrationsBundle:[NSBundle mainBundle]];
-//create table, check existed before create
-BOOL success = [manager createMigrationsTable:&amp;amp;error];
-//New objects confirm to FMDBMigrating
-//Add to manager
-[manager addMigrations:[#yourMigrations]]
-//migrate
-BOOL success = [manager migrateDatabaseToVersion:UINT64_MAX progress:nil error:&amp;amp;error];
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
-          &lt;/li&gt;
-          &lt;li&gt;As your app continue releases, just new FMDBMigrating objects and add them to manager&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a unique id in iOS with Swift let uuid = UUID().uuidString How to migrate FMDB along with new App releases Tool: FMDBMigrationManager How: Treat your database like git repository, add modifications like commits, and apply commits to the current state Steps: install FMDBMigrationManager with pod New a FMDBMigrationManager linked to your database Create a version table with FMDBMigrationManager As your apps release, new migrations are need New migrate objects that confirm FMDBMigrating Implement methods in the protocol Version and progress closure is the most important part Which determine the order of migrations and what will be done Migrate to latest version //create manager FMDBMigrationManager *manager = [FMDBMigrationManager managerWithDatabaseAtPath:@&quot;path/to/your/DB.sqlite&quot; migrationsBundle:[NSBundle mainBundle]]; //create table, check existed before create BOOL success = [manager createMigrationsTable:&amp;amp;error]; //New objects confirm to FMDBMigrating //Add to manager [manager addMigrations:[#yourMigrations]] //migrate BOOL success = [manager migrateDatabaseToVersion:UINT64_MAX progress:nil error:&amp;amp;error]; As your app continue releases, just new FMDBMigrating objects and add them to manager</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">We can use () to represent Void Use void when represent observer when you just need tell observer that certain things happens but no detail should be provided let o = PublishSubject&amp;lt;Void&amp;gt;() o.onNext(()) o.subscribe()</summary></entry></feed>
