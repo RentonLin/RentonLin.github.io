@@ -1,49 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-15T08:20:41+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use TTS service</title><link href="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html" rel="alternate" type="text/html" title="How to use TTS service" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/12/how-to-use-tts-service</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html">&lt;ul&gt;
-  &lt;li&gt;How to use AVSpeechSynthesizer To speak a sentence?
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-15T23:02:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to write UnitTests in Xcode</title><link href="http://localhost:4000/ios,/xcode/2018/10/15/how-to-write-unittests-in-Xcode.html" rel="alternate" type="text/html" title="How to write UnitTests in Xcode" /><published>2018-10-15T00:00:00+08:00</published><updated>2018-10-15T00:00:00+08:00</updated><id>http://localhost:4000/ios,/xcode/2018/10/15/how-to-write-unittests-in-Xcode</id><content type="html" xml:base="http://localhost:4000/ios,/xcode/2018/10/15/how-to-write-unittests-in-Xcode.html">&lt;ul&gt;
+  &lt;li&gt;How to write UnitTests
     &lt;ul&gt;
-      &lt;li&gt;First, new an AVSpeechUtterance with text&lt;/li&gt;
-      &lt;li&gt;Adjust voice, rate, pre pro latency of utterance&lt;/li&gt;
-      &lt;li&gt;New a new AVSpeechSynthesizer or reuse one&lt;/li&gt;
-      &lt;li&gt;Use synthesizer.speak(utterance)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to use Objective-C Framework in Swift?
-    &lt;ul&gt;
-      &lt;li&gt;Drag framework to project&lt;/li&gt;
-      &lt;li&gt;If there is no bridge file
+      &lt;li&gt;New target&lt;/li&gt;
+      &lt;li&gt;Add test classes to target&lt;/li&gt;
+      &lt;li&gt;Be careful of the FIRST principles
         &lt;ul&gt;
-          &lt;li&gt;New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file)&lt;/li&gt;
-          &lt;li&gt;Import &amp;lt;Module/MoudleName.h&amp;gt;&lt;/li&gt;
+          &lt;li&gt;Fast&lt;/li&gt;
+          &lt;li&gt;Independent&lt;/li&gt;
+          &lt;li&gt;Repeatable&lt;/li&gt;
+          &lt;li&gt;Self validating&lt;/li&gt;
+          &lt;li&gt;Timely&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Now the framework can be used&lt;/li&gt;
+      &lt;li&gt;Write tests for asynchronous operations&lt;/li&gt;
+      &lt;li&gt;Faking objects&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;How to use TTS Cloud service of Google?
+  &lt;li&gt;How to run UnitTests
     &lt;ul&gt;
-      &lt;li&gt;Enable Google Cloud&lt;/li&gt;
-      &lt;li&gt;New a project&lt;/li&gt;
-      &lt;li&gt;Enable TTS API&lt;/li&gt;
-      &lt;li&gt;Create a  service  account key
-        &lt;ul&gt;
-          &lt;li&gt;No role is needed for the service account&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Download a json version of the key&lt;/li&gt;
-      &lt;li&gt;Set environment variable to use the JSON file(which is your credential)&lt;/li&gt;
-      &lt;li&gt;Install and init Cloud SDK&lt;/li&gt;
-      &lt;li&gt;Use curl to use TTS api to transform text to mp3 and save to local
-        &lt;ul&gt;
-          &lt;li&gt;This is a json file&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Save value for key “audioContent”, and save to a text file&lt;/li&gt;
-      &lt;li&gt;Base64 decode this file to mp3&lt;/li&gt;
-      &lt;li&gt;Play the mp3&lt;/li&gt;
-      &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
+      &lt;li&gt;Command + U to run all tests&lt;/li&gt;
+      &lt;li&gt;Click icon beside test file to run all tests in the file&lt;/li&gt;
+      &lt;li&gt;Click icon beside test function to run the test&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
+  &lt;li&gt;How to test OC class in UnitTests?
+    &lt;ul&gt;
+      &lt;li&gt;Import OC class to the test target&lt;/li&gt;
+      &lt;li&gt;Import head file in bridging file
+        &lt;ul&gt;
+          &lt;li&gt;Module name can get from framework’s modulemap file&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Write test code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to test OC framework in UnitTests?
+    &lt;ul&gt;
+      &lt;li&gt;If using cocoapods, the UnitTests target also need pod installed&lt;/li&gt;
+      &lt;li&gt;New a bridge file, and set bridging file to the file you created
+        &lt;ul&gt;
+          &lt;li&gt;Add import &amp;lt;#ModuleName/header.h&amp;gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Write test code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to write UnitTests New target Add test classes to target Be careful of the FIRST principles Fast Independent Repeatable Self validating Timely Write tests for asynchronous operations Faking objects How to run UnitTests Command + U to run all tests Click icon beside test file to run all tests in the file Click icon beside test function to run the test How to test OC class in UnitTests? Import OC class to the test target Import head file in bridging file Module name can get from framework’s modulemap file Write test code How to test OC framework in UnitTests? If using cocoapods, the UnitTests target also need pod installed New a bridge file, and set bridging file to the file you created Add import &amp;lt;#ModuleName/header.h&amp;gt; Write test code</summary></entry><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
   &lt;li&gt;When test local notification triggered by calendar date, what should you be careful with
     &lt;ul&gt;
       &lt;li&gt;While adjust system time, do not cross the trigger time&lt;/li&gt;
@@ -161,7 +163,52 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry><entry><title type="html">How to use TTS service</title><link href="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html" rel="alternate" type="text/html" title="How to use TTS service" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/12/how-to-use-tts-service</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html">&lt;ul&gt;
+  &lt;li&gt;How to use AVSpeechSynthesizer To speak a sentence?
+    &lt;ul&gt;
+      &lt;li&gt;First, new an AVSpeechUtterance with text&lt;/li&gt;
+      &lt;li&gt;Adjust voice, rate, pre pro latency of utterance&lt;/li&gt;
+      &lt;li&gt;New a new AVSpeechSynthesizer or reuse one&lt;/li&gt;
+      &lt;li&gt;Use synthesizer.speak(utterance)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use Objective-C Framework in Swift?
+    &lt;ul&gt;
+      &lt;li&gt;Drag framework to project&lt;/li&gt;
+      &lt;li&gt;If there is no bridge file
+        &lt;ul&gt;
+          &lt;li&gt;New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file)&lt;/li&gt;
+          &lt;li&gt;Import &amp;lt;Module/MoudleName.h&amp;gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Now the framework can be used&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use TTS Cloud service of Google?
+    &lt;ul&gt;
+      &lt;li&gt;Enable Google Cloud&lt;/li&gt;
+      &lt;li&gt;New a project&lt;/li&gt;
+      &lt;li&gt;Enable TTS API&lt;/li&gt;
+      &lt;li&gt;Create a  service  account key
+        &lt;ul&gt;
+          &lt;li&gt;No role is needed for the service account&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Download a json version of the key&lt;/li&gt;
+      &lt;li&gt;Set environment variable to use the JSON file(which is your credential)&lt;/li&gt;
+      &lt;li&gt;Install and init Cloud SDK&lt;/li&gt;
+      &lt;li&gt;Use curl to use TTS api to transform text to mp3 and save to local
+        &lt;ul&gt;
+          &lt;li&gt;This is a json file&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Save value for key “audioContent”, and save to a text file&lt;/li&gt;
+      &lt;li&gt;Base64 decode this file to mp3&lt;/li&gt;
+      &lt;li&gt;Play the mp3&lt;/li&gt;
+      &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
   &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
     &lt;ul&gt;
       &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
@@ -655,13 +702,4 @@ print(hello + world)
       &lt;li&gt;You don’t need to remember all those keys.font congratulations&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What are the transforming operators in RxSwift Map Transform element to other, just like map in Swift FlatMap Generate a new type of Observable to each element, and merge all the new Observables and subscribe to it Be careful, any observable sending error will make the terminate the observable FlatMapLatest Generate a new type of Observable to each element, and only subscribe to the newest Observable You can use this to deal with error events and filter them Materialize Observe to events of an observable Dematerialize Get element from event, used with Materialize How to use SwiftRichString to generate attributes string Create a style object and call setStyle on string let style = Style { $0.color = UIColor.white $0.alignment = .center .... } let hello = &quot;Hello&quot;.set(style: Style) let world = &quot;world&quot;.set(style: Style) print(hello + world) You don’t need to remember all those keys.font congratulations</summary></entry><entry><title type="html">How to send next in observer of Observer</title><link href="http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void.html" rel="alternate" type="text/html" title="How to send next in observer of Observer&lt;Void&gt;" /><published>2018-06-17T15:13:00+08:00</published><updated>2018-06-17T15:13:00+08:00</updated><id>http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void</id><content type="html" xml:base="http://localhost:4000/collection,/rxswift/2018/06/17/how-to-send-next-in-Observer-void.html">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;we-can-use--to-represent-void&quot;&gt;We can use () to represent Void&lt;/h3&gt;
-    &lt;p&gt;Use void when represent observer when you just need tell observer that certain things happens but no detail should be provided&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let o = PublishSubject&amp;lt;Void&amp;gt;()
-o.onNext(())
-o.subscribe()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">We can use () to represent Void Use void when represent observer when you just need tell observer that certain things happens but no detail should be provided let o = PublishSubject&amp;lt;Void&amp;gt;() o.onNext(()) o.subscribe()</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What are the transforming operators in RxSwift Map Transform element to other, just like map in Swift FlatMap Generate a new type of Observable to each element, and merge all the new Observables and subscribe to it Be careful, any observable sending error will make the terminate the observable FlatMapLatest Generate a new type of Observable to each element, and only subscribe to the newest Observable You can use this to deal with error events and filter them Materialize Observe to events of an observable Dematerialize Get element from event, used with Materialize How to use SwiftRichString to generate attributes string Create a style object and call setStyle on string let style = Style { $0.color = UIColor.white $0.alignment = .center .... } let hello = &quot;Hello&quot;.set(style: Style) let world = &quot;world&quot;.set(style: Style) print(hello + world) You don’t need to remember all those keys.font congratulations</summary></entry></feed>
