@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-16T22:29:32+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to use pasteboard to share info between apps</title><link href="http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app.html" rel="alternate" type="text/html" title="How to use pasteboard to share info between apps" /><published>2018-10-16T00:00:00+08:00</published><updated>2018-10-16T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-23T22:56:32+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to do localization in iOS</title><link href="http://localhost:4000/ios/2018/10/23/how-to-do-localization-work-in-iOS.html" rel="alternate" type="text/html" title="How to do localization in iOS" /><published>2018-10-23T00:00:00+08:00</published><updated>2018-10-23T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/23/how-to-do-localization-work-in-iOS</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/23/how-to-do-localization-work-in-iOS.html">&lt;ul&gt;
+  &lt;li&gt;How to do localization
+    &lt;ul&gt;
+      &lt;li&gt;Strings
+        &lt;ul&gt;
+          &lt;li&gt;New localizable.strings&lt;/li&gt;
+          &lt;li&gt;Add localization&lt;/li&gt;
+          &lt;li&gt;Use NSLocalizedString(#key, #comment)&lt;/li&gt;
+          &lt;li&gt;Use NSLocalizedStringForTable to specify a strings file to read strings&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Image
+        &lt;ul&gt;
+          &lt;li&gt;Add localization&lt;/li&gt;
+          &lt;li&gt;Set image for different languages&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Xib, storyboard
+        &lt;ul&gt;
+          &lt;li&gt;Add localization&lt;/li&gt;
+          &lt;li&gt;Adjust text and layout&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What will you get if you run 1.0 / 0.0?
+    &lt;ul&gt;
+      &lt;li&gt;Get infinite&lt;/li&gt;
+      &lt;li&gt;When you transform infinite to Int, it will crash&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is differences of Int in iPhone5 and iPhone 5s?
+    &lt;ul&gt;
+      &lt;li&gt;Int is Int32 in iPhone5&lt;/li&gt;
+      &lt;li&gt;Int is Int64 in iPhone5s&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What will happen if you pass Int64 to Int?
+    &lt;ul&gt;
+      &lt;li&gt;In x64 devices, it’s ok, they are the same&lt;/li&gt;
+      &lt;li&gt;In armv7 devices, it will crash&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to copy a folder in Linux
+    &lt;ul&gt;
+      &lt;li&gt;Copy -r #SourceFolder #TargetFolder&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to do localization Strings New localizable.strings Add localization Use NSLocalizedString(#key, #comment) Use NSLocalizedStringForTable to specify a strings file to read strings Image Add localization Set image for different languages Xib, storyboard Add localization Adjust text and layout What will you get if you run 1.0 / 0.0? Get infinite When you transform infinite to Int, it will crash What is differences of Int in iPhone5 and iPhone 5s? Int is Int32 in iPhone5 Int is Int64 in iPhone5s What will happen if you pass Int64 to Int? In x64 devices, it’s ok, they are the same In armv7 devices, it will crash How to copy a folder in Linux Copy -r #SourceFolder #TargetFolder</summary></entry><entry><title type="html">How to use pasteboard to share info between apps</title><link href="http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app.html" rel="alternate" type="text/html" title="How to use pasteboard to share info between apps" /><published>2018-10-16T00:00:00+08:00</published><updated>2018-10-16T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app.html">&lt;ul&gt;
   &lt;li&gt;How to install Hackintonish
     &lt;ul&gt;
       &lt;li&gt;Download system install pkg&lt;/li&gt;
@@ -263,7 +311,58 @@
       &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
+  &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
+    &lt;ul&gt;
+      &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
+      &lt;li&gt;How to use it
+        &lt;ul&gt;
+          &lt;li&gt;foo&lt;Int&gt;(dump: Int.type)&lt;/Int&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is frame of layer?
+    &lt;ul&gt;
+      &lt;li&gt;Like view and its superview&lt;/li&gt;
+      &lt;li&gt;A layer’s frame is its frame in it’s superLayer’s coordinate&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What does the mask property of mask mean?
+    &lt;ul&gt;
+      &lt;li&gt;The mask is also a layer&lt;/li&gt;
+      &lt;li&gt;Default is nil, and all contents will be drawn&lt;/li&gt;
+      &lt;li&gt;When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero&lt;/li&gt;
+      &lt;li&gt;In this way you can clip layer by a sublayer(although there will not be a layer there)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to check a value got from json is null
+    &lt;ul&gt;
+      &lt;li&gt;Value is NSNull&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to change array to set in Swift
+    &lt;ul&gt;
+      &lt;li&gt;Set&lt;array&gt;&lt;/array&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the new templates in Xcode playground
+    &lt;ul&gt;
+      &lt;li&gt;You can now create a viewController in the playground&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can you test view in playground
+    &lt;ul&gt;
+      &lt;li&gt;Yes, use the new templates, and show the linked view&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to implement shadow in iOS&lt;/li&gt;
+  &lt;li&gt;How to make rotate to a view
+    &lt;ul&gt;
+      &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
   &lt;li&gt;What is the properties about shadow
     &lt;ul&gt;
       &lt;li&gt;They are properties of CALayer&lt;/li&gt;
@@ -347,58 +446,7 @@ let bezierPath = UIBezierPath()
       &lt;li&gt;Set shadow to the parent view&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
-  &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
-    &lt;ul&gt;
-      &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
-      &lt;li&gt;How to use it
-        &lt;ul&gt;
-          &lt;li&gt;foo&lt;Int&gt;(dump: Int.type)&lt;/Int&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is frame of layer?
-    &lt;ul&gt;
-      &lt;li&gt;Like view and its superview&lt;/li&gt;
-      &lt;li&gt;A layer’s frame is its frame in it’s superLayer’s coordinate&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What does the mask property of mask mean?
-    &lt;ul&gt;
-      &lt;li&gt;The mask is also a layer&lt;/li&gt;
-      &lt;li&gt;Default is nil, and all contents will be drawn&lt;/li&gt;
-      &lt;li&gt;When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero&lt;/li&gt;
-      &lt;li&gt;In this way you can clip layer by a sublayer(although there will not be a layer there)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to check a value got from json is null
-    &lt;ul&gt;
-      &lt;li&gt;Value is NSNull&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to change array to set in Swift
-    &lt;ul&gt;
-      &lt;li&gt;Set&lt;array&gt;&lt;/array&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is the new templates in Xcode playground
-    &lt;ul&gt;
-      &lt;li&gt;You can now create a viewController in the playground&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Can you test view in playground
-    &lt;ul&gt;
-      &lt;li&gt;Yes, use the new templates, and show the linked view&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to implement shadow in iOS&lt;/li&gt;
-  &lt;li&gt;How to make rotate to a view
-    &lt;ul&gt;
-      &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
   &lt;li&gt;What is Shortcuts in iOS 12?
     &lt;ul&gt;
       &lt;li&gt;It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app&lt;/li&gt;
@@ -663,44 +711,4 @@ arr.sorted(by: &amp;lt;/&amp;gt;)
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is decimal Decimal is a structure representing a base-10 number What is the differences between decimal and float/double Float and double are NOT accurate, especially when representing price. They are structure representing a base-2 number. When deal with currency, better use decimal than float/double How to use decimal Create a Decimal Apply +/-/*/\ to decimals Use numberFormmater to change decimal to string How to get monthly price from a SKProduct subscription with period of one year //Get price of product, which is the value in the currency of the related store of your iTunes Store id let price: Decimal = product.price let monthlyPrice = price / 12 //Transform it into string using the local of product let numberFormmater = NumberFormatter() numberFormmater.local = product.local numberFormmater.numberStyle = .currency let result = numberFormmater.stringFromNumber(monthlyPrice as NSNumber) How to enumrate dictionary, and what is the element dic.map({(key, value) -&amp;gt; Any #do with key and value }) for (key, value) in dic Every element is a tuple with key and associate value What are the common ways to get sorted array The element conform to Comparable protocol arr.sorted() arr.sorted(by: &amp;lt;/&amp;gt;) The element does not conform to Comparable protocol arr.sorted(by: { v1, v2 -&amp;gt; Bool #compare two element and return true if v1 should be in front of v2 })</summary></entry><entry><title type="html">How to use CGGradientLayer</title><link href="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html" rel="alternate" type="text/html" title="How to use CGGradientLayer" /><published>2018-06-27T11:59:00+08:00</published><updated>2018-06-27T11:59:00+08:00</updated><id>http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer</id><content type="html" xml:base="http://localhost:4000/collection,/swift/2018/06/27/How-to-use-CGGradientLayer.html">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;how-to-use-cggradientlayer&quot;&gt;How to use CGGradientLayer&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let layer = CGGraidentLayer()
-layer.frame = CGRect.zero
-layer.colors = [color1.cgcolor, color2.cgcolor, color3.cgcolor]
-veiw.layer.addSublayer(layer)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Where is (0, 0) and (1, 1)
-(0,0) is the left bottom corner and (1, 1) is the right top corner&lt;/li&gt;
-      &lt;li&gt;What is the default start point and end point
-(0.5, 0) -&amp;gt; (0.5, 1)
-That is middle bottom to middle top&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;how-to-change-distance-between-characters&quot;&gt;How to change distance between characters&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Use attributedString&lt;/li&gt;
-      &lt;li&gt;kerning can affect this value&lt;/li&gt;
-      &lt;li&gt;Kerning is 0 by default, but it doesn’t mean the distance between is 0, it means determine the distance by the font&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;how-to-delete-app--test-3d-touch-on-simulator&quot;&gt;How to delete app / test 3d touch on simulator&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Touch slightly to enable edit mode on desktop&lt;/li&gt;
-      &lt;li&gt;Touch and press down to test 3d Touch&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;how-to-copy-text-from-simulator&quot;&gt;How to copy text from simulator&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Long click until the copy menu appears&lt;/li&gt;
-      &lt;li&gt;Command + C&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use CGGradientLayer let layer = CGGraidentLayer() layer.frame = CGRect.zero layer.colors = [color1.cgcolor, color2.cgcolor, color3.cgcolor] veiw.layer.addSublayer(layer) Where is (0, 0) and (1, 1) (0,0) is the left bottom corner and (1, 1) is the right top corner What is the default start point and end point (0.5, 0) -&amp;gt; (0.5, 1) That is middle bottom to middle top How to change distance between characters Use attributedString kerning can affect this value Kerning is 0 by default, but it doesn’t mean the distance between is 0, it means determine the distance by the font How to delete app / test 3d touch on simulator Touch slightly to enable edit mode on desktop Touch and press down to test 3d Touch How to copy text from simulator Long click until the copy menu appears Command + C</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is decimal Decimal is a structure representing a base-10 number What is the differences between decimal and float/double Float and double are NOT accurate, especially when representing price. They are structure representing a base-2 number. When deal with currency, better use decimal than float/double How to use decimal Create a Decimal Apply +/-/*/\ to decimals Use numberFormmater to change decimal to string How to get monthly price from a SKProduct subscription with period of one year //Get price of product, which is the value in the currency of the related store of your iTunes Store id let price: Decimal = product.price let monthlyPrice = price / 12 //Transform it into string using the local of product let numberFormmater = NumberFormatter() numberFormmater.local = product.local numberFormmater.numberStyle = .currency let result = numberFormmater.stringFromNumber(monthlyPrice as NSNumber) How to enumrate dictionary, and what is the element dic.map({(key, value) -&amp;gt; Any #do with key and value }) for (key, value) in dic Every element is a tuple with key and associate value What are the common ways to get sorted array The element conform to Comparable protocol arr.sorted() arr.sorted(by: &amp;lt;/&amp;gt;) The element does not conform to Comparable protocol arr.sorted(by: { v1, v2 -&amp;gt; Bool #compare two element and return true if v1 should be in front of v2 })</summary></entry></feed>
