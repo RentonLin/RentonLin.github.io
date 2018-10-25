@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-24T23:32:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">how-to-access-file-with-playground</title><link href="http://localhost:4000/ios,/playground/2018/10/24/how-to-access-file-with-playground.html" rel="alternate" type="text/html" title="how-to-access-file-with-playground" /><published>2018-10-24T00:00:00+08:00</published><updated>2018-10-24T00:00:00+08:00</updated><id>http://localhost:4000/ios,/playground/2018/10/24/how-to-access-file-with-playground</id><content type="html" xml:base="http://localhost:4000/ios,/playground/2018/10/24/how-to-access-file-with-playground.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-25T23:07:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to edit files in MacOS</title><link href="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html" rel="alternate" type="text/html" title="How to edit files in MacOS" /><published>2018-10-25T00:00:00+08:00</published><updated>2018-10-25T00:00:00+08:00</updated><id>http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS</id><content type="html" xml:base="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html">&lt;ul&gt;
+  &lt;li&gt;How to do localization of app name, privacy text?
+    &lt;ul&gt;
+      &lt;li&gt;Get string keys&lt;/li&gt;
+      &lt;li&gt;Localize InfoPlist.String&lt;/li&gt;
+      &lt;li&gt;Input key = “value”;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Where are the keys of the privacy keys?
+    &lt;ul&gt;
+      &lt;li&gt;https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What are the two different ways to declare privacy descriptions?
+    &lt;ul&gt;
+      &lt;li&gt;Use keys in https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html&lt;/li&gt;
+      &lt;li&gt;Or use Privacy-xxxxxx&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to perform choose path action, and get a path?
+    &lt;ul&gt;
+      &lt;li&gt;New Panel&lt;/li&gt;
+      &lt;li&gt;Config whether file, folder can be selected&lt;/li&gt;
+      &lt;li&gt;Present&lt;/li&gt;
+      &lt;li&gt;Check action, if action is ok, get url from property of panel&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to write file in folder that user selected?
+    &lt;ul&gt;
+      &lt;li&gt;Use panel to select a folder&lt;/li&gt;
+      &lt;li&gt;Set com.apple.security.files.user-selected.read-write to true&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to do localization of app name, privacy text? Get string keys Localize InfoPlist.String Input key = “value”; Where are the keys of the privacy keys? https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html What are the two different ways to declare privacy descriptions? Use keys in https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html Or use Privacy-xxxxxx How to perform choose path action, and get a path? New Panel Config whether file, folder can be selected Present Check action, if action is ok, get url from property of panel How to write file in folder that user selected? Use panel to select a folder Set com.apple.security.files.user-selected.read-write to true</summary></entry><entry><title type="html">how-to-access-file-with-playground</title><link href="http://localhost:4000/ios,/playground/2018/10/24/how-to-access-file-with-playground.html" rel="alternate" type="text/html" title="how-to-access-file-with-playground" /><published>2018-10-24T00:00:00+08:00</published><updated>2018-10-24T00:00:00+08:00</updated><id>http://localhost:4000/ios,/playground/2018/10/24/how-to-access-file-with-playground</id><content type="html" xml:base="http://localhost:4000/ios,/playground/2018/10/24/how-to-access-file-with-playground.html">&lt;ul&gt;
   &lt;li&gt;How to transform string to bool?
     &lt;ul&gt;
       &lt;li&gt;(Str as NSString).boolValue&lt;/li&gt;
@@ -196,7 +229,52 @@
       &lt;li&gt;Write test code&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to write UnitTests New target Add test classes to target Be careful of the FIRST principles Fast Independent Repeatable Self validating Timely Write tests for asynchronous operations Faking objects How to run UnitTests Command + U to run all tests Click icon beside test file to run all tests in the file Click icon beside test function to run the test How to test OC class in UnitTests? Import OC class to the test target Import head file in bridging file Module name can get from framework’s modulemap file Write test code How to test OC framework in UnitTests? If using cocoapods, the UnitTests target also need pod installed New a bridge file, and set bridging file to the file you created Add import &amp;lt;#ModuleName/header.h&amp;gt; Write test code</summary></entry><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to write UnitTests New target Add test classes to target Be careful of the FIRST principles Fast Independent Repeatable Self validating Timely Write tests for asynchronous operations Faking objects How to run UnitTests Command + U to run all tests Click icon beside test file to run all tests in the file Click icon beside test function to run the test How to test OC class in UnitTests? Import OC class to the test target Import head file in bridging file Module name can get from framework’s modulemap file Write test code How to test OC framework in UnitTests? If using cocoapods, the UnitTests target also need pod installed New a bridge file, and set bridging file to the file you created Add import &amp;lt;#ModuleName/header.h&amp;gt; Write test code</summary></entry><entry><title type="html">How to use TTS service</title><link href="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html" rel="alternate" type="text/html" title="How to use TTS service" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/12/how-to-use-tts-service</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html">&lt;ul&gt;
+  &lt;li&gt;How to use AVSpeechSynthesizer To speak a sentence?
+    &lt;ul&gt;
+      &lt;li&gt;First, new an AVSpeechUtterance with text&lt;/li&gt;
+      &lt;li&gt;Adjust voice, rate, pre pro latency of utterance&lt;/li&gt;
+      &lt;li&gt;New a new AVSpeechSynthesizer or reuse one&lt;/li&gt;
+      &lt;li&gt;Use synthesizer.speak(utterance)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use Objective-C Framework in Swift?
+    &lt;ul&gt;
+      &lt;li&gt;Drag framework to project&lt;/li&gt;
+      &lt;li&gt;If there is no bridge file
+        &lt;ul&gt;
+          &lt;li&gt;New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file)&lt;/li&gt;
+          &lt;li&gt;Import &amp;lt;Module/MoudleName.h&amp;gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Now the framework can be used&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use TTS Cloud service of Google?
+    &lt;ul&gt;
+      &lt;li&gt;Enable Google Cloud&lt;/li&gt;
+      &lt;li&gt;New a project&lt;/li&gt;
+      &lt;li&gt;Enable TTS API&lt;/li&gt;
+      &lt;li&gt;Create a  service  account key
+        &lt;ul&gt;
+          &lt;li&gt;No role is needed for the service account&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Download a json version of the key&lt;/li&gt;
+      &lt;li&gt;Set environment variable to use the JSON file(which is your credential)&lt;/li&gt;
+      &lt;li&gt;Install and init Cloud SDK&lt;/li&gt;
+      &lt;li&gt;Use curl to use TTS api to transform text to mp3 and save to local
+        &lt;ul&gt;
+          &lt;li&gt;This is a json file&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Save value for key “audioContent”, and save to a text file&lt;/li&gt;
+      &lt;li&gt;Base64 decode this file to mp3&lt;/li&gt;
+      &lt;li&gt;Play the mp3&lt;/li&gt;
+      &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
   &lt;li&gt;When test local notification triggered by calendar date, what should you be careful with
     &lt;ul&gt;
       &lt;li&gt;While adjust system time, do not cross the trigger time&lt;/li&gt;
@@ -314,52 +392,7 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry><entry><title type="html">How to use TTS service</title><link href="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html" rel="alternate" type="text/html" title="How to use TTS service" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/12/how-to-use-tts-service</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html">&lt;ul&gt;
-  &lt;li&gt;How to use AVSpeechSynthesizer To speak a sentence?
-    &lt;ul&gt;
-      &lt;li&gt;First, new an AVSpeechUtterance with text&lt;/li&gt;
-      &lt;li&gt;Adjust voice, rate, pre pro latency of utterance&lt;/li&gt;
-      &lt;li&gt;New a new AVSpeechSynthesizer or reuse one&lt;/li&gt;
-      &lt;li&gt;Use synthesizer.speak(utterance)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to use Objective-C Framework in Swift?
-    &lt;ul&gt;
-      &lt;li&gt;Drag framework to project&lt;/li&gt;
-      &lt;li&gt;If there is no bridge file
-        &lt;ul&gt;
-          &lt;li&gt;New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file)&lt;/li&gt;
-          &lt;li&gt;Import &amp;lt;Module/MoudleName.h&amp;gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Now the framework can be used&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to use TTS Cloud service of Google?
-    &lt;ul&gt;
-      &lt;li&gt;Enable Google Cloud&lt;/li&gt;
-      &lt;li&gt;New a project&lt;/li&gt;
-      &lt;li&gt;Enable TTS API&lt;/li&gt;
-      &lt;li&gt;Create a  service  account key
-        &lt;ul&gt;
-          &lt;li&gt;No role is needed for the service account&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Download a json version of the key&lt;/li&gt;
-      &lt;li&gt;Set environment variable to use the JSON file(which is your credential)&lt;/li&gt;
-      &lt;li&gt;Install and init Cloud SDK&lt;/li&gt;
-      &lt;li&gt;Use curl to use TTS api to transform text to mp3 and save to local
-        &lt;ul&gt;
-          &lt;li&gt;This is a json file&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Save value for key “audioContent”, and save to a text file&lt;/li&gt;
-      &lt;li&gt;Base64 decode this file to mp3&lt;/li&gt;
-      &lt;li&gt;Play the mp3&lt;/li&gt;
-      &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
   &lt;li&gt;What is the properties about shadow
     &lt;ul&gt;
       &lt;li&gt;They are properties of CALayer&lt;/li&gt;
@@ -575,136 +608,4 @@ let bezierPath = UIBezierPath()
       &lt;li&gt;In this way, I can only distinct shortcuts by some values in the userInfo&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is Shortcuts in iOS 12? It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app What is Shortcuts constructed by? UserActivity that can be donated to show on lock screen, spotlight search, notification center, and user can tap to enter app, also can be trigger by Siri. Intent that can be interacted with user by tap or Siri. Now you can even finish a task without open your app! Shortcuts App(formally named Workflow): An app that can help user finish a group of tasks by click, and can be easily customized. What can we do with shortcuts with UserActivity? Donate shortcuts New a UserActivity, and set need properties Call becomeActive on the object and store it iOS will learn automatically by current time, date, location and suggest this action for user later Remove shortcuts NInteraction.removeAll/removeWithId/removeWithIds Respond to click of shortcuts Add type for NSUserActivity in Info.plist Implement in appdelegate func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -&amp;gt; Void) -&amp;gt; Bool Make a class that conform UIUserActivityRestoring protocol Commonly it is your home viewController or app delegate You can use navigator or router to route to specific viewControllers with info from userActivity’s userInfo which was donated by you Suggest shortcuts to user, and user can find in setting Use INVoiceShortcutCenter.shared.setShortcutSuggestions([INShortcut]) to suggest intents for user Suggest user to immediately add voice phrase to a certain shortcut Use INUIAddVoiceShortcutButton to show add to Siri button Use system Controller INUIAddVoiceShortcutViewController to make user input voice phrase for certain shortcuts Update added voice shortcut with new voice phrase Use INUIEditVoiceShortcutViewController to make user update voice phrase for certain shortcuts How to debug a shortcut Setting -&amp;gt; Developer -&amp;gt; Shortcut testing Show recently added shortcut Problems When get useractivity from INVoiceShortcut.INShortcut.userActivity, the persistentIdentifier is nil. In this way, I can only distinct shortcuts by some values in the userInfo</summary></entry><entry><title type="html">How to use RxTableViewSectionedAnimatedDataSource</title><link href="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html" rel="alternate" type="text/html" title="How to use RxTableViewSectionedAnimatedDataSource" /><published>2018-07-11T23:59:00+08:00</published><updated>2018-07-11T23:59:00+08:00</updated><id>http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource</id><content type="html" xml:base="http://localhost:4000/rxswift/rxdatasource/2018/07/11/How-to-use-RxTableViewSectionedAnimatedDataSource.html">&lt;ul&gt;
-  &lt;li&gt;How to implement UITableView with sections and headerView footView with RxSwift
-    &lt;ul&gt;
-      &lt;li&gt;Use RxTableViewSectionedReloadDataSource&lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Create a data type which is the element for a cell
-struct CustomElementType {
-var text: String
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Create a type conform SectionModelType which is the element for a section
-//Here we use header to represent headerView
-//You can also add a property like footer to represent footerView
-struct CustomSectionDataType: SectionModelType {
-var header: String
-var items: [Item]
-typealias Item = CustomElementType
-init(original: CustomSectionDataType, items: [Item]) {
-  self = original
-  self.items = items
-}
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//New datasource with section model type
-//Config each cell with each element
-let dataSource = RxTableViewSectionedReloadDataSource&amp;lt;CustomSectionDataType&amp;gt;(configureCell: { datasource, tableView, element(&amp;lt;--CustomElementType) -&amp;gt; UItableViewCell in
-//create and return your cell here
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Config titleView for section
-//Get title from SectionModel
-dataSource.titleForHeaderInSection = { (ds, section) in
-let sectionModel = ds.sectionModels[section]
-return sectionModel.header
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//new section models
-let sectionDatas = [CustomSectionDataType(header:&quot;section0&quot;, items:[Item]),
-CustomSectionDataType(header:&quot;section1&quot;, items:[Item]]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Bind data to UITableView
-Observable.just(sectionDatas).bind{to: tableView.rx.items(dataSource: dataSource)}.dispose(by: #yourDisposeBag)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//If you have different types of element in cells, you may wrap your final model in CustomElementType
-struct CustomElementType {
-var text: String
-var exactModel: Any
-}
-//when config cell, downcast exactModel to your model type, and fill cell
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to implement UITableView with animation while insert or delete with RxSwift
-    &lt;ul&gt;
-      &lt;li&gt;Use RxTableViewSectionedAnimatedDataSource&lt;/li&gt;
-      &lt;li&gt;How does this work?
-        &lt;ul&gt;
-          &lt;li&gt;RxTableViewSectionedAnimatedDataSource is built on top of RxTableViewSectionedReloadDataSource&lt;/li&gt;
-          &lt;li&gt;RxTableViewSectionedAnimatedDataSource keep latest value, when get a new value, it compare two value, and then make tableView animation like insert or delete&lt;/li&gt;
-          &lt;li&gt;CustomSectionDataType conform to AnimatableSectionModelType, where you need to provide a unique id for each sectionModel, which helps datasource to find which sectionModel is new and which sectionModel is deleted&lt;/li&gt;
-          &lt;li&gt;Element conforms to IdentifiableType and Equatable, where you need to provide unique id for datasource to find which rows are deleted and which rows are added&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;How to use
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//make element in each cell conform IdentifiableType, Equatable
-struct CustomElementType: IdentifiableType, Equatable {
-var id: String
-var text: String
-typealias Identity = String(&amp;lt;--can be Int)
-var identity: Identity {
-  return text
-}
-
-func ==(lhs: CustomElementType, rhs: CustomElementType) -&amp;gt; Bool {
-  return lhs.id == rhs.id
-}
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//See AnimatableSectionModelType
-struct CustomSectionDataType: AnimatableSectionModelType {
-var uniqueId: String
-var header: String
-var items: [Item]
-typealias Item = CustomElementType
-init(original: CustomSectionDataType, items: [Item]) {
-  self = original
-  self.items = items
-}
-typealias Identity = String(&amp;lt;--can be Int)
-var identity: String {
-  return uniqueId //Use this
-}
-}
-//create models and bind to RxTableViewSectionedAnimatedDataSource, that is almost same with reloadDataSource
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Do not rebind observable to UITableView, which will result in fatalerror in Debug, and reloadData(with no animation) in Release
-Observable.just(models0).bind(to: tableView.rx.items(dataSource: dataSource))
-Observable.just(models1).bind(to: tableView.rx.items(dataSource: dataSource)//&amp;lt;--This will cause fatalerror in Debug
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Even if you dispose previous bind, and bind a new observable, there will be no animation
-//No animation:
-let modelsObservable1 = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
-modelsObservable1.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
-disposeBag = DisposeBag()
-let modelsObservable2 = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
-modelsObservable2.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//This is the prefered way
-let modelsObservable = PublishSubject&amp;lt;[CustomSectionDataType]&amp;gt;()
-modelsObservable.asObservable().bind(to: tableView.rx.items(xxxx)).disposed(by: disposeBag)
-modelsObservable.onNext(v1)
-modelsObservable.onNext(v2)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//IdentifiableType can be the same, but it will raise fatalerror in Debug, and just reload (with no animation) in Release
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to implement UITableView with sections and headerView footView with RxSwift Use RxTableViewSectionedReloadDataSource //Create a data type which is the element for a cell struct CustomElementType { var text: String }</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is Shortcuts in iOS 12? It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app What is Shortcuts constructed by? UserActivity that can be donated to show on lock screen, spotlight search, notification center, and user can tap to enter app, also can be trigger by Siri. Intent that can be interacted with user by tap or Siri. Now you can even finish a task without open your app! Shortcuts App(formally named Workflow): An app that can help user finish a group of tasks by click, and can be easily customized. What can we do with shortcuts with UserActivity? Donate shortcuts New a UserActivity, and set need properties Call becomeActive on the object and store it iOS will learn automatically by current time, date, location and suggest this action for user later Remove shortcuts NInteraction.removeAll/removeWithId/removeWithIds Respond to click of shortcuts Add type for NSUserActivity in Info.plist Implement in appdelegate func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -&amp;gt; Void) -&amp;gt; Bool Make a class that conform UIUserActivityRestoring protocol Commonly it is your home viewController or app delegate You can use navigator or router to route to specific viewControllers with info from userActivity’s userInfo which was donated by you Suggest shortcuts to user, and user can find in setting Use INVoiceShortcutCenter.shared.setShortcutSuggestions([INShortcut]) to suggest intents for user Suggest user to immediately add voice phrase to a certain shortcut Use INUIAddVoiceShortcutButton to show add to Siri button Use system Controller INUIAddVoiceShortcutViewController to make user input voice phrase for certain shortcuts Update added voice shortcut with new voice phrase Use INUIEditVoiceShortcutViewController to make user update voice phrase for certain shortcuts How to debug a shortcut Setting -&amp;gt; Developer -&amp;gt; Shortcut testing Show recently added shortcut Problems When get useractivity from INVoiceShortcut.INShortcut.userActivity, the persistentIdentifier is nil. In this way, I can only distinct shortcuts by some values in the userInfo</summary></entry></feed>
