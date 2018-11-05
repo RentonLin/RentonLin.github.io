@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-25T23:07:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to edit files in MacOS</title><link href="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html" rel="alternate" type="text/html" title="How to edit files in MacOS" /><published>2018-10-25T00:00:00+08:00</published><updated>2018-10-25T00:00:00+08:00</updated><id>http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS</id><content type="html" xml:base="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-05T23:22:57+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to distinguish client languages</title><link href="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html" rel="alternate" type="text/html" title="How to distinguish client languages" /><published>2018-11-05T00:00:00+08:00</published><updated>2018-11-05T00:00:00+08:00</updated><id>http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages</id><content type="html" xml:base="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html">&lt;ul&gt;
+  &lt;li&gt;How to map a dictionary to another dictionary?
+    &lt;ul&gt;
+      &lt;li&gt;You can write an extension, new a new dictionary&lt;/li&gt;
+      &lt;li&gt;Get the transform block&lt;/li&gt;
+      &lt;li&gt;And set key value to the new dictionary&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the protocol that make the class object able to change to string?
+    &lt;ul&gt;
+      &lt;li&gt;CustomStringConvertible&lt;/li&gt;
+      &lt;li&gt;This is a protocol with one method: description&lt;/li&gt;
+      &lt;li&gt;This is not only for debug print, is also used for change objects to strings, like to a url&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the debug version protocol that make the class object able to change to string?
+    &lt;ul&gt;
+      &lt;li&gt;CustomDebugStringConvertible&lt;/li&gt;
+      &lt;li&gt;Swift works for any type, but it is discouraged to use this directly&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How should you return contents of different languages according to client requests?
+    &lt;ul&gt;
+      &lt;li&gt;Respect accept-language in http header&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How should throw exceptions and how should you write method that can throw?
+    &lt;ul&gt;
+      &lt;li&gt;Throw error&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the differences between normal refresh and hard refresh on frontend?
+    &lt;ul&gt;
+      &lt;li&gt;All the js files are refreshed in hard refresh&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to map a dictionary to another dictionary? You can write an extension, new a new dictionary Get the transform block And set key value to the new dictionary What is the protocol that make the class object able to change to string? CustomStringConvertible This is a protocol with one method: description This is not only for debug print, is also used for change objects to strings, like to a url What is the debug version protocol that make the class object able to change to string? CustomDebugStringConvertible Swift works for any type, but it is discouraged to use this directly How should you return contents of different languages according to client requests? Respect accept-language in http header How should throw exceptions and how should you write method that can throw? Throw error What is the differences between normal refresh and hard refresh on frontend? All the js files are refreshed in hard refresh</summary></entry><entry><title type="html">How to edit files in MacOS</title><link href="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html" rel="alternate" type="text/html" title="How to edit files in MacOS" /><published>2018-10-25T00:00:00+08:00</published><updated>2018-10-25T00:00:00+08:00</updated><id>http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS</id><content type="html" xml:base="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html">&lt;ul&gt;
   &lt;li&gt;How to do localization of app name, privacy text?
     &lt;ul&gt;
       &lt;li&gt;Get string keys&lt;/li&gt;
@@ -527,85 +563,4 @@ let bezierPath = UIBezierPath()
       &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry><entry><title type="html">Basic for Shortcuts in iOS 12 (NSUserActivity)</title><link href="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html" rel="alternate" type="text/html" title="Basic for Shortcuts in iOS 12 (NSUserActivity)" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12</id><content type="html" xml:base="http://localhost:4000/ios12/2018/09/19/Basic-for-Shortcuts-in-iOS-12.html">&lt;ul&gt;
-  &lt;li&gt;What is Shortcuts in iOS 12?
-    &lt;ul&gt;
-      &lt;li&gt;It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is Shortcuts constructed by?
-    &lt;ul&gt;
-      &lt;li&gt;UserActivity that can be donated to show on lock screen, spotlight search, notification center, and user can tap to enter app, also can be trigger by Siri.
-        &lt;ul&gt;
-          &lt;li&gt;Intent that can be interacted with user by tap or Siri. Now you can even finish a task without open your app!&lt;/li&gt;
-          &lt;li&gt;Shortcuts App(formally named Workflow): An app that can help user finish a group of tasks by click, and can be easily customized.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What can we do with shortcuts with UserActivity?
-    &lt;ul&gt;
-      &lt;li&gt;Donate shortcuts
-        &lt;ul&gt;
-          &lt;li&gt;New a UserActivity, and set need properties
-            &lt;ul&gt;
-              &lt;li&gt;Call becomeActive on the object and store it
-                &lt;ul&gt;
-                  &lt;li&gt;iOS will learn automatically by current time, date, location and suggest this action for user later&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Remove shortcuts
-            &lt;ul&gt;
-              &lt;li&gt;NInteraction.removeAll/removeWithId/removeWithIds&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Respond to click of shortcuts
-            &lt;ul&gt;
-              &lt;li&gt;Add type for NSUserActivity in Info.plist&lt;/li&gt;
-              &lt;li&gt;Implement in appdelegate
-                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -&amp;gt; Void) -&amp;gt; Bool
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
-              &lt;/li&gt;
-              &lt;li&gt;Make a class that conform UIUserActivityRestoring protocol
-                &lt;ul&gt;
-                  &lt;li&gt;Commonly it is your home viewController or app delegate
-                    &lt;ul&gt;
-                      &lt;li&gt;You can use navigator or router to route to specific viewControllers with info from userActivity’s userInfo which was donated by you&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Suggest shortcuts to user, and user can find in setting
-            &lt;ul&gt;
-              &lt;li&gt;Use INVoiceShortcutCenter.shared.setShortcutSuggestions([INShortcut]) to suggest intents for user&lt;/li&gt;
-              &lt;li&gt;Suggest user to immediately add voice phrase to a certain shortcut&lt;/li&gt;
-              &lt;li&gt;Use INUIAddVoiceShortcutButton to show add to Siri button&lt;/li&gt;
-              &lt;li&gt;Use system Controller INUIAddVoiceShortcutViewController to make user input voice phrase for certain shortcuts&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Update added voice shortcut with new voice phrase
-            &lt;ul&gt;
-              &lt;li&gt;Use INUIEditVoiceShortcutViewController  to make user update voice phrase for certain shortcuts&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;How to debug a shortcut
-            &lt;ul&gt;
-              &lt;li&gt;Setting -&amp;gt; Developer -&amp;gt; Shortcut testing&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Show recently added shortcut&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Problems
-    &lt;ul&gt;
-      &lt;li&gt;When get useractivity from INVoiceShortcut.INShortcut.userActivity, the persistentIdentifier is nil.&lt;/li&gt;
-      &lt;li&gt;In this way, I can only distinct shortcuts by some values in the userInfo&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is Shortcuts in iOS 12? It is an assistant that can help user find and finish what he wants to do quickly, whether by displaying elements in lock screen, Siri or Shortcuts app What is Shortcuts constructed by? UserActivity that can be donated to show on lock screen, spotlight search, notification center, and user can tap to enter app, also can be trigger by Siri. Intent that can be interacted with user by tap or Siri. Now you can even finish a task without open your app! Shortcuts App(formally named Workflow): An app that can help user finish a group of tasks by click, and can be easily customized. What can we do with shortcuts with UserActivity? Donate shortcuts New a UserActivity, and set need properties Call becomeActive on the object and store it iOS will learn automatically by current time, date, location and suggest this action for user later Remove shortcuts NInteraction.removeAll/removeWithId/removeWithIds Respond to click of shortcuts Add type for NSUserActivity in Info.plist Implement in appdelegate func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -&amp;gt; Void) -&amp;gt; Bool Make a class that conform UIUserActivityRestoring protocol Commonly it is your home viewController or app delegate You can use navigator or router to route to specific viewControllers with info from userActivity’s userInfo which was donated by you Suggest shortcuts to user, and user can find in setting Use INVoiceShortcutCenter.shared.setShortcutSuggestions([INShortcut]) to suggest intents for user Suggest user to immediately add voice phrase to a certain shortcut Use INUIAddVoiceShortcutButton to show add to Siri button Use system Controller INUIAddVoiceShortcutViewController to make user input voice phrase for certain shortcuts Update added voice shortcut with new voice phrase Use INUIEditVoiceShortcutViewController to make user update voice phrase for certain shortcuts How to debug a shortcut Setting -&amp;gt; Developer -&amp;gt; Shortcut testing Show recently added shortcut Problems When get useractivity from INVoiceShortcut.INShortcut.userActivity, the persistentIdentifier is nil. In this way, I can only distinct shortcuts by some values in the userInfo</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry></feed>
