@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to distinguish client languages"
+title:  "How to distinguish client languages from http request"
 date: 2018/11/5
 categories: iOS, Backend
 ---
