@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-05T23:23:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to distinguish client languages from http request</title><link href="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html" rel="alternate" type="text/html" title="How to distinguish client languages from http request" /><published>2018-11-05T00:00:00+08:00</published><updated>2018-11-05T00:00:00+08:00</updated><id>http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages</id><content type="html" xml:base="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-12T23:27:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to determine where our user is from</title><link href="http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from.html" rel="alternate" type="text/html" title="How to determine where our user is from" /><published>2018-11-09T00:00:00+08:00</published><updated>2018-11-09T00:00:00+08:00</updated><id>http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from</id><content type="html" xml:base="http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from.html">&lt;ul&gt;
+  &lt;li&gt;How to determine where our user is from? Organic or not? From which ads platform? Form which campaign?
+    &lt;ul&gt;
+      &lt;li&gt;Enable IDFA Track&lt;/li&gt;
+      &lt;li&gt;Install AppsFlyerSDK&lt;/li&gt;
+      &lt;li&gt;Set appsflyer delegate&lt;/li&gt;
+      &lt;li&gt;In the delegate method, you can get the values about current user&lt;/li&gt;
+      &lt;li&gt;Available keys and values are here
+        &lt;ul&gt;
+          &lt;li&gt;https://support.appsflyer.com/hc/en-us/articles/207032096-Deferred-Deep-Linking-Getting-the-Conversion-Data#ResponseKeys&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to determine where our user is from? Organic or not? From which ads platform? Form which campaign? Enable IDFA Track Install AppsFlyerSDK Set appsflyer delegate In the delegate method, you can get the values about current user Available keys and values are here https://support.appsflyer.com/hc/en-us/articles/207032096-Deferred-Deep-Linking-Getting-the-Conversion-Data#ResponseKeys</summary></entry><entry><title type="html">How to distinguish client languages from http request</title><link href="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html" rel="alternate" type="text/html" title="How to distinguish client languages from http request" /><published>2018-11-05T00:00:00+08:00</published><updated>2018-11-05T00:00:00+08:00</updated><id>http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages</id><content type="html" xml:base="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html">&lt;ul&gt;
   &lt;li&gt;How to map a dictionary to another dictionary?
     &lt;ul&gt;
       &lt;li&gt;You can write an extension, new a new dictionary&lt;/li&gt;
@@ -512,55 +526,4 @@ let bezierPath = UIBezierPath()
       &lt;li&gt;Set shadow to the parent view&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry><entry><title type="html">how-to-create-method-using-generic</title><link href="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html" rel="alternate" type="text/html" title="how-to-create-method-using-generic" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/collection/2018/09/20/how-to-create-method-using-generic.html">&lt;ul&gt;
-  &lt;li&gt;How to create a method that takes a generic type value as input, and  returns a generic type.
-    &lt;ul&gt;
-      &lt;li&gt;Func foo&lt;T&gt;(dump: T.type) -&amp;gt; T&lt;/T&gt;&lt;/li&gt;
-      &lt;li&gt;How to use it
-        &lt;ul&gt;
-          &lt;li&gt;foo&lt;Int&gt;(dump: Int.type)&lt;/Int&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is frame of layer?
-    &lt;ul&gt;
-      &lt;li&gt;Like view and its superview&lt;/li&gt;
-      &lt;li&gt;A layer’s frame is its frame in it’s superLayer’s coordinate&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What does the mask property of mask mean?
-    &lt;ul&gt;
-      &lt;li&gt;The mask is also a layer&lt;/li&gt;
-      &lt;li&gt;Default is nil, and all contents will be drawn&lt;/li&gt;
-      &lt;li&gt;When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero&lt;/li&gt;
-      &lt;li&gt;In this way you can clip layer by a sublayer(although there will not be a layer there)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to check a value got from json is null
-    &lt;ul&gt;
-      &lt;li&gt;Value is NSNull&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to change array to set in Swift
-    &lt;ul&gt;
-      &lt;li&gt;Set&lt;array&gt;&lt;/array&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is the new templates in Xcode playground
-    &lt;ul&gt;
-      &lt;li&gt;You can now create a viewController in the playground&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Can you test view in playground
-    &lt;ul&gt;
-      &lt;li&gt;Yes, use the new templates, and show the linked view&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to implement shadow in iOS&lt;/li&gt;
-  &lt;li&gt;How to make rotate to a view
-    &lt;ul&gt;
-      &lt;li&gt;View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to create a method that takes a generic type value as input, and returns a generic type. Func foo(dump: T.type) -&amp;gt; T How to use it foo(dump: Int.type) What is frame of layer? Like view and its superview A layer’s frame is its frame in it’s superLayer’s coordinate What does the mask property of mask mean? The mask is also a layer Default is nil, and all contents will be drawn When it is not nil, the layer’s contents will only be drawn where the mask’s alpha is not zero In this way you can clip layer by a sublayer(although there will not be a layer there) How to check a value got from json is null Value is NSNull How to change array to set in Swift Set What is the new templates in Xcode playground You can now create a viewController in the playground Can you test view in playground Yes, use the new templates, and show the linked view How to implement shadow in iOS How to make rotate to a view View.layer.transform = CATransform3DRotate(originTranform, CGFloat.pi / 4.0, 0, 0, 1)</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry></feed>
