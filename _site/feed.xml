@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-12T23:27:16+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to determine where our user is from</title><link href="http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from.html" rel="alternate" type="text/html" title="How to determine where our user is from" /><published>2018-11-09T00:00:00+08:00</published><updated>2018-11-09T00:00:00+08:00</updated><id>http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from</id><content type="html" xml:base="http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-14T09:06:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to add an imageView to collectionView as background</title><link href="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html" rel="alternate" type="text/html" title="How to add an imageView to collectionView as background" /><published>2018-11-14T00:00:00+08:00</published><updated>2018-11-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background</id><content type="html" xml:base="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html">&lt;ul&gt;
+  &lt;li&gt;What are the three ways to track where is the user from?
+    &lt;ul&gt;
+      &lt;li&gt;Idfa and cookie&lt;/li&gt;
+      &lt;li&gt;Google play url&lt;/li&gt;
+      &lt;li&gt;Common info
+        &lt;ul&gt;
+          &lt;li&gt;Device id&lt;/li&gt;
+          &lt;li&gt;Mac address&lt;/li&gt;
+          &lt;li&gt;IP address&lt;/li&gt;
+          &lt;li&gt;Device name&lt;/li&gt;
+          &lt;li&gt;Wifi mac address&lt;/li&gt;
+          &lt;li&gt;Region&lt;/li&gt;
+          &lt;li&gt;Local&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to add a view to collectionView’s background and send to back?
+    &lt;ul&gt;
+      &lt;li&gt;The view should be userInteractive set to false&lt;/li&gt;
+      &lt;li&gt;Add it as subview&lt;/li&gt;
+      &lt;li&gt;Send back&lt;/li&gt;
+      &lt;li&gt;Make layer’s zposition to negative value&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to set substring’s attributes for an attributes string?
+    &lt;ul&gt;
+      &lt;li&gt;In SwifAttributed string, get range of substring, check if it is NSNotfound&lt;/li&gt;
+      &lt;li&gt;If not, set(style: forRange:)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What are the three ways to track where is the user from? Idfa and cookie Google play url Common info Device id Mac address IP address Device name Wifi mac address Region Local How to add a view to collectionView’s background and send to back? The view should be userInteractive set to false Add it as subview Send back Make layer’s zposition to negative value How to set substring’s attributes for an attributes string? In SwifAttributed string, get range of substring, check if it is NSNotfound If not, set(style: forRange:)</summary></entry><entry><title type="html">How to determine where our user is from</title><link href="http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from.html" rel="alternate" type="text/html" title="How to determine where our user is from" /><published>2018-11-09T00:00:00+08:00</published><updated>2018-11-09T00:00:00+08:00</updated><id>http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from</id><content type="html" xml:base="http://localhost:4000/ads,/ios/2018/11/09/how-to-determine-where-our-user-is-from.html">&lt;ul&gt;
   &lt;li&gt;How to determine where our user is from? Organic or not? From which ads platform? Form which campaign?
     &lt;ul&gt;
       &lt;li&gt;Enable IDFA Track&lt;/li&gt;
@@ -442,88 +474,4 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry><entry><title type="html">How to use shadow in iOS</title><link href="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html" rel="alternate" type="text/html" title="How to use shadow in iOS" /><published>2018-09-20T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow</id><content type="html" xml:base="http://localhost:4000/ios,/cocoa/2018/09/20/how-to-use-shadow.html">&lt;ul&gt;
-  &lt;li&gt;What is the properties about shadow
-    &lt;ul&gt;
-      &lt;li&gt;They are properties of CALayer&lt;/li&gt;
-      &lt;li&gt;shadowColor
-        &lt;ul&gt;
-          &lt;li&gt;CGColor&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;shadowOpacity
-        &lt;ul&gt;
-          &lt;li&gt;[0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque&lt;/li&gt;
-          &lt;li&gt;0 by default -&amp;gt; your shadow is not shown by default&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;shadowOffset
-        &lt;ul&gt;
-          &lt;li&gt;Offset: CGSize&lt;/li&gt;
-          &lt;li&gt;When set to (0, 0), it is four boarder shadow&lt;/li&gt;
-          &lt;li&gt;When set to (width, height), shadow.x += width, shdow.y += height&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;shadowRadius
-        &lt;ul&gt;
-          &lt;li&gt;Blend&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;shadowPath
-        &lt;ul&gt;
-          &lt;li&gt;Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How can you implement common shadow
-    &lt;ul&gt;
-      &lt;li&gt;Set the four properties
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        workView.backgroundColor = UIColor.red
-        workView.layer.shadowColor = UIColor.green.cgColor
-        workView.layer.shadowOpacity = 1
-        workView.layer.shadowOffset = CGSize(width: 10, height: 10)
-        workView.layer.shadowRadius = 5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How can you implement custom shadow
-    &lt;ul&gt;
-      &lt;li&gt;Set the four properties&lt;/li&gt;
-      &lt;li&gt;New a path, and set to shadowPath
-let bezierPath = UIBezierPath()
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        bezierPath.move(to: CGPoint(x: 0, y: 0))
-        bezierPath.addLine(to: CGPoint(x: 0, y: 200))
-        bezierPath.addLine(to: CGPoint(x: 100, y: 200))
-        bezierPath.addLine(to: CGPoint(x: 100, y: 0))
-        bezierPath.close()
-        
-        workView.layer.shadowPath = bezierPath.cgPath
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How can you implement shadow on round corner view
-    &lt;ul&gt;
-      &lt;li&gt;When clipsToBounds is set true, the layer.maskToBounds is also set to true
-        &lt;ul&gt;
-          &lt;li&gt;Set layer.maskToBounds back to fasle will show the shadow&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;New a new transparent view and place the origin view into it as a subview
-        &lt;ul&gt;
-          &lt;li&gt;Set shadow to the new view&lt;/li&gt;
-          &lt;li&gt;Not recommended&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What if you have three views and you want to add the same shadow to them?
-    &lt;ul&gt;
-      &lt;li&gt;Put them into the same tranparent view&lt;/li&gt;
-      &lt;li&gt;Set shadow to the parent view&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the properties about shadow They are properties of CALayer shadowColor CGColor shadowOpacity [0, 1], 0 -&amp;gt; transparent, 1 -&amp;gt; opaque 0 by default -&amp;gt; your shadow is not shown by default shadowOffset Offset: CGSize When set to (0, 0), it is four boarder shadow When set to (width, height), shadow.x += width, shdow.y += height shadowRadius Blend shadowPath Shadow will draw in this path if not nil, using properties from shadowOpacity, shadowOffset, shadowRadius, shadowColor How can you implement common shadow Set the four properties let workView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))         workView.backgroundColor = UIColor.red         workView.layer.shadowColor = UIColor.green.cgColor         workView.layer.shadowOpacity = 1         workView.layer.shadowOffset = CGSize(width: 10, height: 10)         workView.layer.shadowRadius = 5 How can you implement custom shadow Set the four properties New a path, and set to shadowPath let bezierPath = UIBezierPath()         bezierPath.move(to: CGPoint(x: 0, y: 0))         bezierPath.addLine(to: CGPoint(x: 0, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 200))         bezierPath.addLine(to: CGPoint(x: 100, y: 0))         bezierPath.close()                  workView.layer.shadowPath = bezierPath.cgPath How can you implement shadow on round corner view When clipsToBounds is set true, the layer.maskToBounds is also set to true Set layer.maskToBounds back to fasle will show the shadow New a new transparent view and place the origin view into it as a subview Set shadow to the new view Not recommended What if you have three views and you want to add the same shadow to them? Put them into the same tranparent view Set shadow to the parent view</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry></feed>
