@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-14T09:06:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to add an imageView to collectionView as background</title><link href="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html" rel="alternate" type="text/html" title="How to add an imageView to collectionView as background" /><published>2018-11-14T00:00:00+08:00</published><updated>2018-11-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background</id><content type="html" xml:base="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-19T22:19:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to get int part and float part of a price decimal</title><link href="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html" rel="alternate" type="text/html" title="How to get int part and float part of a price decimal" /><published>2018-11-19T00:00:00+08:00</published><updated>2018-11-19T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal</id><content type="html" xml:base="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html">&lt;ul&gt;
+  &lt;li&gt;How to get int part and float part of a price decimal?
+    &lt;ul&gt;
+      &lt;li&gt;Int part: Floor((decimal as NSDecimal).doubleValue)&lt;/li&gt;
+      &lt;li&gt;Decimal part: (decimall * Decimal(100)).IntValue - (Int part) * 100&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to implement price with int on left and decimal part on right top?
+    &lt;ul&gt;
+      &lt;li&gt;Get different parts of the decimal&lt;/li&gt;
+      &lt;li&gt;Use formater to change integer to price and delete .00 at the end&lt;/li&gt;
+      &lt;li&gt;Place “.” before decimal part * 100&lt;/li&gt;
+      &lt;li&gt;Use two labels to represent them&lt;/li&gt;
+      &lt;li&gt;Adjust constraints
+        &lt;ul&gt;
+          &lt;li&gt;Make a container view&lt;/li&gt;
+          &lt;li&gt;Add the two views as subviews&lt;/li&gt;
+          &lt;li&gt;Make left.left.equalToSuperview&lt;/li&gt;
+          &lt;li&gt;Make right.right.equalToSuperview&lt;/li&gt;
+          &lt;li&gt;Make left.right.equalTo(right.left)&lt;/li&gt;
+          &lt;li&gt;Make container.centerX.equalToSuperView&lt;/li&gt;
+          &lt;li&gt;Make conatiner.left.greaterOrEqualTo(superView)&lt;/li&gt;
+          &lt;li&gt;Make right part’s compressionResistancePriority to low
+            &lt;ul&gt;
+              &lt;li&gt;Make right part adjust fontSizeWithWidth&lt;/li&gt;
+              &lt;li&gt;In this way when the int part is too big ,the right part will be compressed to small fonts&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;LeftEdge     left.right    RightEdge&lt;/li&gt;
+      &lt;li&gt;LeftEdgeleftxxxxxxxxx.rightRightEdge&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to get int part and float part of a price decimal? Int part: Floor((decimal as NSDecimal).doubleValue) Decimal part: (decimall * Decimal(100)).IntValue - (Int part) * 100 How to implement price with int on left and decimal part on right top? Get different parts of the decimal Use formater to change integer to price and delete .00 at the end Place “.” before decimal part * 100 Use two labels to represent them Adjust constraints Make a container view Add the two views as subviews Make left.left.equalToSuperview Make right.right.equalToSuperview Make left.right.equalTo(right.left) Make container.centerX.equalToSuperView Make conatiner.left.greaterOrEqualTo(superView) Make right part’s compressionResistancePriority to low Make right part adjust fontSizeWithWidth In this way when the int part is too big ,the right part will be compressed to small fonts LeftEdge left.right RightEdge LeftEdgeleftxxxxxxxxx.rightRightEdge</summary></entry><entry><title type="html">How to add an imageView to collectionView as background</title><link href="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html" rel="alternate" type="text/html" title="How to add an imageView to collectionView as background" /><published>2018-11-14T00:00:00+08:00</published><updated>2018-11-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background</id><content type="html" xml:base="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html">&lt;ul&gt;
   &lt;li&gt;What are the three ways to track where is the user from?
     &lt;ul&gt;
       &lt;li&gt;Idfa and cookie&lt;/li&gt;
@@ -356,122 +390,4 @@
       &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry><entry><title type="html">How to create an Alfred workflow</title><link href="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html" rel="alternate" type="text/html" title="How to create an Alfred workflow" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow</id><content type="html" xml:base="http://localhost:4000/alfred,/ios,/python/2018/10/12/How-to-create-an-Alfred-workflow.html">&lt;ul&gt;
-  &lt;li&gt;When test local notification triggered by calendar date, what should you be careful with
-    &lt;ul&gt;
-      &lt;li&gt;While adjust system time, do not cross the trigger time&lt;/li&gt;
-      &lt;li&gt;It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;When you test iAP, what should you be careful with
-    &lt;ul&gt;
-      &lt;li&gt;The system time must be correct&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to draw a shape on a layer
-    &lt;ul&gt;
-      &lt;li&gt;New a CGShapeLayer&lt;/li&gt;
-      &lt;li&gt;Create a CGPath
-        &lt;ul&gt;
-          &lt;li&gt;You can also create a CGPath with a UIBezierPath&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Set shaperLayer.path = path&lt;/li&gt;
-      &lt;li&gt;```
-        &lt;ul&gt;
-          &lt;li&gt;Let layer = CGShapeLayer()&lt;/li&gt;
-          &lt;li&gt;Layer.frame = CGRect(x:0, y:0, with: width, height: height)&lt;/li&gt;
-          &lt;li&gt;let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50))&lt;/li&gt;
-          &lt;li&gt;Layer.path = bezierPath.cgPath&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;```&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to clip a view as you wish
-    &lt;ul&gt;
-      &lt;li&gt;New a CGShapeLayer and set path to&lt;/li&gt;
-      &lt;li&gt;Set layer.mask to shapeLayer&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python: How to make utf-8 code enable in your python file
-    &lt;ul&gt;
-      &lt;li&gt;Indicate encoding utf-8&lt;/li&gt;
-      &lt;li&gt;
-        &lt;h1 id=&quot;---coding-utf-8---&quot;&gt;-&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-&lt;/h1&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python: How to read string from file
-    &lt;ul&gt;
-      &lt;li&gt;F = Open(#path, #mode)&lt;/li&gt;
-      &lt;li&gt;F.readlines()&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python: How to get lines from file and enumerate them
-    &lt;ul&gt;
-      &lt;li&gt;Lines = F.readlines()&lt;/li&gt;
-      &lt;li&gt;For line in Lines:&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python: How to replace substring in string
-    &lt;ul&gt;
-      &lt;li&gt;Str.replace(#replacedString, #newString)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python: How to concat string list
-    &lt;ul&gt;
-      &lt;li&gt;‘\n’.join(stringList)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Python: How to take value from input
-    &lt;ul&gt;
-      &lt;li&gt;Import sys&lt;/li&gt;
-      &lt;li&gt;Let param1 = sys.argv[1]&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to write a workflow in Alfred
-    &lt;ul&gt;
-      &lt;li&gt;Drag Trigger/Input
-        &lt;ul&gt;
-          &lt;li&gt;Trigger
-            &lt;ul&gt;
-              &lt;li&gt;Hotkey&lt;/li&gt;
-              &lt;li&gt;Keyword&lt;/li&gt;
-              &lt;li&gt;Snipper in other app and others&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Input
-            &lt;ul&gt;
-              &lt;li&gt;When using hot key, clipboard/current selection text is supported&lt;/li&gt;
-              &lt;li&gt;When using keyword, you can pass text after keyword&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Action/Script
-        &lt;ul&gt;
-          &lt;li&gt;Action
-            &lt;ul&gt;
-              &lt;li&gt;Open file&lt;/li&gt;
-              &lt;li&gt;Open app&lt;/li&gt;
-              &lt;li&gt;And many others&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Script
-            &lt;ul&gt;
-              &lt;li&gt;Using input to do actions and sys.stdout.write(output) to produce output to the next  step&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Output
-        &lt;ul&gt;
-          &lt;li&gt;To clipboard&lt;/li&gt;
-          &lt;li&gt;To file&lt;/li&gt;
-          &lt;li&gt;Notification&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">When test local notification triggered by calendar date, what should you be careful with While adjust system time, do not cross the trigger time It seems that every time you select a date, even you have not click pop button, the local notification will be rearranged When you test iAP, what should you be careful with The system time must be correct How to draw a shape on a layer New a CGShapeLayer Create a CGPath You can also create a CGPath with a UIBezierPath Set shaperLayer.path = path ``` Let layer = CGShapeLayer() Layer.frame = CGRect(x:0, y:0, with: width, height: height) let bezierPath = UIBezierPath(roundedRect: frame, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.topRight],  cornerRadii: CGSize(width: 50, height: 50)) Layer.path = bezierPath.cgPath ``` How to clip a view as you wish New a CGShapeLayer and set path to Set layer.mask to shapeLayer Python: How to make utf-8 code enable in your python file Indicate encoding utf-8 -- coding: utf-8 -- Python: How to read string from file F = Open(#path, #mode) F.readlines() Python: How to get lines from file and enumerate them Lines = F.readlines() For line in Lines: Python: How to replace substring in string Str.replace(#replacedString, #newString) Python: How to concat string list ‘\n’.join(stringList) Python: How to take value from input Import sys Let param1 = sys.argv[1] How to write a workflow in Alfred Drag Trigger/Input Trigger Hotkey Keyword Snipper in other app and others Input When using hot key, clipboard/current selection text is supported When using keyword, you can pass text after keyword Action/Script Action Open file Open app And many others Script Using input to do actions and sys.stdout.write(output) to produce output to the next step Output To clipboard To file Notification</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry></feed>
