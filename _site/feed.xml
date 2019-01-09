@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-19T22:19:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to get int part and float part of a price decimal</title><link href="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html" rel="alternate" type="text/html" title="How to get int part and float part of a price decimal" /><published>2018-11-19T00:00:00+08:00</published><updated>2018-11-19T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal</id><content type="html" xml:base="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-03T22:51:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Is indexPathsForVisibleItems sorted?</title><link href="http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted.html" rel="alternate" type="text/html" title="Is indexPathsForVisibleItems sorted?" /><published>2019-01-03T00:00:00+08:00</published><updated>2019-01-03T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted</id><content type="html" xml:base="http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted.html">&lt;ul&gt;
+  &lt;li&gt;How to fix bug of calling selectItem:at:position:animation of UICollectionView sometimes does not trigger isSelected state changing?
+    &lt;ul&gt;
+      &lt;li&gt;It seem to be a bug of UICollectionView, sometime, the when call this method, the isSelected state of the target cell is not changed.&lt;/li&gt;
+      &lt;li&gt;Call UICollectionView.reloadData() first&lt;/li&gt;
+      &lt;li&gt;Then call selectItem:at:position:animation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to draw a bezierPath with some corners round clipped.
+    &lt;ul&gt;
+      &lt;li&gt;Using medthod init(roundedRect: byRounddingCorners:cornderRadii)&lt;/li&gt;
+      &lt;li&gt;You can pass needed corner to UIRectCorner&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to get differences of a file with a history version in git?
+    &lt;ul&gt;
+      &lt;li&gt;Gd #md5OfCommit #filepath&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is the first indexPath always the first indexPath in indexPathsForVisibleItems?
+    &lt;ul&gt;
+      &lt;li&gt;No&lt;/li&gt;
+      &lt;li&gt;So if you want to get the topMost cell that is visible now, you should sort this array first&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to fix bug of calling selectItem:at:position:animation of UICollectionView sometimes does not trigger isSelected state changing? It seem to be a bug of UICollectionView, sometime, the when call this method, the isSelected state of the target cell is not changed. Call UICollectionView.reloadData() first Then call selectItem:at:position:animation How to draw a bezierPath with some corners round clipped. Using medthod init(roundedRect: byRounddingCorners:cornderRadii) You can pass needed corner to UIRectCorner How to get differences of a file with a history version in git? Gd #md5OfCommit #filepath Is the first indexPath always the first indexPath in indexPathsForVisibleItems? No So if you want to get the topMost cell that is visible now, you should sort this array first</summary></entry><entry><title type="html">How to get int part and float part of a price decimal</title><link href="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html" rel="alternate" type="text/html" title="How to get int part and float part of a price decimal" /><published>2018-11-19T00:00:00+08:00</published><updated>2018-11-19T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal</id><content type="html" xml:base="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html">&lt;ul&gt;
   &lt;li&gt;How to get int part and float part of a price decimal?
     &lt;ul&gt;
       &lt;li&gt;Int part: Floor((decimal as NSDecimal).doubleValue)&lt;/li&gt;
@@ -345,49 +370,4 @@
       &lt;li&gt;Write test code&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to write UnitTests New target Add test classes to target Be careful of the FIRST principles Fast Independent Repeatable Self validating Timely Write tests for asynchronous operations Faking objects How to run UnitTests Command + U to run all tests Click icon beside test file to run all tests in the file Click icon beside test function to run the test How to test OC class in UnitTests? Import OC class to the test target Import head file in bridging file Module name can get from framework’s modulemap file Write test code How to test OC framework in UnitTests? If using cocoapods, the UnitTests target also need pod installed New a bridge file, and set bridging file to the file you created Add import &amp;lt;#ModuleName/header.h&amp;gt; Write test code</summary></entry><entry><title type="html">How to use TTS service</title><link href="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html" rel="alternate" type="text/html" title="How to use TTS service" /><published>2018-10-12T00:00:00+08:00</published><updated>2018-10-12T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/12/how-to-use-tts-service</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/12/how-to-use-tts-service.html">&lt;ul&gt;
-  &lt;li&gt;How to use AVSpeechSynthesizer To speak a sentence?
-    &lt;ul&gt;
-      &lt;li&gt;First, new an AVSpeechUtterance with text&lt;/li&gt;
-      &lt;li&gt;Adjust voice, rate, pre pro latency of utterance&lt;/li&gt;
-      &lt;li&gt;New a new AVSpeechSynthesizer or reuse one&lt;/li&gt;
-      &lt;li&gt;Use synthesizer.speak(utterance)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to use Objective-C Framework in Swift?
-    &lt;ul&gt;
-      &lt;li&gt;Drag framework to project&lt;/li&gt;
-      &lt;li&gt;If there is no bridge file
-        &lt;ul&gt;
-          &lt;li&gt;New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file)&lt;/li&gt;
-          &lt;li&gt;Import &amp;lt;Module/MoudleName.h&amp;gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Now the framework can be used&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to use TTS Cloud service of Google?
-    &lt;ul&gt;
-      &lt;li&gt;Enable Google Cloud&lt;/li&gt;
-      &lt;li&gt;New a project&lt;/li&gt;
-      &lt;li&gt;Enable TTS API&lt;/li&gt;
-      &lt;li&gt;Create a  service  account key
-        &lt;ul&gt;
-          &lt;li&gt;No role is needed for the service account&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Download a json version of the key&lt;/li&gt;
-      &lt;li&gt;Set environment variable to use the JSON file(which is your credential)&lt;/li&gt;
-      &lt;li&gt;Install and init Cloud SDK&lt;/li&gt;
-      &lt;li&gt;Use curl to use TTS api to transform text to mp3 and save to local
-        &lt;ul&gt;
-          &lt;li&gt;This is a json file&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Save value for key “audioContent”, and save to a text file&lt;/li&gt;
-      &lt;li&gt;Base64 decode this file to mp3&lt;/li&gt;
-      &lt;li&gt;Play the mp3&lt;/li&gt;
-      &lt;li&gt;So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to use AVSpeechSynthesizer To speak a sentence? First, new an AVSpeechUtterance with text Adjust voice, rate, pre pro latency of utterance New a new AVSpeechSynthesizer or reuse one Use synthesizer.speak(utterance) How to use Objective-C Framework in Swift? Drag framework to project If there is no bridge file New an Objective-C file and add a new bridging file(Xcode will ask you to create a bridging file) Import &amp;lt;Module/MoudleName.h&amp;gt; Now the framework can be used How to use TTS Cloud service of Google? Enable Google Cloud New a project Enable TTS API Create a service account key No role is needed for the service account Download a json version of the key Set environment variable to use the JSON file(which is your credential) Install and init Cloud SDK Use curl to use TTS api to transform text to mp3 and save to local This is a json file Save value for key “audioContent”, and save to a text file Base64 decode this file to mp3 Play the mp3 So if you want to use this service, you must have a server do the previous steps, and then you can download the mp3 file to local and play it</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to write UnitTests New target Add test classes to target Be careful of the FIRST principles Fast Independent Repeatable Self validating Timely Write tests for asynchronous operations Faking objects How to run UnitTests Command + U to run all tests Click icon beside test file to run all tests in the file Click icon beside test function to run the test How to test OC class in UnitTests? Import OC class to the test target Import head file in bridging file Module name can get from framework’s modulemap file Write test code How to test OC framework in UnitTests? If using cocoapods, the UnitTests target also need pod installed New a bridge file, and set bridging file to the file you created Add import &amp;lt;#ModuleName/header.h&amp;gt; Write test code</summary></entry></feed>
