@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-03T22:51:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Is indexPathsForVisibleItems sorted?</title><link href="http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted.html" rel="alternate" type="text/html" title="Is indexPathsForVisibleItems sorted?" /><published>2019-01-03T00:00:00+08:00</published><updated>2019-01-03T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted</id><content type="html" xml:base="http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T08:41:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?</title><link href="http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating.html" rel="alternate" type="text/html" title="Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?" /><published>2019-01-07T00:00:00+08:00</published><updated>2019-01-07T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating</id><content type="html" xml:base="http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating.html">&lt;ul&gt;
+  &lt;li&gt;What is sectionInsect in UICollectionView?
+    &lt;ul&gt;
+      &lt;li&gt;Top is the first cell’s top from bottom of headerView. Be careful, top is not calculated from the top of headerView to previous section.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?
+    &lt;ul&gt;
+      &lt;li&gt;isDecerating is true when scrollView is moving after user lifts finger&lt;/li&gt;
+      &lt;li&gt;So this is not called, when you set UIScrollView’s offset with animation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to implement cell’s size changing animation.
+    &lt;ul&gt;
+      &lt;li&gt;Implement new size in collectionView:collectionViewLayout:sizeForItem:&lt;/li&gt;
+      &lt;li&gt;Call collectionView.collectionViewLayout.invalidateLayout()&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is sectionInsect in UICollectionView? Top is the first cell’s top from bottom of headerView. Be careful, top is not calculated from the top of headerView to previous section. Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView? isDecerating is true when scrollView is moving after user lifts finger So this is not called, when you set UIScrollView’s offset with animation. How to implement cell’s size changing animation. Implement new size in collectionView:collectionViewLayout:sizeForItem: Call collectionView.collectionViewLayout.invalidateLayout()</summary></entry><entry><title type="html">Is indexPathsForVisibleItems sorted?</title><link href="http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted.html" rel="alternate" type="text/html" title="Is indexPathsForVisibleItems sorted?" /><published>2019-01-03T00:00:00+08:00</published><updated>2019-01-03T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted</id><content type="html" xml:base="http://localhost:4000/ios,/uikit/2019/01/03/is-indexPathsForVisibleItems-sorted.html">&lt;ul&gt;
   &lt;li&gt;How to fix bug of calling selectItem:at:position:animation of UICollectionView sometimes does not trigger isSelected state changing?
     &lt;ul&gt;
       &lt;li&gt;It seem to be a bug of UICollectionView, sometime, the when call this method, the isSelected state of the target cell is not changed.&lt;/li&gt;
@@ -323,51 +341,4 @@
       &lt;li&gt;Dic&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to install Hackintonish Download system install pkg Create install disk through Ubeast Configure bios setting for PC Insert disk to usb 2.0 port Boot from usb Install Boot from usb Install on disk Boot from usb Install on disk Finish configure MultiBeast Be careful with graphics and usb configuration Reboot into mac OS How to encode url and decode url Encode Str.addingPercentEncoding(withAllowedCharset: .urlQueryAllowed) Decode Str.removingPercentEncoding How to copy text to clipboard, and get text from clipboard UIPasteboard.general.string = “xx” You can use setValue:ForType:to share info with other app Other app can use value(forPasteboardType:) to get the value You can use setData:ForType: to share UIIMage or NSData with other app What type of data if supported to save in the clipboard? String NSData Image(through data) Array Dic</summary></entry><entry><title type="html">How to write UnitTests in Xcode</title><link href="http://localhost:4000/ios,/xcode/2018/10/15/how-to-write-unittests-in-Xcode.html" rel="alternate" type="text/html" title="How to write UnitTests in Xcode" /><published>2018-10-15T00:00:00+08:00</published><updated>2018-10-15T00:00:00+08:00</updated><id>http://localhost:4000/ios,/xcode/2018/10/15/how-to-write-unittests-in-Xcode</id><content type="html" xml:base="http://localhost:4000/ios,/xcode/2018/10/15/how-to-write-unittests-in-Xcode.html">&lt;ul&gt;
-  &lt;li&gt;How to write UnitTests
-    &lt;ul&gt;
-      &lt;li&gt;New target&lt;/li&gt;
-      &lt;li&gt;Add test classes to target&lt;/li&gt;
-      &lt;li&gt;Be careful of the FIRST principles
-        &lt;ul&gt;
-          &lt;li&gt;Fast&lt;/li&gt;
-          &lt;li&gt;Independent&lt;/li&gt;
-          &lt;li&gt;Repeatable&lt;/li&gt;
-          &lt;li&gt;Self validating&lt;/li&gt;
-          &lt;li&gt;Timely&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Write tests for asynchronous operations&lt;/li&gt;
-      &lt;li&gt;Faking objects&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to run UnitTests
-    &lt;ul&gt;
-      &lt;li&gt;Command + U to run all tests&lt;/li&gt;
-      &lt;li&gt;Click icon beside test file to run all tests in the file&lt;/li&gt;
-      &lt;li&gt;Click icon beside test function to run the test&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to test OC class in UnitTests?
-    &lt;ul&gt;
-      &lt;li&gt;Import OC class to the test target&lt;/li&gt;
-      &lt;li&gt;Import head file in bridging file
-        &lt;ul&gt;
-          &lt;li&gt;Module name can get from framework’s modulemap file&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Write test code&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to test OC framework in UnitTests?
-    &lt;ul&gt;
-      &lt;li&gt;If using cocoapods, the UnitTests target also need pod installed&lt;/li&gt;
-      &lt;li&gt;New a bridge file, and set bridging file to the file you created
-        &lt;ul&gt;
-          &lt;li&gt;Add import &amp;lt;#ModuleName/header.h&amp;gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Write test code&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to write UnitTests New target Add test classes to target Be careful of the FIRST principles Fast Independent Repeatable Self validating Timely Write tests for asynchronous operations Faking objects How to run UnitTests Command + U to run all tests Click icon beside test file to run all tests in the file Click icon beside test function to run the test How to test OC class in UnitTests? Import OC class to the test target Import head file in bridging file Module name can get from framework’s modulemap file Write test code How to test OC framework in UnitTests? If using cocoapods, the UnitTests target also need pod installed New a bridge file, and set bridging file to the file you created Add import &amp;lt;#ModuleName/header.h&amp;gt; Write test code</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to install Hackintonish Download system install pkg Create install disk through Ubeast Configure bios setting for PC Insert disk to usb 2.0 port Boot from usb Install Boot from usb Install on disk Boot from usb Install on disk Finish configure MultiBeast Be careful with graphics and usb configuration Reboot into mac OS How to encode url and decode url Encode Str.addingPercentEncoding(withAllowedCharset: .urlQueryAllowed) Decode Str.removingPercentEncoding How to copy text to clipboard, and get text from clipboard UIPasteboard.general.string = “xx” You can use setValue:ForType:to share info with other app Other app can use value(forPasteboardType:) to get the value You can use setData:ForType: to share UIIMage or NSData with other app What type of data if supported to save in the clipboard? String NSData Image(through data) Array Dic</summary></entry></feed>
