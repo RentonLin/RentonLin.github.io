@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T08:41:58+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?</title><link href="http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating.html" rel="alternate" type="text/html" title="Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?" /><published>2019-01-07T00:00:00+08:00</published><updated>2019-01-07T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating</id><content type="html" xml:base="http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-19T11:00:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to clip web page to PDF on iPhone</title><link href="http://localhost:4000/iphone/2019/01/19/how-to-clip-web-page-on-iPhone.html" rel="alternate" type="text/html" title="How to clip web page to PDF on iPhone" /><published>2019-01-19T00:00:00+08:00</published><updated>2019-01-19T00:00:00+08:00</updated><id>http://localhost:4000/iphone/2019/01/19/how-to-clip-web-page-on-iPhone</id><content type="html" xml:base="http://localhost:4000/iphone/2019/01/19/how-to-clip-web-page-on-iPhone.html">&lt;ul&gt;
+  &lt;li&gt;How to clip web on iPhone?
+    &lt;ul&gt;
+      &lt;li&gt;On Chrome
+        &lt;ul&gt;
+          &lt;li&gt;Install PDF Viewer&lt;/li&gt;
+          &lt;li&gt;Tap share button on top right&lt;/li&gt;
+          &lt;li&gt;Tap “Import to PDF Viewer”&lt;/li&gt;
+          &lt;li&gt;Save to open pdf viewer&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;On Safari
+        &lt;ul&gt;
+          &lt;li&gt;Tap share button on bottom bar&lt;/li&gt;
+          &lt;li&gt;Tap “Import to PDF Viewer”
+            &lt;ul&gt;
+              &lt;li&gt;Save and open pd viewer&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Or tap “Create PDF”&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;How to enum an enum?
+        &lt;ul&gt;
+          &lt;li&gt;Make enum conform protocol CaseIterable&lt;/li&gt;
+          &lt;li&gt;Then you can call allCases on enum type&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;How to change [(key, value)] to dictionary?
+        &lt;ul&gt;
+          &lt;li&gt;Dictionary(uniqueKeyWithValues: [(key, value)])&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to clip web on iPhone? On Chrome Install PDF Viewer Tap share button on top right Tap “Import to PDF Viewer” Save to open pdf viewer On Safari Tap share button on bottom bar Tap “Import to PDF Viewer” Save and open pd viewer Or tap “Create PDF” How to enum an enum? Make enum conform protocol CaseIterable Then you can call allCases on enum type How to change [(key, value)] to dictionary? Dictionary(uniqueKeyWithValues: [(key, value)])</summary></entry><entry><title type="html">Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?</title><link href="http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating.html" rel="alternate" type="text/html" title="Will isDecerating be true when you call selectItemAt:postion:animated: of UIScrollView?" /><published>2019-01-07T00:00:00+08:00</published><updated>2019-01-07T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating</id><content type="html" xml:base="http://localhost:4000/ios,/uiscrollview/2019/01/07/what-is-isDecerating.html">&lt;ul&gt;
   &lt;li&gt;What is sectionInsect in UICollectionView?
     &lt;ul&gt;
       &lt;li&gt;Top is the first cell’s top from bottom of headerView. Be careful, top is not calculated from the top of headerView to previous section.&lt;/li&gt;
@@ -286,59 +321,4 @@
       &lt;li&gt;Copy -r #SourceFolder #TargetFolder&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to do localization Strings New localizable.strings Add localization Use NSLocalizedString(#key, #comment) Use NSLocalizedStringForTable to specify a strings file to read strings Image Add localization Set image for different languages Xib, storyboard Add localization Adjust text and layout What will you get if you run 1.0 / 0.0? Get infinite When you transform infinite to Int, it will crash What is differences of Int in iPhone5 and iPhone 5s? Int is Int32 in iPhone5 Int is Int64 in iPhone5s What will happen if you pass Int64 to Int? In x64 devices, it’s ok, they are the same In armv7 devices, it will crash How to copy a folder in Linux Copy -r #SourceFolder #TargetFolder</summary></entry><entry><title type="html">How to use pasteboard to share info between apps</title><link href="http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app.html" rel="alternate" type="text/html" title="How to use pasteboard to share info between apps" /><published>2018-10-16T00:00:00+08:00</published><updated>2018-10-16T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app</id><content type="html" xml:base="http://localhost:4000/ios/2018/10/16/how-to-use-pasteboard-to-share-info-with-other-app.html">&lt;ul&gt;
-  &lt;li&gt;How to install Hackintonish
-    &lt;ul&gt;
-      &lt;li&gt;Download system install pkg&lt;/li&gt;
-      &lt;li&gt;Create install disk through Ubeast&lt;/li&gt;
-      &lt;li&gt;Configure bios setting for PC&lt;/li&gt;
-      &lt;li&gt;Insert disk to usb 2.0 port&lt;/li&gt;
-      &lt;li&gt;Boot from usb&lt;/li&gt;
-      &lt;li&gt;Install&lt;/li&gt;
-      &lt;li&gt;Boot from usb&lt;/li&gt;
-      &lt;li&gt;Install on disk&lt;/li&gt;
-      &lt;li&gt;Boot from usb&lt;/li&gt;
-      &lt;li&gt;Install on disk&lt;/li&gt;
-      &lt;li&gt;Finish configure MultiBeast
-        &lt;ul&gt;
-          &lt;li&gt;Be careful with graphics and usb configuration&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Reboot into mac OS&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to encode url and decode url
-    &lt;ul&gt;
-      &lt;li&gt;Encode
-        &lt;ul&gt;
-          &lt;li&gt;Str.addingPercentEncoding(withAllowedCharset: .urlQueryAllowed)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Decode
-        &lt;ul&gt;
-          &lt;li&gt;Str.removingPercentEncoding&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to copy text to clipboard, and get text from clipboard
-    &lt;ul&gt;
-      &lt;li&gt;UIPasteboard.general.string = “xx”&lt;/li&gt;
-      &lt;li&gt;You can use setValue:ForType:to share info with other app
-        &lt;ul&gt;
-          &lt;li&gt;Other app can use value(forPasteboardType:) to get the value&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;You can use setData:ForType: to share UIIMage or NSData with other app&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What type of data if supported to save in the clipboard?
-    &lt;ul&gt;
-      &lt;li&gt;String&lt;/li&gt;
-      &lt;li&gt;NSData&lt;/li&gt;
-      &lt;li&gt;Image(through data)&lt;/li&gt;
-      &lt;li&gt;Array&lt;/li&gt;
-      &lt;li&gt;Dic&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to install Hackintonish Download system install pkg Create install disk through Ubeast Configure bios setting for PC Insert disk to usb 2.0 port Boot from usb Install Boot from usb Install on disk Boot from usb Install on disk Finish configure MultiBeast Be careful with graphics and usb configuration Reboot into mac OS How to encode url and decode url Encode Str.addingPercentEncoding(withAllowedCharset: .urlQueryAllowed) Decode Str.removingPercentEncoding How to copy text to clipboard, and get text from clipboard UIPasteboard.general.string = “xx” You can use setValue:ForType:to share info with other app Other app can use value(forPasteboardType:) to get the value You can use setData:ForType: to share UIIMage or NSData with other app What type of data if supported to save in the clipboard? String NSData Image(through data) Array Dic</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to do localization Strings New localizable.strings Add localization Use NSLocalizedString(#key, #comment) Use NSLocalizedStringForTable to specify a strings file to read strings Image Add localization Set image for different languages Xib, storyboard Add localization Adjust text and layout What will you get if you run 1.0 / 0.0? Get infinite When you transform infinite to Int, it will crash What is differences of Int in iPhone5 and iPhone 5s? Int is Int32 in iPhone5 Int is Int64 in iPhone5s What will happen if you pass Int64 to Int? In x64 devices, it’s ok, they are the same In armv7 devices, it will crash How to copy a folder in Linux Copy -r #SourceFolder #TargetFolder</summary></entry></feed>
