@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-24T23:27:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to initial an array with default value of n zero</title><link href="http://localhost:4000/ios/2019/01/24/How-to-initial-an-array-with-several-default-value.html" rel="alternate" type="text/html" title="How to initial an array with default value of n zero" /><published>2019-01-24T00:00:00+08:00</published><updated>2019-01-24T00:00:00+08:00</updated><id>http://localhost:4000/ios/2019/01/24/How-to-initial-an-array-with-several-default-value</id><content type="html" xml:base="http://localhost:4000/ios/2019/01/24/How-to-initial-an-array-with-several-default-value.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-14T23:48:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Can you supply subscriptions with different access level?</title><link href="http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level.html" rel="alternate" type="text/html" title="Can you supply subscriptions with different access level?" /><published>2019-02-14T00:00:00+08:00</published><updated>2019-02-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level</id><content type="html" xml:base="http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level.html">&lt;ul&gt;
+  &lt;li&gt;Can you supply subscriptions with different access level?
+    &lt;ul&gt;
+      &lt;li&gt;Yes&lt;/li&gt;
+      &lt;li&gt;A subscription group can contain several subscription levels&lt;/li&gt;
+      &lt;li&gt;Each level can have several subscriptions&lt;/li&gt;
+      &lt;li&gt;You can make different levels having different level of accessible contents&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When user switch between different level in a subscription group, what will happen?
+    &lt;ul&gt;
+      &lt;li&gt;If this is an upgrade , user need pay the high price - lower price and immedietely upgrades to high level&lt;/li&gt;
+      &lt;li&gt;When downgrade, it will take effect on the next period&lt;/li&gt;
+      &lt;li&gt;When in the same level, if this is in the same level, and the period is the same, the change takes effect immedietely, or next period if not.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Can you make one of your subscription not available in some country?
+    &lt;ul&gt;
+      &lt;li&gt;No&lt;/li&gt;
+      &lt;li&gt;You can make your app not available in some country&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is escaping for closure in Swift?
+    &lt;ul&gt;
+      &lt;li&gt;When a closure it passed to a function, and can be called after function returned, the closure should be marked as @escaping.&lt;/li&gt;
+      &lt;li&gt;For example, you pass a closure to a function of an object, and the object stores the closure as variable for future calling.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Can you supply subscriptions with different access level? Yes A subscription group can contain several subscription levels Each level can have several subscriptions You can make different levels having different level of accessible contents When user switch between different level in a subscription group, what will happen? If this is an upgrade , user need pay the high price - lower price and immedietely upgrades to high level When downgrade, it will take effect on the next period When in the same level, if this is in the same level, and the period is the same, the change takes effect immedietely, or next period if not. Can you make one of your subscription not available in some country? No You can make your app not available in some country What is escaping for closure in Swift? When a closure it passed to a function, and can be called after function returned, the closure should be marked as @escaping. For example, you pass a closure to a function of an object, and the object stores the closure as variable for future calling.</summary></entry><entry><title type="html">How to initial an array with default value of n zero</title><link href="http://localhost:4000/ios/2019/01/24/How-to-initial-an-array-with-several-default-value.html" rel="alternate" type="text/html" title="How to initial an array with default value of n zero" /><published>2019-01-24T00:00:00+08:00</published><updated>2019-01-24T00:00:00+08:00</updated><id>http://localhost:4000/ios/2019/01/24/How-to-initial-an-array-with-several-default-value</id><content type="html" xml:base="http://localhost:4000/ios/2019/01/24/How-to-initial-an-array-with-several-default-value.html">&lt;ul&gt;
   &lt;li&gt;How to initial an array with default value of n zero?
     &lt;ul&gt;
       &lt;li&gt;Init(repeating: #Value, count: #n)&lt;/li&gt;
@@ -259,37 +287,4 @@
       &lt;li&gt;All the js files are refreshed in hard refresh&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to map a dictionary to another dictionary? You can write an extension, new a new dictionary Get the transform block And set key value to the new dictionary What is the protocol that make the class object able to change to string? CustomStringConvertible This is a protocol with one method: description This is not only for debug print, is also used for change objects to strings, like to a url What is the debug version protocol that make the class object able to change to string? CustomDebugStringConvertible Swift works for any type, but it is discouraged to use this directly How should you return contents of different languages according to client requests? Respect accept-language in http header How should throw exceptions and how should you write method that can throw? Throw error What is the differences between normal refresh and hard refresh on frontend? All the js files are refreshed in hard refresh</summary></entry><entry><title type="html">How to edit files in MacOS</title><link href="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html" rel="alternate" type="text/html" title="How to edit files in MacOS" /><published>2018-10-25T00:00:00+08:00</published><updated>2018-10-25T00:00:00+08:00</updated><id>http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS</id><content type="html" xml:base="http://localhost:4000/macos/2018/10/25/how-to-edit-file-in-Mac-OS.html">&lt;ul&gt;
-  &lt;li&gt;How to do localization of app name, privacy text?
-    &lt;ul&gt;
-      &lt;li&gt;Get string keys&lt;/li&gt;
-      &lt;li&gt;Localize InfoPlist.String&lt;/li&gt;
-      &lt;li&gt;Input key = “value”;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Where are the keys of the privacy keys?
-    &lt;ul&gt;
-      &lt;li&gt;https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What are the two different ways to declare privacy descriptions?
-    &lt;ul&gt;
-      &lt;li&gt;Use keys in https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html&lt;/li&gt;
-      &lt;li&gt;Or use Privacy-xxxxxx&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to perform choose path action, and get a path?
-    &lt;ul&gt;
-      &lt;li&gt;New Panel&lt;/li&gt;
-      &lt;li&gt;Config whether file, folder can be selected&lt;/li&gt;
-      &lt;li&gt;Present&lt;/li&gt;
-      &lt;li&gt;Check action, if action is ok, get url from property of panel&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to write file in folder that user selected?
-    &lt;ul&gt;
-      &lt;li&gt;Use panel to select a folder&lt;/li&gt;
-      &lt;li&gt;Set com.apple.security.files.user-selected.read-write to true&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to do localization of app name, privacy text? Get string keys Localize InfoPlist.String Input key = “value”; Where are the keys of the privacy keys? https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html What are the two different ways to declare privacy descriptions? Use keys in https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html Or use Privacy-xxxxxx How to perform choose path action, and get a path? New Panel Config whether file, folder can be selected Present Check action, if action is ok, get url from property of panel How to write file in folder that user selected? Use panel to select a folder Set com.apple.security.files.user-selected.read-write to true</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to map a dictionary to another dictionary? You can write an extension, new a new dictionary Get the transform block And set key value to the new dictionary What is the protocol that make the class object able to change to string? CustomStringConvertible This is a protocol with one method: description This is not only for debug print, is also used for change objects to strings, like to a url What is the debug version protocol that make the class object able to change to string? CustomDebugStringConvertible Swift works for any type, but it is discouraged to use this directly How should you return contents of different languages according to client requests? Respect accept-language in http header How should throw exceptions and how should you write method that can throw? Throw error What is the differences between normal refresh and hard refresh on frontend? All the js files are refreshed in hard refresh</summary></entry></feed>
