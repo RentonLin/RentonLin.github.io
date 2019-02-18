@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-14T23:48:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">Can you supply subscriptions with different access level?</title><link href="http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level.html" rel="alternate" type="text/html" title="Can you supply subscriptions with different access level?" /><published>2019-02-14T00:00:00+08:00</published><updated>2019-02-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level</id><content type="html" xml:base="http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-18T23:15:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">When using Kingfisher, how to process image before set image?</title><link href="http://localhost:4000/ios,/kingfisher,/swift/2019/02/18/How-to-process-image-before-setting-to-imageView-when-using-Kingfisher.html" rel="alternate" type="text/html" title="When using Kingfisher, how to process image before set image?" /><published>2019-02-18T00:00:00+08:00</published><updated>2019-02-18T00:00:00+08:00</updated><id>http://localhost:4000/ios,/kingfisher,/swift/2019/02/18/How-to-process-image-before-setting-to-imageView-when-using-Kingfisher</id><content type="html" xml:base="http://localhost:4000/ios,/kingfisher,/swift/2019/02/18/How-to-process-image-before-setting-to-imageView-when-using-Kingfisher.html">&lt;ul&gt;
+  &lt;li&gt;When using Kingfisher, how to process image before set image?
+    &lt;ul&gt;
+      &lt;li&gt;You can supply processor in options&lt;/li&gt;
+      &lt;li&gt;The final image is cached and returned&lt;/li&gt;
+      &lt;li&gt;You can create your own processors&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When using imageProcessor in Kingfisher, which image will be cached?
+    &lt;ul&gt;
+      &lt;li&gt;Default the final image will be cached.&lt;/li&gt;
+      &lt;li&gt;But you can add .cacheOrigin to cache origin image.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When using imageProcessor in Kingfisher, what should you do if you want to cache origin image?
+    &lt;ul&gt;
+      &lt;li&gt;Add .cacheOrigin option&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to enumerate from 10 to 0, 0 included or not included?
+    &lt;ul&gt;
+      &lt;li&gt;Not include the end
+        &lt;ul&gt;
+          &lt;li&gt;For x in stride(from: 1 to: 10, by: 1)
+            &lt;ul&gt;
+              &lt;li&gt;0…9&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Maybe include the end
+        &lt;ul&gt;
+          &lt;li&gt;For x in stride(from:1 through: 10, by: 1)
+            &lt;ul&gt;
+              &lt;li&gt;0…10&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">When using Kingfisher, how to process image before set image? You can supply processor in options The final image is cached and returned You can create your own processors When using imageProcessor in Kingfisher, which image will be cached? Default the final image will be cached. But you can add .cacheOrigin to cache origin image. When using imageProcessor in Kingfisher, what should you do if you want to cache origin image? Add .cacheOrigin option How to enumerate from 10 to 0, 0 included or not included? Not include the end For x in stride(from: 1 to: 10, by: 1) 0…9 Maybe include the end For x in stride(from:1 through: 10, by: 1) 0…10</summary></entry><entry><title type="html">Can you supply subscriptions with different access level?</title><link href="http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level.html" rel="alternate" type="text/html" title="Can you supply subscriptions with different access level?" /><published>2019-02-14T00:00:00+08:00</published><updated>2019-02-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level</id><content type="html" xml:base="http://localhost:4000/ios,/iap,/swift/2019/02/14/Can-you-supply-subscriptions-with-different-access-level.html">&lt;ul&gt;
   &lt;li&gt;Can you supply subscriptions with different access level?
     &lt;ul&gt;
       &lt;li&gt;Yes&lt;/li&gt;
@@ -251,40 +292,4 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to determine where our user is from? Organic or not? From which ads platform? Form which campaign? Enable IDFA Track Install AppsFlyerSDK Set appsflyer delegate In the delegate method, you can get the values about current user Available keys and values are here https://support.appsflyer.com/hc/en-us/articles/207032096-Deferred-Deep-Linking-Getting-the-Conversion-Data#ResponseKeys</summary></entry><entry><title type="html">How to distinguish client languages from http request</title><link href="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html" rel="alternate" type="text/html" title="How to distinguish client languages from http request" /><published>2018-11-05T00:00:00+08:00</published><updated>2018-11-05T00:00:00+08:00</updated><id>http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages</id><content type="html" xml:base="http://localhost:4000/ios,/backend/2018/11/05/how-to-distinguish-client-languages.html">&lt;ul&gt;
-  &lt;li&gt;How to map a dictionary to another dictionary?
-    &lt;ul&gt;
-      &lt;li&gt;You can write an extension, new a new dictionary&lt;/li&gt;
-      &lt;li&gt;Get the transform block&lt;/li&gt;
-      &lt;li&gt;And set key value to the new dictionary&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is the protocol that make the class object able to change to string?
-    &lt;ul&gt;
-      &lt;li&gt;CustomStringConvertible&lt;/li&gt;
-      &lt;li&gt;This is a protocol with one method: description&lt;/li&gt;
-      &lt;li&gt;This is not only for debug print, is also used for change objects to strings, like to a url&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is the debug version protocol that make the class object able to change to string?
-    &lt;ul&gt;
-      &lt;li&gt;CustomDebugStringConvertible&lt;/li&gt;
-      &lt;li&gt;Swift works for any type, but it is discouraged to use this directly&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How should you return contents of different languages according to client requests?
-    &lt;ul&gt;
-      &lt;li&gt;Respect accept-language in http header&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How should throw exceptions and how should you write method that can throw?
-    &lt;ul&gt;
-      &lt;li&gt;Throw error&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;What is the differences between normal refresh and hard refresh on frontend?
-    &lt;ul&gt;
-      &lt;li&gt;All the js files are refreshed in hard refresh&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to map a dictionary to another dictionary? You can write an extension, new a new dictionary Get the transform block And set key value to the new dictionary What is the protocol that make the class object able to change to string? CustomStringConvertible This is a protocol with one method: description This is not only for debug print, is also used for change objects to strings, like to a url What is the debug version protocol that make the class object able to change to string? CustomDebugStringConvertible Swift works for any type, but it is discouraged to use this directly How should you return contents of different languages according to client requests? Respect accept-language in http header How should throw exceptions and how should you write method that can throw? Throw error What is the differences between normal refresh and hard refresh on frontend? All the js files are refreshed in hard refresh</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to determine where our user is from? Organic or not? From which ads platform? Form which campaign? Enable IDFA Track Install AppsFlyerSDK Set appsflyer delegate In the delegate method, you can get the values about current user Available keys and values are here https://support.appsflyer.com/hc/en-us/articles/207032096-Deferred-Deep-Linking-Getting-the-Conversion-Data#ResponseKeys</summary></entry></feed>
