@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-19T23:10:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">How to test events on production environment</title><link href="http://localhost:4000/ios,/ads/2019/02/19/How-to-test-events-on-production-environment.html" rel="alternate" type="text/html" title="How to test events on production environment" /><published>2019-02-19T00:00:00+08:00</published><updated>2019-02-19T00:00:00+08:00</updated><id>http://localhost:4000/ios,/ads/2019/02/19/How-to-test-events-on-production-environment</id><content type="html" xml:base="http://localhost:4000/ios,/ads/2019/02/19/How-to-test-events-on-production-environment.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-07T08:06:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">What is the difference between subscribeOn and observeOn</title><link href="http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn.html" rel="alternate" type="text/html" title="What is the difference between subscribeOn and observeOn" /><published>2019-03-06T00:00:00+08:00</published><updated>2019-03-06T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn.html">&lt;ul&gt;
+  &lt;li&gt;What is the difference between subscribeOn and observeOn?
+    &lt;ul&gt;
+      &lt;li&gt;subscribedOn makes the subscribeBlock run on certain scheduler
+        &lt;ul&gt;
+          &lt;li&gt;In which events are generated&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;observeOn makes the observeBlock run on certain scheduler
+        &lt;ul&gt;
+          &lt;li&gt;In which user reacts to the elements generated&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to use dispatchQueue in Swift? How to get certain priority queue?
+    &lt;ul&gt;
+      &lt;li&gt;DispatchQueue.main.sync/Async()&lt;/li&gt;
+      &lt;li&gt;DispatchQueue.global(qos: DispatchQos.QoSClass)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is the level of QoSClass?
+    &lt;ul&gt;
+      &lt;li&gt;userInteractive&lt;/li&gt;
+      &lt;li&gt;userInitiated&lt;/li&gt;
+      &lt;li&gt;Default&lt;/li&gt;
+      &lt;li&gt;Utility&lt;/li&gt;
+      &lt;li&gt;Background&lt;/li&gt;
+      &lt;li&gt;unspecified&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How to transform range to array?
+    &lt;ul&gt;
+      &lt;li&gt;Array(0..&amp;lt;10)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">What is the difference between subscribeOn and observeOn? subscribedOn makes the subscribeBlock run on certain scheduler In which events are generated observeOn makes the observeBlock run on certain scheduler In which user reacts to the elements generated How to use dispatchQueue in Swift? How to get certain priority queue? DispatchQueue.main.sync/Async() DispatchQueue.global(qos: DispatchQos.QoSClass) What is the level of QoSClass? userInteractive userInitiated Default Utility Background unspecified How to transform range to array? Array(0..&amp;lt;10)</summary></entry><entry><title type="html">How to test events on production environment</title><link href="http://localhost:4000/ios,/ads/2019/02/19/How-to-test-events-on-production-environment.html" rel="alternate" type="text/html" title="How to test events on production environment" /><published>2019-02-19T00:00:00+08:00</published><updated>2019-02-19T00:00:00+08:00</updated><id>http://localhost:4000/ios,/ads/2019/02/19/How-to-test-events-on-production-environment</id><content type="html" xml:base="http://localhost:4000/ios,/ads/2019/02/19/How-to-test-events-on-production-environment.html">&lt;ul&gt;
   &lt;li&gt;How to test events on production environment?
     &lt;ul&gt;
       &lt;li&gt;Use Appsflyer, and test on whitelist devices.&lt;/li&gt;
@@ -267,36 +303,4 @@
       &lt;li&gt;LeftEdgeleftxxxxxxxxx.rightRightEdge&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to get int part and float part of a price decimal? Int part: Floor((decimal as NSDecimal).doubleValue) Decimal part: (decimall * Decimal(100)).IntValue - (Int part) * 100 How to implement price with int on left and decimal part on right top? Get different parts of the decimal Use formater to change integer to price and delete .00 at the end Place “.” before decimal part * 100 Use two labels to represent them Adjust constraints Make a container view Add the two views as subviews Make left.left.equalToSuperview Make right.right.equalToSuperview Make left.right.equalTo(right.left) Make container.centerX.equalToSuperView Make conatiner.left.greaterOrEqualTo(superView) Make right part’s compressionResistancePriority to low Make right part adjust fontSizeWithWidth In this way when the int part is too big ,the right part will be compressed to small fonts LeftEdge left.right RightEdge LeftEdgeleftxxxxxxxxx.rightRightEdge</summary></entry><entry><title type="html">How to add an imageView to collectionView as background</title><link href="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html" rel="alternate" type="text/html" title="How to add an imageView to collectionView as background" /><published>2018-11-14T00:00:00+08:00</published><updated>2018-11-14T00:00:00+08:00</updated><id>http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background</id><content type="html" xml:base="http://localhost:4000/ios,/uicollectionview,/calayer/2018/11/14/how-to-add-imageView-to-collectionView-as-background.html">&lt;ul&gt;
-  &lt;li&gt;What are the three ways to track where is the user from?
-    &lt;ul&gt;
-      &lt;li&gt;Idfa and cookie&lt;/li&gt;
-      &lt;li&gt;Google play url&lt;/li&gt;
-      &lt;li&gt;Common info
-        &lt;ul&gt;
-          &lt;li&gt;Device id&lt;/li&gt;
-          &lt;li&gt;Mac address&lt;/li&gt;
-          &lt;li&gt;IP address&lt;/li&gt;
-          &lt;li&gt;Device name&lt;/li&gt;
-          &lt;li&gt;Wifi mac address&lt;/li&gt;
-          &lt;li&gt;Region&lt;/li&gt;
-          &lt;li&gt;Local&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to add a view to collectionView’s background and send to back?
-    &lt;ul&gt;
-      &lt;li&gt;The view should be userInteractive set to false&lt;/li&gt;
-      &lt;li&gt;Add it as subview&lt;/li&gt;
-      &lt;li&gt;Send back&lt;/li&gt;
-      &lt;li&gt;Make layer’s zposition to negative value&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to set substring’s attributes for an attributes string?
-    &lt;ul&gt;
-      &lt;li&gt;In SwifAttributed string, get range of substring, check if it is NSNotfound&lt;/li&gt;
-      &lt;li&gt;If not, set(style: forRange:)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">What are the three ways to track where is the user from? Idfa and cookie Google play url Common info Device id Mac address IP address Device name Wifi mac address Region Local How to add a view to collectionView’s background and send to back? The view should be userInteractive set to false Add it as subview Send back Make layer’s zposition to negative value How to set substring’s attributes for an attributes string? In SwifAttributed string, get range of substring, check if it is NSNotfound If not, set(style: forRange:)</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to get int part and float part of a price decimal? Int part: Floor((decimal as NSDecimal).doubleValue) Decimal part: (decimall * Decimal(100)).IntValue - (Int part) * 100 How to implement price with int on left and decimal part on right top? Get different parts of the decimal Use formater to change integer to price and delete .00 at the end Place “.” before decimal part * 100 Use two labels to represent them Adjust constraints Make a container view Add the two views as subviews Make left.left.equalToSuperview Make right.right.equalToSuperview Make left.right.equalTo(right.left) Make container.centerX.equalToSuperView Make conatiner.left.greaterOrEqualTo(superView) Make right part’s compressionResistancePriority to low Make right part adjust fontSizeWithWidth In this way when the int part is too big ,the right part will be compressed to small fonts LeftEdge left.right RightEdge LeftEdgeleftxxxxxxxxx.rightRightEdge</summary></entry></feed>
