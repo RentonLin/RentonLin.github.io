@@ -1,4 +1,315 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-07T08:06:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">What is the difference between subscribeOn and observeOn</title><link href="http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn.html" rel="alternate" type="text/html" title="What is the difference between subscribeOn and observeOn" /><published>2019-03-06T00:00:00+08:00</published><updated>2019-03-06T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-13T09:21:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ToraceOn Studio</title><subtitle>Record</subtitle><entry><title type="html">标准日本语中级No.12课笔记</title><link href="http://localhost:4000/japanese/2019/04/13/Japanese-middle-no-12.html" rel="alternate" type="text/html" title="标准日本语中级No.12课笔记" /><published>2019-04-13T00:00:00+08:00</published><updated>2019-04-13T00:00:00+08:00</updated><id>http://localhost:4000/japanese/2019/04/13/Japanese-middle-no-12</id><content type="html" xml:base="http://localhost:4000/japanese/2019/04/13/Japanese-middle-no-12.html">&lt;ul&gt;
+  &lt;li&gt;表达：随着年龄的增长，考虑事情的方式也变了
+    &lt;ul&gt;
+      &lt;li&gt;年を取るとともに、考え方も変わっている&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：登山
+    &lt;ul&gt;
+      &lt;li&gt;山に登る&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：同行する・どうこうする
+    &lt;ul&gt;
+      &lt;li&gt;目上
+        &lt;ul&gt;
+          &lt;li&gt;社長が部下をどうこうする&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;目下
+        &lt;ul&gt;
+          &lt;li&gt;部下が社長に同行する&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：せっかく
+    &lt;ul&gt;
+      &lt;li&gt;名词
+        &lt;ul&gt;
+          &lt;li&gt;せっかくの努力が水の泡になった&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;副词
+        &lt;ul&gt;
+          &lt;li&gt;せっかくここ来たんのに、店が開かなかった&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：天气都有哪些词
+    &lt;ul&gt;
+      &lt;li&gt;晴れる&lt;/li&gt;
+      &lt;li&gt;雪
+        &lt;ul&gt;
+          &lt;li&gt;雪が降る&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;雨
+        &lt;ul&gt;
+          &lt;li&gt;雨が降る&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;曇る&lt;/li&gt;
+      &lt;li&gt;霧
+        &lt;ul&gt;
+          &lt;li&gt;霧がかかる&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;稲妻
+        &lt;ul&gt;
+          &lt;li&gt;稲妻が光る&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：改めて
+    &lt;ul&gt;
+      &lt;li&gt;之后
+        &lt;ul&gt;
+          &lt;li&gt;改めて参ります・まいります&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;重新
+        &lt;ul&gt;
+          &lt;li&gt;改めて自己紹介する&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：耳・目・口・手にする
+    &lt;ul&gt;
+      &lt;li&gt;聞く&lt;/li&gt;
+      &lt;li&gt;みる&lt;/li&gt;
+      &lt;li&gt;食べる&lt;/li&gt;
+      &lt;li&gt;もつ&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：断る
+    &lt;ul&gt;
+      &lt;li&gt;お断りします&lt;/li&gt;
+      &lt;li&gt;断っておくが、わたしは絶対行かないだ&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;接续：〜もの（ん）です
+    &lt;ul&gt;
+      &lt;li&gt;当作是一个体言&lt;/li&gt;
+      &lt;li&gt;女の心は変わるものだ
+        &lt;ul&gt;
+          &lt;li&gt;V普通形+もの（ん）です&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;薬は苦いものだ
+        &lt;ul&gt;
+          &lt;li&gt;A1+もの（ん）です&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;綺麗なものだ
+        &lt;ul&gt;
+          &lt;li&gt;A2＋な＋もの（ん）です&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;使用场景
+        &lt;ul&gt;
+          &lt;li&gt;感叹&lt;/li&gt;
+          &lt;li&gt;劝说&lt;/li&gt;
+          &lt;li&gt;回忆过去&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：果然，不实际来的话，很多事情是不知道的
+    &lt;ul&gt;
+      &lt;li&gt;やばり、実際に来てみないと、わからないものがあるものですね&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：因为是大阪，我还以为会听到更多的诸如“おおきに”和“あかん”之类的大孤方言，但实际上很少听到
+    &lt;ul&gt;
+      &lt;li&gt;大阪だから、「おおきに」とか「あかん」とか、もっと大阪の方言が聞けると思っていたんですか、あまり耳にしませんでした&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：那么说的话，确实是那样的
+    &lt;ul&gt;
+      &lt;li&gt;そういえば、そうですね&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;辨析：聞ける　vs 聞こえる、見える　vs 見られる
+    &lt;ul&gt;
+      &lt;li&gt;聞こえる、見える偏向能力上的行不行
+        &lt;ul&gt;
+          &lt;li&gt;耳朵能不能听得到&lt;/li&gt;
+          &lt;li&gt;眼睛能不能看得到&lt;/li&gt;
+          &lt;li&gt;聞こえる？&lt;/li&gt;
+          &lt;li&gt;なに？&lt;/li&gt;
+          &lt;li&gt;見える？&lt;/li&gt;
+          &lt;li&gt;見えない。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;聞ける、見られる偏向客观上的外部条件
+        &lt;ul&gt;
+          &lt;li&gt;大阪だらか、もっと大阪弁が聞けると思ったんだ&lt;/li&gt;
+          &lt;li&gt;ここに、中国人があまり見られない&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;接续：～せいだ/で/か
+    &lt;ul&gt;
+      &lt;li&gt;把せい当作是名词&lt;/li&gt;
+      &lt;li&gt;わたしのせいだ
+        &lt;ul&gt;
+          &lt;li&gt;N＋の＋せいだ/で/か&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;原料が高いせいで、この製品は値段が高い
+        &lt;ul&gt;
+          &lt;li&gt;A１＋せいだ/で/か&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;A2＋な＋せいだ/で/か
+        &lt;ul&gt;
+          &lt;li&gt;綺麗なせいだ&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;彼がきったせいだ
+        &lt;ul&gt;
+          &lt;li&gt;V普通形+せいだ/で/か&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：虽然你难得邀请我，但是今天请让我拒绝
+    &lt;ul&gt;
+      &lt;li&gt;せっかくですけれど、今日はご遠慮しておきます。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;辨析：表示移动目标地点时 に　vs へ
+    &lt;ul&gt;
+      &lt;li&gt;具体的地点，两者都行
+        &lt;ul&gt;
+          &lt;li&gt;病院に・へいく&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;抽象的地点，只有用に
+        &lt;ul&gt;
+          &lt;li&gt;披露宴に出る&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;会话：邀请/回复
+    &lt;ul&gt;
+      &lt;li&gt;邀请
+        &lt;ul&gt;
+          &lt;li&gt;〜んですが
+            &lt;ul&gt;
+              &lt;li&gt;明日、会社はパーチーがあるんですが&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;〜ませんか&lt;/li&gt;
+          &lt;li&gt;〜てもらえませんか&lt;/li&gt;
+          &lt;li&gt;〜てみませんか&lt;/li&gt;
+          &lt;li&gt;〜てください&lt;/li&gt;
+          &lt;li&gt;〜ましょう&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;回复
+        &lt;ul&gt;
+          &lt;li&gt;良いですか？行きます&lt;/li&gt;
+          &lt;li&gt;出席させていただきます&lt;/li&gt;
+          &lt;li&gt;せっかくですけれど、〜んです、まだ誘ってください&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：異なる・ことなる
+    &lt;ul&gt;
+      &lt;li&gt;民族によって、使う言葉も異なっている&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：誤解
+    &lt;ul&gt;
+      &lt;li&gt;誤解するな&lt;/li&gt;
+      &lt;li&gt;人の善意を誤解する&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：投げる
+    &lt;ul&gt;
+      &lt;li&gt;石を投げる&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;语法：构词，言い返す
+    &lt;ul&gt;
+      &lt;li&gt;Vます词干＋返す&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：各种各样的方言在发音、语法、词汇上都有很大的区别
+    &lt;ul&gt;
+      &lt;li&gt;それぞれの方言が発音も文法も語彙も大きく違っている&lt;/li&gt;
+      &lt;li&gt;〜も〜も〜も
+        &lt;ul&gt;
+          &lt;li&gt;可翻译为都&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;A1作副词
+        &lt;ul&gt;
+          &lt;li&gt;い变成く&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;大小主语，大主语是方言，小主语是后面的几个要素&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：在日语里，发音、语法、词汇什么的，因为地域不同而引起的不致也是存在的
+    &lt;ul&gt;
+      &lt;li&gt;日本語においても、発音、文法、語彙が、地域（ちいき）による言葉の違いがある。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;接续：〜おいても/（〜おける＋N）
+    &lt;ul&gt;
+      &lt;li&gt;N+〜おいても&lt;/li&gt;
+      &lt;li&gt;会館において、説明会を行います&lt;/li&gt;
+      &lt;li&gt;我が国における少子化は深刻な問題です&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：我们就从这两个意思上思考一下
+    &lt;ul&gt;
+      &lt;li&gt;この二つの意味で考えてみよう&lt;/li&gt;
+      &lt;li&gt;考えてみる变成意志形みよう&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：在高中，让孩子去思考自己未来的教育是必要的
+    &lt;ul&gt;
+      &lt;li&gt;高校においては、生徒が自分の未来を考えるような教育が必要だ&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;接续：～ことになる
+    &lt;ul&gt;
+      &lt;li&gt;两个意思，当表示一件事被决定了意思时，使用过去式
+        &lt;ul&gt;
+          &lt;li&gt;彼をいかせることになりました&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;表示推测，判断
+        &lt;ul&gt;
+          &lt;li&gt;これしないと、　絶対後悔することになる。&lt;/li&gt;
+          &lt;li&gt;「はし」という言葉の意味は、方言によて変わることになる。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;C：やはり
+    &lt;ul&gt;
+      &lt;li&gt;果然&lt;/li&gt;
+      &lt;li&gt;也是&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;表达：感谢你的邀请
+    &lt;ul&gt;
+      &lt;li&gt;誘いいただいてありがとうございます&lt;/li&gt;
+      &lt;li&gt;いただく变成て形&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">表达：随着年龄的增长，考虑事情的方式也变了 年を取るとともに、考え方も変わっている C：登山 山に登る C：同行する・どうこうする 目上 社長が部下をどうこうする 目下 部下が社長に同行する C：せっかく 名词 せっかくの努力が水の泡になった 副词 せっかくここ来たんのに、店が開かなかった C：天气都有哪些词 晴れる 雪 雪が降る 雨 雨が降る 曇る 霧 霧がかかる 稲妻 稲妻が光る C：改めて 之后 改めて参ります・まいります 重新 改めて自己紹介する C：耳・目・口・手にする 聞く みる 食べる もつ C：断る お断りします 断っておくが、わたしは絶対行かないだ 接续：〜もの（ん）です 当作是一个体言 女の心は変わるものだ V普通形+もの（ん）です 薬は苦いものだ A1+もの（ん）です 綺麗なものだ A2＋な＋もの（ん）です 使用场景 感叹 劝说 回忆过去 表达：果然，不实际来的话，很多事情是不知道的 やばり、実際に来てみないと、わからないものがあるものですね 表达：因为是大阪，我还以为会听到更多的诸如“おおきに”和“あかん”之类的大孤方言，但实际上很少听到 大阪だから、「おおきに」とか「あかん」とか、もっと大阪の方言が聞けると思っていたんですか、あまり耳にしませんでした 表达：那么说的话，确实是那样的 そういえば、そうですね 辨析：聞ける　vs 聞こえる、見える　vs 見られる 聞こえる、見える偏向能力上的行不行 耳朵能不能听得到 眼睛能不能看得到 聞こえる？ なに？ 見える？ 見えない。 聞ける、見られる偏向客观上的外部条件 大阪だらか、もっと大阪弁が聞けると思ったんだ ここに、中国人があまり見られない 接续：～せいだ/で/か 把せい当作是名词 わたしのせいだ N＋の＋せいだ/で/か 原料が高いせいで、この製品は値段が高い A１＋せいだ/で/か A2＋な＋せいだ/で/か 綺麗なせいだ 彼がきったせいだ V普通形+せいだ/で/か 表达：虽然你难得邀请我，但是今天请让我拒绝 せっかくですけれど、今日はご遠慮しておきます。 辨析：表示移动目标地点时 に　vs へ 具体的地点，两者都行 病院に・へいく 抽象的地点，只有用に 披露宴に出る 会话：邀请/回复 邀请 〜んですが 明日、会社はパーチーがあるんですが 〜ませんか 〜てもらえませんか 〜てみませんか 〜てください 〜ましょう 回复 良いですか？行きます 出席させていただきます せっかくですけれど、〜んです、まだ誘ってください C：異なる・ことなる 民族によって、使う言葉も異なっている C：誤解 誤解するな 人の善意を誤解する C：投げる 石を投げる 语法：构词，言い返す Vます词干＋返す 表达：各种各样的方言在发音、语法、词汇上都有很大的区别 それぞれの方言が発音も文法も語彙も大きく違っている 〜も〜も〜も 可翻译为都 A1作副词 い变成く 大小主语，大主语是方言，小主语是后面的几个要素 表达：在日语里，发音、语法、词汇什么的，因为地域不同而引起的不致也是存在的 日本語においても、発音、文法、語彙が、地域（ちいき）による言葉の違いがある。 接续：〜おいても/（〜おける＋N） N+〜おいても 会館において、説明会を行います 我が国における少子化は深刻な問題です 表达：我们就从这两个意思上思考一下 この二つの意味で考えてみよう 考えてみる变成意志形みよう 表达：在高中，让孩子去思考自己未来的教育是必要的 高校においては、生徒が自分の未来を考えるような教育が必要だ 接续：～ことになる 两个意思，当表示一件事被决定了意思时，使用过去式 彼をいかせることになりました 表示推测，判断 これしないと、　絶対後悔することになる。 「はし」という言葉の意味は、方言によて変わることになる。 C：やはり 果然 也是 表达：感谢你的邀请 誘いいただいてありがとうございます いただく变成て形</summary></entry><entry><title type="html">What is the difference between subscribeOn and observeOn</title><link href="http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn.html" rel="alternate" type="text/html" title="What is the difference between subscribeOn and observeOn" /><published>2019-03-06T00:00:00+08:00</published><updated>2019-03-06T00:00:00+08:00</updated><id>http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn</id><content type="html" xml:base="http://localhost:4000/ios,/swift,/rxswift/2019/03/06/What-is-the-difference-between-subscribedOn-and-observedOn.html">&lt;ul&gt;
   &lt;li&gt;What is the difference between subscribeOn and observeOn?
     &lt;ul&gt;
       &lt;li&gt;subscribedOn makes the subscribeBlock run on certain scheduler
@@ -269,38 +580,4 @@
       &lt;li&gt;So if you want to get the topMost cell that is visible now, you should sort this array first&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to fix bug of calling selectItem:at:position:animation of UICollectionView sometimes does not trigger isSelected state changing? It seem to be a bug of UICollectionView, sometime, the when call this method, the isSelected state of the target cell is not changed. Call UICollectionView.reloadData() first Then call selectItem:at:position:animation How to draw a bezierPath with some corners round clipped. Using medthod init(roundedRect: byRounddingCorners:cornderRadii) You can pass needed corner to UIRectCorner How to get differences of a file with a history version in git? Gd #md5OfCommit #filepath Is the first indexPath always the first indexPath in indexPathsForVisibleItems? No So if you want to get the topMost cell that is visible now, you should sort this array first</summary></entry><entry><title type="html">How to get int part and float part of a price decimal</title><link href="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html" rel="alternate" type="text/html" title="How to get int part and float part of a price decimal" /><published>2018-11-19T00:00:00+08:00</published><updated>2018-11-19T00:00:00+08:00</updated><id>http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal</id><content type="html" xml:base="http://localhost:4000/ios/2018/11/19/how-to-get-int-and-decimal-part-of-price-decimal.html">&lt;ul&gt;
-  &lt;li&gt;How to get int part and float part of a price decimal?
-    &lt;ul&gt;
-      &lt;li&gt;Int part: Floor((decimal as NSDecimal).doubleValue)&lt;/li&gt;
-      &lt;li&gt;Decimal part: (decimall * Decimal(100)).IntValue - (Int part) * 100&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;How to implement price with int on left and decimal part on right top?
-    &lt;ul&gt;
-      &lt;li&gt;Get different parts of the decimal&lt;/li&gt;
-      &lt;li&gt;Use formater to change integer to price and delete .00 at the end&lt;/li&gt;
-      &lt;li&gt;Place “.” before decimal part * 100&lt;/li&gt;
-      &lt;li&gt;Use two labels to represent them&lt;/li&gt;
-      &lt;li&gt;Adjust constraints
-        &lt;ul&gt;
-          &lt;li&gt;Make a container view&lt;/li&gt;
-          &lt;li&gt;Add the two views as subviews&lt;/li&gt;
-          &lt;li&gt;Make left.left.equalToSuperview&lt;/li&gt;
-          &lt;li&gt;Make right.right.equalToSuperview&lt;/li&gt;
-          &lt;li&gt;Make left.right.equalTo(right.left)&lt;/li&gt;
-          &lt;li&gt;Make container.centerX.equalToSuperView&lt;/li&gt;
-          &lt;li&gt;Make conatiner.left.greaterOrEqualTo(superView)&lt;/li&gt;
-          &lt;li&gt;Make right part’s compressionResistancePriority to low
-            &lt;ul&gt;
-              &lt;li&gt;Make right part adjust fontSizeWithWidth&lt;/li&gt;
-              &lt;li&gt;In this way when the int part is too big ,the right part will be compressed to small fonts&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;LeftEdge     left.right    RightEdge&lt;/li&gt;
-      &lt;li&gt;LeftEdgeleftxxxxxxxxx.rightRightEdge&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to get int part and float part of a price decimal? Int part: Floor((decimal as NSDecimal).doubleValue) Decimal part: (decimall * Decimal(100)).IntValue - (Int part) * 100 How to implement price with int on left and decimal part on right top? Get different parts of the decimal Use formater to change integer to price and delete .00 at the end Place “.” before decimal part * 100 Use two labels to represent them Adjust constraints Make a container view Add the two views as subviews Make left.left.equalToSuperview Make right.right.equalToSuperview Make left.right.equalTo(right.left) Make container.centerX.equalToSuperView Make conatiner.left.greaterOrEqualTo(superView) Make right part’s compressionResistancePriority to low Make right part adjust fontSizeWithWidth In this way when the int part is too big ,the right part will be compressed to small fonts LeftEdge left.right RightEdge LeftEdgeleftxxxxxxxxx.rightRightEdge</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">How to fix bug of calling selectItem:at:position:animation of UICollectionView sometimes does not trigger isSelected state changing? It seem to be a bug of UICollectionView, sometime, the when call this method, the isSelected state of the target cell is not changed. Call UICollectionView.reloadData() first Then call selectItem:at:position:animation How to draw a bezierPath with some corners round clipped. Using medthod init(roundedRect: byRounddingCorners:cornderRadii) You can pass needed corner to UIRectCorner How to get differences of a file with a history version in git? Gd #md5OfCommit #filepath Is the first indexPath always the first indexPath in indexPathsForVisibleItems? No So if you want to get the topMost cell that is visible now, you should sort this array first</summary></entry></feed>
